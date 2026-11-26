@@ -56,7 +56,9 @@ fs.writeFileSync(
     }) +
     ");\n",
 );
-fs.copyFileSync(".openai/hosting.json", "dist/.openai/hosting.json");
+if (fs.existsSync(".openai/hosting.json")) {
+  fs.copyFileSync(".openai/hosting.json", "dist/.openai/hosting.json");
+}
 console.log(
   `Built Worker with ${Object.keys(assets).length} embedded assets and ${baseRoutes.length} route records.`,
 );

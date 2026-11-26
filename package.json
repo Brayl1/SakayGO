@@ -1,0 +1,52 @@
+{
+  "name": "sakaygo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --configLoader runner",
+    "build": "tsc --noEmit && vite build --configLoader runner && node scripts/build-worker.mjs",
+    "test": "vitest run tests --configLoader runner",
+    "server": "node scripts/run-server.cjs server/index",
+    "import:data": "node scripts/run-server.cjs scripts/import",
+    "test:e2e": "playwright test",
+    "test:e2e:express": "playwright test --config playwright.express.config.ts",
+    "seed": "node scripts/run-server.cjs scripts/seed",
+    "preview": "node scripts/preview-worker.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "import:cdo": "node scripts/prepare-cdo.mjs",
+    "import:fares": "node scripts/import-fares.mjs"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "express-rate-limit": "^8.0.0",
+    "helmet": "^8.0.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.468.0",
+    "motion": "^14.10.1",
+    "pg": "^8.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/express": "^5.0.0",
+    "@types/leaflet": "^1.9.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9.39.5",
+    "prettier": "^3.9.10",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}

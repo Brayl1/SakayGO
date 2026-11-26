@@ -1,0 +1,265 @@
+{
+  "locations": [
+    {
+      "id": "ustp",
+      "name": "USTP CDO Campus",
+      "category": "University",
+      "point": [
+        8.4853,
+        124.6565
+      ]
+    },
+    {
+      "id": "limketkai",
+      "name": "Limketkai Center",
+      "category": "Shopping",
+      "point": [
+        8.4854,
+        124.6578
+      ]
+    },
+    {
+      "id": "centrio",
+      "name": "Centrio Mall",
+      "category": "Shopping",
+      "point": [
+        8.4875,
+        124.6505
+      ]
+    },
+    {
+      "id": "sm",
+      "name": "SM CDO Downtown Premier",
+      "category": "Shopping",
+      "point": [
+        8.4893,
+        124.6561
+      ]
+    },
+    {
+      "id": "cogon",
+      "name": "Cogon Market",
+      "category": "Market",
+      "point": [
+        8.4785,
+        124.6518
+      ]
+    },
+    {
+      "id": "divisoria",
+      "name": "Divisoria",
+      "category": "City landmark",
+      "point": [
+        8.4778,
+        124.6457
+      ]
+    },
+    {
+      "id": "xavier",
+      "name": "Xavier University",
+      "category": "University",
+      "point": [
+        8.4765,
+        124.6473
+      ]
+    },
+    {
+      "id": "gaisano",
+      "name": "Gaisano City Mall",
+      "category": "Shopping",
+      "point": [
+        8.4902,
+        124.6504
+      ]
+    },
+    {
+      "id": "agora",
+      "name": "Agora Bus Terminal",
+      "category": "Terminal",
+      "point": [
+        8.4948,
+        124.6611
+      ]
+    },
+    {
+      "id": "carmen",
+      "name": "Carmen Public Market",
+      "category": "Market",
+      "point": [
+        8.4803,
+        124.6368
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "A",
+      "name": "Campus → Downtown",
+      "stops": [
+        "ustp",
+        "limketkai",
+        "cogon",
+        "xavier",
+        "divisoria"
+      ],
+      "area": "Downtown",
+      "signboard": "DEMO A · Campus → Downtown",
+      "direction": "One-way synthetic alignment",
+      "status": "demo",
+      "verifiedAt": null,
+      "source": "Synthetic software test fixture; not a real jeepney service",
+      "geometry": [
+        [
+          8.4853,
+          124.6565
+        ],
+        [
+          8.4854,
+          124.6578
+        ],
+        [
+          8.4785,
+          124.6518
+        ],
+        [
+          8.4765,
+          124.6473
+        ],
+        [
+          8.4778,
+          124.6457
+        ]
+      ],
+      "policyId": "demo-policy"
+    },
+    {
+      "id": "B",
+      "name": "Campus → North loop",
+      "stops": [
+        "ustp",
+        "sm",
+        "centrio",
+        "gaisano",
+        "agora"
+      ],
+      "area": "North",
+      "signboard": "DEMO B · Campus → North loop",
+      "direction": "One-way synthetic alignment",
+      "status": "demo",
+      "verifiedAt": null,
+      "source": "Synthetic software test fixture; not a real jeepney service",
+      "geometry": [
+        [
+          8.4853,
+          124.6565
+        ],
+        [
+          8.4893,
+          124.6561
+        ],
+        [
+          8.4875,
+          124.6505
+        ],
+        [
+          8.4902,
+          124.6504
+        ],
+        [
+          8.4948,
+          124.6611
+        ]
+      ],
+      "policyId": "demo-policy"
+    },
+    {
+      "id": "C",
+      "name": "Mall → Riverside",
+      "stops": [
+        "centrio",
+        "cogon",
+        "divisoria",
+        "carmen"
+      ],
+      "area": "Downtown",
+      "signboard": "DEMO C · Mall → Riverside",
+      "direction": "One-way synthetic alignment",
+      "status": "demo",
+      "verifiedAt": null,
+      "source": "Synthetic software test fixture; not a real jeepney service",
+      "geometry": [
+        [
+          8.4875,
+          124.6505
+        ],
+        [
+          8.4785,
+          124.6518
+        ],
+        [
+          8.4778,
+          124.6457
+        ],
+        [
+          8.4803,
+          124.6368
+        ]
+      ],
+      "policyId": "demo-policy"
+    },
+    {
+      "id": "D",
+      "name": "Riverside → Campus",
+      "stops": [
+        "carmen",
+        "divisoria",
+        "xavier",
+        "cogon",
+        "ustp"
+      ],
+      "area": "West",
+      "signboard": "DEMO D · Riverside → Campus",
+      "direction": "One-way synthetic alignment",
+      "status": "demo",
+      "verifiedAt": null,
+      "source": "Synthetic software test fixture; not a real jeepney service",
+      "geometry": [
+        [
+          8.4803,
+          124.6368
+        ],
+        [
+          8.4778,
+          124.6457
+        ],
+        [
+          8.4765,
+          124.6473
+        ],
+        [
+          8.4785,
+          124.6518
+        ],
+        [
+          8.4853,
+          124.6565
+        ]
+      ],
+      "policyId": "demo-policy"
+    }
+  ],
+  "policies": [
+    {
+      "id": "demo-policy",
+      "source": "Synthetic test amounts — not an official fare policy",
+      "effective": "2020-01-01",
+      "expires": "2099-12-31",
+      "demo": true,
+      "base": 15,
+      "baseKm": 4,
+      "perKm": 2,
+      "discount": 0.2,
+      "roundTo": 1
+    }
+  ]
+}

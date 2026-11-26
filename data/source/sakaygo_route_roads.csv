@@ -1,0 +1,2256 @@
+﻿route_id,route_name,route_identifier,direction,road_sequence,road_name
+1,Baikingon - Carmen Public Market,,inbound,1,Baikingon-San Simon Road
+1,Baikingon - Carmen Public Market,,inbound,2,Baikingon Road
+1,Baikingon - Carmen Public Market,,inbound,3,Iponan-Baikingon Road
+1,Baikingon - Carmen Public Market,,inbound,4,Macapagal Drive
+1,Baikingon - Carmen Public Market,,inbound,5,Canitoan Road
+1,Baikingon - Carmen Public Market,,inbound,6,Carmen-Canitoan Road
+1,Baikingon - Carmen Public Market,,inbound,7,Villarin Street
+1,Baikingon - Carmen Public Market,,inbound,8,Max Suniel Street
+1,Baikingon - Carmen Public Market,,inbound,9,V. Neri Street
+1,Baikingon - Carmen Public Market,,inbound,10,Castro Street
+1,Baikingon - Carmen Public Market,,outbound,1,Max Suniel Street
+1,Baikingon - Carmen Public Market,,outbound,2,Villarin Street
+1,Baikingon - Carmen Public Market,,outbound,3,Gumamela Street
+1,Baikingon - Carmen Public Market,,outbound,4,Rabanes Street
+1,Baikingon - Carmen Public Market,,outbound,5,Concordio Diel Street
+1,Baikingon - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+1,Baikingon - Carmen Public Market,,outbound,7,Canitoan Road
+1,Baikingon - Carmen Public Market,,outbound,8,Macapagal Drive
+1,Baikingon - Carmen Public Market,,outbound,9,Iponan-Baikingon Road
+1,Baikingon - Carmen Public Market,,outbound,10,Baikingon Road
+1,Baikingon - Carmen Public Market,,outbound,11,Baikingon-San Simon Road
+1,Baikingon - Carmen Public Market,,both,1,Baikingon-San Simon Road
+1,Baikingon - Carmen Public Market,,both,2,Baikingon Road
+1,Baikingon - Carmen Public Market,,both,3,Iponan-Baikingon Road
+1,Baikingon - Carmen Public Market,,both,4,Macapagal Drive
+1,Baikingon - Carmen Public Market,,both,5,Canitoan Road
+1,Baikingon - Carmen Public Market,,both,6,Carmen-Canitoan Road
+1,Baikingon - Carmen Public Market,,both,7,Villarin Street
+1,Baikingon - Carmen Public Market,,both,8,Max Suniel Street
+1,Baikingon - Carmen Public Market,,both,9,V. Neri Street
+1,Baikingon - Carmen Public Market,,both,10,Castro Street
+1,Baikingon - Carmen Public Market,,both,11,Gumamela Street
+1,Baikingon - Carmen Public Market,,both,12,Rabanes Street
+1,Baikingon - Carmen Public Market,,both,13,Concordio Diel Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,1,Apitong Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,2,Mariano Velez Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,3,Concordio Diel Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,4,Villarin Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,5,Max Suniel Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,6,V. Neri Street
+2,Balulang R1 Centro - Carmen Public Market,R1,inbound,7,Castro Street
+2,Balulang R1 Centro - Carmen Public Market,R1,outbound,1,Castro Street
+2,Balulang R1 Centro - Carmen Public Market,R1,outbound,2,Vamenta Boulevard
+2,Balulang R1 Centro - Carmen Public Market,R1,outbound,3,Masterson Avenue
+2,Balulang R1 Centro - Carmen Public Market,R1,outbound,4,Mariano Velez Street
+2,Balulang R1 Centro - Carmen Public Market,R1,outbound,5,Apitong Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,1,Apitong Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,2,Mariano Velez Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,3,Concordio Diel Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,4,Villarin Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,5,Max Suniel Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,6,V. Neri Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,7,Castro Street
+2,Balulang R1 Centro - Carmen Public Market,R1,both,8,Vamenta Boulevard
+2,Balulang R1 Centro - Carmen Public Market,R1,both,9,Masterson Avenue
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,1,Walnut Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,2,Alder Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,3,Apitong Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,4,Mariano Velez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,5,Masterson Avenue
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,6,Don Apolinar Velez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,7,M. Clemente Fernandez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,8,Corrales Avenue
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,9,Archbishop Hayes Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,inbound,10,Sergio Osmeña Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,1,Sergio Osmeña Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,2,Yacapin Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,3,Captain Vicente Roa Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,4,8th Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,5,2nd Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,6,21st Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,7,6th Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,8,Tomas Saco Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,9,15th Street Extension
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,10,Masterson Avenue
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,11,Mariano Velez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,12,Apitong Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,13,Alder Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,outbound,14,Walnut Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,1,Walnut Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,2,Alder Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,3,Apitong Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,4,Mariano Velez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,5,Masterson Avenue
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,6,Don Apolinar Velez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,7,M. Clemente Fernandez Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,8,Corrales Avenue
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,9,Archbishop Hayes Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,10,Sergio Osmeña Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,11,Yacapin Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,12,Captain Vicente Roa Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,13,8th Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,14,2nd Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,15,21st Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,16,6th Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,17,Tomas Saco Street
+3,Balulang R2 Villa Verde - Cogon Public Market,R2,both,18,15th Street Extension
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,1,Masterson Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,2,Don Apolinar Velez Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,3,M. Clemente Fernandez Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,4,Corrales Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,5,Mayor J. R. Borja Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,6,Sergio Osmeña Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,inbound,7,Yacapin Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,1,Yacapin Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,2,Captain Vicente Roa Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,3,Mayor J. R. Borja Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,4,Pabayo Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,5,Tomas Saco Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,6,15th Street Extension
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,7,Masterson Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,8,Loyola Drive
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,9,Xavier Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,outbound,10,Manresa Drive
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,1,Masterson Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,2,Don Apolinar Velez Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,3,M. Clemente Fernandez Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,4,Corrales Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,5,Mayor J. R. Borja Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,6,Sergio Osmeña Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,7,Yacapin Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,8,Captain Vicente Roa Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,9,Pabayo Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,10,Tomas Saco Street
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,11,15th Street Extension
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,12,Loyola Drive
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,13,Xavier Avenue
+4,Balulang R3 Xavier Heights - Cogon Public Market,R3,both,14,Manresa Drive
+5,Bayabas R1 - Cogon Public Market,R1,inbound,1,San Pedro Street
+5,Bayabas R1 - Cogon Public Market,R1,inbound,2,R. N. Pelaez Boulevard
+5,Bayabas R1 - Cogon Public Market,R1,inbound,3,C. M. Recto Avenue
+5,Bayabas R1 - Cogon Public Market,R1,inbound,4,General Capistrano Street
+5,Bayabas R1 - Cogon Public Market,R1,inbound,5,Toribio Chaves Street
+5,Bayabas R1 - Cogon Public Market,R1,inbound,6,Corrales Avenue
+5,Bayabas R1 - Cogon Public Market,R1,inbound,7,Archbishop Hayes Street
+5,Bayabas R1 - Cogon Public Market,R1,inbound,8,Sotero Daumar Street
+5,Bayabas R1 - Cogon Public Market,R1,outbound,1,Sotero Daumar Street
+5,Bayabas R1 - Cogon Public Market,R1,outbound,2,Mayor J. R. Borja Avenue
+5,Bayabas R1 - Cogon Public Market,R1,outbound,3,Don Apolinar Velez Street
+5,Bayabas R1 - Cogon Public Market,R1,outbound,4,C. M. Recto Avenue
+5,Bayabas R1 - Cogon Public Market,R1,outbound,5,R. N. Pelaez Boulevard
+5,Bayabas R1 - Cogon Public Market,R1,outbound,6,San Pedro Street
+5,Bayabas R1 - Cogon Public Market,R1,both,1,San Pedro Street
+5,Bayabas R1 - Cogon Public Market,R1,both,2,R. N. Pelaez Boulevard
+5,Bayabas R1 - Cogon Public Market,R1,both,3,C. M. Recto Avenue
+5,Bayabas R1 - Cogon Public Market,R1,both,4,General Capistrano Street
+5,Bayabas R1 - Cogon Public Market,R1,both,5,Toribio Chaves Street
+5,Bayabas R1 - Cogon Public Market,R1,both,6,Corrales Avenue
+5,Bayabas R1 - Cogon Public Market,R1,both,7,Archbishop Hayes Street
+5,Bayabas R1 - Cogon Public Market,R1,both,8,Sotero Daumar Street
+5,Bayabas R1 - Cogon Public Market,R1,both,9,Mayor J. R. Borja Avenue
+5,Bayabas R1 - Cogon Public Market,R1,both,10,Don Apolinar Velez Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,1,San Pedro Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,2,San Lucas Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,3,Eagle Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,4,R. N. Pelaez Boulevard
+6,Bayabas R2 - Carmen Public Market,R2,inbound,5,Mayor P.N. Roa Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,6,Villarin Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,7,Concordio Diel Street
+6,Bayabas R2 - Carmen Public Market,R2,inbound,8,Masterson Avenue
+6,Bayabas R2 - Carmen Public Market,R2,inbound,9,Vamenta Boulevard
+6,Bayabas R2 - Carmen Public Market,R2,inbound,10,Castro Street
+6,Bayabas R2 - Carmen Public Market,R2,outbound,1,Max Suniel Street
+6,Bayabas R2 - Carmen Public Market,R2,outbound,2,Villarin Street
+6,Bayabas R2 - Carmen Public Market,R2,outbound,3,Mayor P.N. Roa Street
+6,Bayabas R2 - Carmen Public Market,R2,outbound,4,R. N. Pelaez Boulevard
+6,Bayabas R2 - Carmen Public Market,R2,outbound,5,Eagle Street
+6,Bayabas R2 - Carmen Public Market,R2,outbound,6,San Lucas Street
+6,Bayabas R2 - Carmen Public Market,R2,outbound,7,San Pedro Street
+6,Bayabas R2 - Carmen Public Market,R2,both,1,San Pedro Street
+6,Bayabas R2 - Carmen Public Market,R2,both,2,San Lucas Street
+6,Bayabas R2 - Carmen Public Market,R2,both,3,Eagle Street
+6,Bayabas R2 - Carmen Public Market,R2,both,4,R. N. Pelaez Boulevard
+6,Bayabas R2 - Carmen Public Market,R2,both,5,Mayor P.N. Roa Street
+6,Bayabas R2 - Carmen Public Market,R2,both,6,Villarin Street
+6,Bayabas R2 - Carmen Public Market,R2,both,7,Concordio Diel Street
+6,Bayabas R2 - Carmen Public Market,R2,both,8,Masterson Avenue
+6,Bayabas R2 - Carmen Public Market,R2,both,9,Vamenta Boulevard
+6,Bayabas R2 - Carmen Public Market,R2,both,10,Castro Street
+6,Bayabas R2 - Carmen Public Market,R2,both,11,Max Suniel Street
+7,Bayabas R3 - Carmen Public Market,R3,inbound,1,San Pedro Street
+7,Bayabas R3 - Carmen Public Market,R3,inbound,2,R. N. Pelaez Boulevard
+7,Bayabas R3 - Carmen Public Market,R3,inbound,3,Vamenta Boulevard
+7,Bayabas R3 - Carmen Public Market,R3,inbound,4,Masterson Avenue
+7,Bayabas R3 - Carmen Public Market,R3,inbound,5,Concordio Diel Street
+7,Bayabas R3 - Carmen Public Market,R3,inbound,6,Villarin Street
+7,Bayabas R3 - Carmen Public Market,R3,inbound,7,Max Suniel Street
+7,Bayabas R3 - Carmen Public Market,R3,inbound,8,V. Neri Street
+7,Bayabas R3 - Carmen Public Market,R3,inbound,9,Castro Street
+7,Bayabas R3 - Carmen Public Market,R3,outbound,1,Castro Street
+7,Bayabas R3 - Carmen Public Market,R3,outbound,2,Max Suniel Street
+7,Bayabas R3 - Carmen Public Market,R3,outbound,3,Yakal Street
+7,Bayabas R3 - Carmen Public Market,R3,outbound,4,Lirio Street
+7,Bayabas R3 - Carmen Public Market,R3,outbound,5,Vamenta Boulevard
+7,Bayabas R3 - Carmen Public Market,R3,outbound,6,R. N. Pelaez Boulevard
+7,Bayabas R3 - Carmen Public Market,R3,outbound,7,San Pedro Street
+7,Bayabas R3 - Carmen Public Market,R3,both,1,San Pedro Street
+7,Bayabas R3 - Carmen Public Market,R3,both,2,R. N. Pelaez Boulevard
+7,Bayabas R3 - Carmen Public Market,R3,both,3,Vamenta Boulevard
+7,Bayabas R3 - Carmen Public Market,R3,both,4,Masterson Avenue
+7,Bayabas R3 - Carmen Public Market,R3,both,5,Concordio Diel Street
+7,Bayabas R3 - Carmen Public Market,R3,both,6,Villarin Street
+7,Bayabas R3 - Carmen Public Market,R3,both,7,Max Suniel Street
+7,Bayabas R3 - Carmen Public Market,R3,both,8,V. Neri Street
+7,Bayabas R3 - Carmen Public Market,R3,both,9,Castro Street
+7,Bayabas R3 - Carmen Public Market,R3,both,10,Yakal Street
+7,Bayabas R3 - Carmen Public Market,R3,both,11,Lirio Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,1,San Pedro Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,2,West Coastal Road
+8,Bayabas R4 - Carmen Public Market,R4,inbound,3,Saarenas Avenue
+8,Bayabas R4 - Carmen Public Market,R4,inbound,4,C. M. Recto Avenue
+8,Bayabas R4 - Carmen Public Market,R4,inbound,5,Mother of Perpetual Help Avenue
+8,Bayabas R4 - Carmen Public Market,R4,inbound,6,Mayor P.N. Roa Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,7,Vamenta Boulevard
+8,Bayabas R4 - Carmen Public Market,R4,inbound,8,J. V. Seriña Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,9,Villarin Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,10,Max Suniel Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,11,V. Neri Street
+8,Bayabas R4 - Carmen Public Market,R4,inbound,12,Castro Street
+8,Bayabas R4 - Carmen Public Market,R4,outbound,1,Max Suniel Street
+8,Bayabas R4 - Carmen Public Market,R4,outbound,2,Yakal Street
+8,Bayabas R4 - Carmen Public Market,R4,outbound,3,Ferrabrel Street
+8,Bayabas R4 - Carmen Public Market,R4,outbound,4,Mayor P.N. Roa Street
+8,Bayabas R4 - Carmen Public Market,R4,outbound,5,C. M. Recto Avenue
+8,Bayabas R4 - Carmen Public Market,R4,outbound,6,Saarenas Avenue
+8,Bayabas R4 - Carmen Public Market,R4,outbound,7,West Coastal Road
+8,Bayabas R4 - Carmen Public Market,R4,outbound,8,San Pedro Street
+8,Bayabas R4 - Carmen Public Market,R4,both,1,San Pedro Street
+8,Bayabas R4 - Carmen Public Market,R4,both,2,West Coastal Road
+8,Bayabas R4 - Carmen Public Market,R4,both,3,Saarenas Avenue
+8,Bayabas R4 - Carmen Public Market,R4,both,4,C. M. Recto Avenue
+8,Bayabas R4 - Carmen Public Market,R4,both,5,Mother of Perpetual Help Avenue
+8,Bayabas R4 - Carmen Public Market,R4,both,6,Mayor P.N. Roa Street
+8,Bayabas R4 - Carmen Public Market,R4,both,7,Vamenta Boulevard
+8,Bayabas R4 - Carmen Public Market,R4,both,8,J. V. Seriña Street
+8,Bayabas R4 - Carmen Public Market,R4,both,9,Villarin Street
+8,Bayabas R4 - Carmen Public Market,R4,both,10,Max Suniel Street
+8,Bayabas R4 - Carmen Public Market,R4,both,11,V. Neri Street
+8,Bayabas R4 - Carmen Public Market,R4,both,12,Castro Street
+8,Bayabas R4 - Carmen Public Market,R4,both,13,Yakal Street
+8,Bayabas R4 - Carmen Public Market,R4,both,14,Ferrabrel Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,1,San Pedro Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,2,San Lucas Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,3,Eagle Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,4,R. N. Pelaez Boulevard
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,5,Vamenta Boulevard
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,6,Max Suniel Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,7,V. Neri Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,8,Castro Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,9,Mayor J. R. Borja Avenue
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,10,Roxas Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,11,Yacapin Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,12,President Quirino Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,13,Justo Ramonal Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,14,Limketkai Avenue
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,15,C. M. Recto Avenue
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,16,Valenzuela Road
+9,Bayabas R5 - Agora Market City and Terminal,R5,inbound,17,Gaabucayan Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,outbound,1,Gaabucayan Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,outbound,2,Julio Pacana Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,outbound,3,San Pedro Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,1,San Pedro Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,2,San Lucas Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,3,Eagle Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,4,R. N. Pelaez Boulevard
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,5,Vamenta Boulevard
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,6,Max Suniel Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,7,V. Neri Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,8,Castro Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,9,Mayor J. R. Borja Avenue
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,10,Roxas Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,11,Yacapin Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,12,President Quirino Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,13,Justo Ramonal Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,14,Limketkai Avenue
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,15,C. M. Recto Avenue
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,16,Valenzuela Road
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,17,Gaabucayan Street
+9,Bayabas R5 - Agora Market City and Terminal,R5,both,18,Julio Pacana Street
+10,Bonbon R1 - Cogon Public Market,R1,inbound,1,Rodolfo N. Pelaez Boulevard
+10,Bonbon R1 - Cogon Public Market,R1,inbound,2,R. N. Pelaez Boulevard
+10,Bonbon R1 - Cogon Public Market,R1,inbound,3,C. M. Recto Avenue
+10,Bonbon R1 - Cogon Public Market,R1,inbound,4,General Capistrano Street
+10,Bonbon R1 - Cogon Public Market,R1,inbound,5,Toribio Chaves Street
+10,Bonbon R1 - Cogon Public Market,R1,inbound,6,Corrales Avenue
+10,Bonbon R1 - Cogon Public Market,R1,inbound,7,Archbishop Hayes Street
+10,Bonbon R1 - Cogon Public Market,R1,inbound,8,Sotero Daumar Street
+10,Bonbon R1 - Cogon Public Market,R1,outbound,1,Sotero Daumar Street
+10,Bonbon R1 - Cogon Public Market,R1,outbound,2,Mayor J. R. Borja Avenue
+10,Bonbon R1 - Cogon Public Market,R1,outbound,3,Don Apolinar Velez Street
+10,Bonbon R1 - Cogon Public Market,R1,outbound,4,C. M. Recto Avenue
+10,Bonbon R1 - Cogon Public Market,R1,outbound,5,R. N. Pelaez Boulevard
+10,Bonbon R1 - Cogon Public Market,R1,outbound,6,Rodolfo N. Pelaez Boulevard
+10,Bonbon R1 - Cogon Public Market,R1,both,1,Rodolfo N. Pelaez Boulevard
+10,Bonbon R1 - Cogon Public Market,R1,both,2,R. N. Pelaez Boulevard
+10,Bonbon R1 - Cogon Public Market,R1,both,3,C. M. Recto Avenue
+10,Bonbon R1 - Cogon Public Market,R1,both,4,General Capistrano Street
+10,Bonbon R1 - Cogon Public Market,R1,both,5,Toribio Chaves Street
+10,Bonbon R1 - Cogon Public Market,R1,both,6,Corrales Avenue
+10,Bonbon R1 - Cogon Public Market,R1,both,7,Archbishop Hayes Street
+10,Bonbon R1 - Cogon Public Market,R1,both,8,Sotero Daumar Street
+10,Bonbon R1 - Cogon Public Market,R1,both,9,Mayor J. R. Borja Avenue
+10,Bonbon R1 - Cogon Public Market,R1,both,10,Don Apolinar Velez Street
+11,Bonbon R2 - Carmen Public Market,R2,inbound,1,Pasil-Bonbon Road
+11,Bonbon R2 - Carmen Public Market,R2,inbound,2,John The Baptist Street
+11,Bonbon R2 - Carmen Public Market,R2,inbound,3,R. N. Pelaez Boulevard
+11,Bonbon R2 - Carmen Public Market,R2,inbound,4,Vamenta Boulevard
+11,Bonbon R2 - Carmen Public Market,R2,inbound,5,Masterson Avenue
+11,Bonbon R2 - Carmen Public Market,R2,inbound,6,Concordio Diel Street
+11,Bonbon R2 - Carmen Public Market,R2,inbound,7,Villarin Street
+11,Bonbon R2 - Carmen Public Market,R2,inbound,8,Max Suniel Street
+11,Bonbon R2 - Carmen Public Market,R2,inbound,9,V. Neri Street
+11,Bonbon R2 - Carmen Public Market,R2,inbound,10,Castro Street
+11,Bonbon R2 - Carmen Public Market,R2,outbound,1,Max Suniel Street
+11,Bonbon R2 - Carmen Public Market,R2,outbound,2,Yakal Street
+11,Bonbon R2 - Carmen Public Market,R2,outbound,3,Lirio Street
+11,Bonbon R2 - Carmen Public Market,R2,outbound,4,Vamenta Boulevard
+11,Bonbon R2 - Carmen Public Market,R2,outbound,5,R. N. Pelaez Boulevard
+11,Bonbon R2 - Carmen Public Market,R2,outbound,6,John The Baptist Street
+11,Bonbon R2 - Carmen Public Market,R2,outbound,7,Pasil-Bonbon Road
+11,Bonbon R2 - Carmen Public Market,R2,both,1,Pasil-Bonbon Road
+11,Bonbon R2 - Carmen Public Market,R2,both,2,John The Baptist Street
+11,Bonbon R2 - Carmen Public Market,R2,both,3,R. N. Pelaez Boulevard
+11,Bonbon R2 - Carmen Public Market,R2,both,4,Vamenta Boulevard
+11,Bonbon R2 - Carmen Public Market,R2,both,5,Masterson Avenue
+11,Bonbon R2 - Carmen Public Market,R2,both,6,Concordio Diel Street
+11,Bonbon R2 - Carmen Public Market,R2,both,7,Villarin Street
+11,Bonbon R2 - Carmen Public Market,R2,both,8,Max Suniel Street
+11,Bonbon R2 - Carmen Public Market,R2,both,9,V. Neri Street
+11,Bonbon R2 - Carmen Public Market,R2,both,10,Castro Street
+11,Bonbon R2 - Carmen Public Market,R2,both,11,Yakal Street
+11,Bonbon R2 - Carmen Public Market,R2,both,12,Lirio Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,1,San Pedro Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,2,San Lucas Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,3,Eagle Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,4,R. N. Pelaez Boulevard
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,5,Vamenta Boulevard
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,6,Max Suniel Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,7,V. Neri Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,8,Castro Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,9,Mayor J. R. Borja Avenue
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,10,Roxas Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,11,Yacapin Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,12,President Quirino Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,13,Justo Ramonal Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,14,Limketkai Avenue
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,15,C. M. Recto Avenue
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,16,Valenzuela Road
+12,Bonbon R3 - Agora Market City and Terminal,R3,inbound,17,Gaabucayan Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,outbound,1,Gaabucayan Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,outbound,2,Julio Pacana Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,outbound,3,San Pedro Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,1,San Pedro Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,2,San Lucas Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,3,Eagle Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,4,R. N. Pelaez Boulevard
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,5,Vamenta Boulevard
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,6,Max Suniel Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,7,V. Neri Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,8,Castro Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,9,Mayor J. R. Borja Avenue
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,10,Roxas Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,11,Yacapin Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,12,President Quirino Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,13,Justo Ramonal Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,14,Limketkai Avenue
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,15,C. M. Recto Avenue
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,16,Valenzuela Road
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,17,Gaabucayan Street
+12,Bonbon R3 - Agora Market City and Terminal,R3,both,18,Julio Pacana Street
+13,Bonbon R4 - Carmen Public Market,R4,inbound,1,Pasil-Bonbon Road
+13,Bonbon R4 - Carmen Public Market,R4,inbound,2,San Pedro Street
+13,Bonbon R4 - Carmen Public Market,R4,inbound,3,R. N. Pelaez Boulevard
+13,Bonbon R4 - Carmen Public Market,R4,inbound,4,C. M. Recto Avenue
+13,Bonbon R4 - Carmen Public Market,R4,inbound,5,Saarenas Avenue
+13,Bonbon R4 - Carmen Public Market,R4,inbound,6,West Coastal Road
+13,Bonbon R4 - Carmen Public Market,R4,inbound,7,Mother of Perpetual Help Avenue
+13,Bonbon R4 - Carmen Public Market,R4,inbound,8,Mayor P.N. Roa Street
+13,Bonbon R4 - Carmen Public Market,R4,inbound,9,Vamenta Boulevard
+13,Bonbon R4 - Carmen Public Market,R4,inbound,10,Max Suniel Street
+13,Bonbon R4 - Carmen Public Market,R4,inbound,11,V. Neri Street
+13,Bonbon R4 - Carmen Public Market,R4,inbound,12,Castro Street
+13,Bonbon R4 - Carmen Public Market,R4,outbound,1,Max Suniel Street
+13,Bonbon R4 - Carmen Public Market,R4,outbound,2,Yakal Street
+13,Bonbon R4 - Carmen Public Market,R4,outbound,3,Ferrabrel Street
+13,Bonbon R4 - Carmen Public Market,R4,outbound,4,Mayor P.N. Roa Street
+13,Bonbon R4 - Carmen Public Market,R4,outbound,5,C. M. Recto Avenue
+13,Bonbon R4 - Carmen Public Market,R4,outbound,6,Saarenas Avenue
+13,Bonbon R4 - Carmen Public Market,R4,outbound,7,West Coastal Road
+13,Bonbon R4 - Carmen Public Market,R4,outbound,8,R. N. Pelaez Boulevard
+13,Bonbon R4 - Carmen Public Market,R4,outbound,9,San Pedro Street
+13,Bonbon R4 - Carmen Public Market,R4,outbound,10,Pasil-Bonbon Road
+13,Bonbon R4 - Carmen Public Market,R4,both,1,Pasil-Bonbon Road
+13,Bonbon R4 - Carmen Public Market,R4,both,2,San Pedro Street
+13,Bonbon R4 - Carmen Public Market,R4,both,3,R. N. Pelaez Boulevard
+13,Bonbon R4 - Carmen Public Market,R4,both,4,C. M. Recto Avenue
+13,Bonbon R4 - Carmen Public Market,R4,both,5,Saarenas Avenue
+13,Bonbon R4 - Carmen Public Market,R4,both,6,West Coastal Road
+13,Bonbon R4 - Carmen Public Market,R4,both,7,Mother of Perpetual Help Avenue
+13,Bonbon R4 - Carmen Public Market,R4,both,8,Mayor P.N. Roa Street
+13,Bonbon R4 - Carmen Public Market,R4,both,9,Vamenta Boulevard
+13,Bonbon R4 - Carmen Public Market,R4,both,10,Max Suniel Street
+13,Bonbon R4 - Carmen Public Market,R4,both,11,V. Neri Street
+13,Bonbon R4 - Carmen Public Market,R4,both,12,Castro Street
+13,Bonbon R4 - Carmen Public Market,R4,both,13,Yakal Street
+13,Bonbon R4 - Carmen Public Market,R4,both,14,Ferrabrel Street
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,1,Saarenas Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,2,West Coastal Road
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,3,C. M. Recto Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,4,Mother of Perpetual Help Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,5,Mayor P.N. Roa Street
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,6,Molawan Street
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,7,Limketkai Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,8,Valenzuela Road
+14,Bulua R1 - Agora Market City and Terminal,R1,inbound,9,Gaabucayan Street
+14,Bulua R1 - Agora Market City and Terminal,R1,outbound,1,Gaabucayan Street
+14,Bulua R1 - Agora Market City and Terminal,R1,outbound,2,Mambato Street
+14,Bulua R1 - Agora Market City and Terminal,R1,outbound,3,Santo Niño Street
+14,Bulua R1 - Agora Market City and Terminal,R1,outbound,4,Valenzuela Road
+14,Bulua R1 - Agora Market City and Terminal,R1,outbound,5,C. M. Recto Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,outbound,6,Saarenas Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,both,1,Saarenas Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,both,2,West Coastal Road
+14,Bulua R1 - Agora Market City and Terminal,R1,both,3,C. M. Recto Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,both,4,Mother of Perpetual Help Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,both,5,Mayor P.N. Roa Street
+14,Bulua R1 - Agora Market City and Terminal,R1,both,6,Molawan Street
+14,Bulua R1 - Agora Market City and Terminal,R1,both,7,Limketkai Avenue
+14,Bulua R1 - Agora Market City and Terminal,R1,both,8,Valenzuela Road
+14,Bulua R1 - Agora Market City and Terminal,R1,both,9,Gaabucayan Street
+14,Bulua R1 - Agora Market City and Terminal,R1,both,10,Mambato Street
+14,Bulua R1 - Agora Market City and Terminal,R1,both,11,Santo Niño Street
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,1,C. M. Recto Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,2,Mother of Perpetual Help Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,3,Mayor P.N. Roa Street
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,4,Mango Street
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,5,R. N. Pelaez Boulevard
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,6,Limketkai Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,7,Valenzuela Road
+15,Bulua R2 - Agora Market City and Terminal,R2,inbound,8,Gaabucayan Street
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,1,Gaabucayan Street
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,2,Mambato Street
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,3,Santo Niño Street
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,4,Valenzuela Road
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,5,C. M. Recto Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,6,R. N. Pelaez Boulevard
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,7,Mayor P.N. Roa Street
+15,Bulua R2 - Agora Market City and Terminal,R2,outbound,8,Mother of Perpetual Help Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,both,1,C. M. Recto Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,both,2,Mother of Perpetual Help Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,both,3,Mayor P.N. Roa Street
+15,Bulua R2 - Agora Market City and Terminal,R2,both,4,Mango Street
+15,Bulua R2 - Agora Market City and Terminal,R2,both,5,R. N. Pelaez Boulevard
+15,Bulua R2 - Agora Market City and Terminal,R2,both,6,Limketkai Avenue
+15,Bulua R2 - Agora Market City and Terminal,R2,both,7,Valenzuela Road
+15,Bulua R2 - Agora Market City and Terminal,R2,both,8,Gaabucayan Street
+15,Bulua R2 - Agora Market City and Terminal,R2,both,9,Mambato Street
+15,Bulua R2 - Agora Market City and Terminal,R2,both,10,Santo Niño Street
+16,Bulua R3 - Carmen Public Market,R3,inbound,1,Saarenas Avenue
+16,Bulua R3 - Carmen Public Market,R3,inbound,2,West Coastal Road
+16,Bulua R3 - Carmen Public Market,R3,inbound,3,C. M. Recto Avenue
+16,Bulua R3 - Carmen Public Market,R3,inbound,4,Mother of Perpetual Help Avenue
+16,Bulua R3 - Carmen Public Market,R3,inbound,5,Mayor P.N. Roa Street
+16,Bulua R3 - Carmen Public Market,R3,inbound,6,Vamenta Boulevard
+16,Bulua R3 - Carmen Public Market,R3,inbound,7,J. V. Seriña Street
+16,Bulua R3 - Carmen Public Market,R3,inbound,8,Villarin Street
+16,Bulua R3 - Carmen Public Market,R3,inbound,9,Max Suniel Street
+16,Bulua R3 - Carmen Public Market,R3,inbound,10,V. Neri Street
+16,Bulua R3 - Carmen Public Market,R3,inbound,11,Castro Street
+16,Bulua R3 - Carmen Public Market,R3,outbound,1,Castro Street
+16,Bulua R3 - Carmen Public Market,R3,outbound,2,Vamenta Boulevard
+16,Bulua R3 - Carmen Public Market,R3,outbound,3,Mayor P.N. Roa Street
+16,Bulua R3 - Carmen Public Market,R3,outbound,4,C. M. Recto Avenue
+16,Bulua R3 - Carmen Public Market,R3,outbound,5,Saarenas Avenue
+16,Bulua R3 - Carmen Public Market,R3,both,1,Saarenas Avenue
+16,Bulua R3 - Carmen Public Market,R3,both,2,West Coastal Road
+16,Bulua R3 - Carmen Public Market,R3,both,3,C. M. Recto Avenue
+16,Bulua R3 - Carmen Public Market,R3,both,4,Mother of Perpetual Help Avenue
+16,Bulua R3 - Carmen Public Market,R3,both,5,Mayor P.N. Roa Street
+16,Bulua R3 - Carmen Public Market,R3,both,6,Vamenta Boulevard
+16,Bulua R3 - Carmen Public Market,R3,both,7,J. V. Seriña Street
+16,Bulua R3 - Carmen Public Market,R3,both,8,Villarin Street
+16,Bulua R3 - Carmen Public Market,R3,both,9,Max Suniel Street
+16,Bulua R3 - Carmen Public Market,R3,both,10,V. Neri Street
+16,Bulua R3 - Carmen Public Market,R3,both,11,Castro Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,1,Saarenas Avenue
+17,Bulua R4 - Cogon Public Market,R4,inbound,2,West Coastal Road
+17,Bulua R4 - Cogon Public Market,R4,inbound,3,San Pedro Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,4,Julio Pacana Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,5,Don Apolinar Velez Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,6,Yacapin Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,7,J. Rizal Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,8,R. N. Abejuela Street
+17,Bulua R4 - Cogon Public Market,R4,inbound,9,Corrales Avenue
+17,Bulua R4 - Cogon Public Market,R4,inbound,10,Mayor J. R. Borja Avenue
+17,Bulua R4 - Cogon Public Market,R4,inbound,11,Sergio Osmeña Street
+17,Bulua R4 - Cogon Public Market,R4,outbound,1,Yacapin Street
+17,Bulua R4 - Cogon Public Market,R4,outbound,2,Captain Vicente Roa Street
+17,Bulua R4 - Cogon Public Market,R4,outbound,3,Mayor J. R. Borja Avenue
+17,Bulua R4 - Cogon Public Market,R4,outbound,4,Don Apolinar Velez Street
+17,Bulua R4 - Cogon Public Market,R4,outbound,5,Julio Pacana Street
+17,Bulua R4 - Cogon Public Market,R4,outbound,6,San Pedro Street
+17,Bulua R4 - Cogon Public Market,R4,outbound,7,West Coastal Road
+17,Bulua R4 - Cogon Public Market,R4,outbound,8,Saarenas Avenue
+17,Bulua R4 - Cogon Public Market,R4,both,1,Saarenas Avenue
+17,Bulua R4 - Cogon Public Market,R4,both,2,West Coastal Road
+17,Bulua R4 - Cogon Public Market,R4,both,3,San Pedro Street
+17,Bulua R4 - Cogon Public Market,R4,both,4,Julio Pacana Street
+17,Bulua R4 - Cogon Public Market,R4,both,5,Don Apolinar Velez Street
+17,Bulua R4 - Cogon Public Market,R4,both,6,Yacapin Street
+17,Bulua R4 - Cogon Public Market,R4,both,7,J. Rizal Street
+17,Bulua R4 - Cogon Public Market,R4,both,8,R. N. Abejuela Street
+17,Bulua R4 - Cogon Public Market,R4,both,9,Corrales Avenue
+17,Bulua R4 - Cogon Public Market,R4,both,10,Mayor J. R. Borja Avenue
+17,Bulua R4 - Cogon Public Market,R4,both,11,Sergio Osmeña Street
+17,Bulua R4 - Cogon Public Market,R4,both,12,Captain Vicente Roa Street
+18,Bulua R5 - Divisoria Park,R5,inbound,1,Saarenas Avenue
+18,Bulua R5 - Divisoria Park,R5,inbound,2,C. M. Recto Avenue
+18,Bulua R5 - Divisoria Park,R5,inbound,3,General Capistrano Street
+18,Bulua R5 - Divisoria Park,R5,inbound,4,Toribio Chaves Street
+18,Bulua R5 - Divisoria Park,R5,inbound,5,Corrales Avenue
+18,Bulua R5 - Divisoria Park,R5,outbound,1,Corrales Avenue
+18,Bulua R5 - Divisoria Park,R5,outbound,2,Tirso Neri Street
+18,Bulua R5 - Divisoria Park,R5,outbound,3,Don Apolinar Velez Street
+18,Bulua R5 - Divisoria Park,R5,outbound,4,C. M. Recto Avenue
+18,Bulua R5 - Divisoria Park,R5,outbound,5,Saarenas Avenue
+18,Bulua R5 - Divisoria Park,R5,outbound,6,West Coastal Road
+18,Bulua R5 - Divisoria Park,R5,both,1,Saarenas Avenue
+18,Bulua R5 - Divisoria Park,R5,both,2,C. M. Recto Avenue
+18,Bulua R5 - Divisoria Park,R5,both,3,General Capistrano Street
+18,Bulua R5 - Divisoria Park,R5,both,4,Toribio Chaves Street
+18,Bulua R5 - Divisoria Park,R5,both,5,Corrales Avenue
+18,Bulua R5 - Divisoria Park,R5,both,6,Tirso Neri Street
+18,Bulua R5 - Divisoria Park,R5,both,7,Don Apolinar Velez Street
+18,Bulua R5 - Divisoria Park,R5,both,8,West Coastal Road
+19,Bulua R6 - Carmen Public Market,R6,inbound,1,Saarenas Avenue
+19,Bulua R6 - Carmen Public Market,R6,inbound,2,C. M. Recto Avenue
+19,Bulua R6 - Carmen Public Market,R6,inbound,3,Macapagal Drive
+19,Bulua R6 - Carmen Public Market,R6,inbound,4,Canitoan Road
+19,Bulua R6 - Carmen Public Market,R6,inbound,5,Carmen-Canitoan Road
+19,Bulua R6 - Carmen Public Market,R6,inbound,6,Villarin Street
+19,Bulua R6 - Carmen Public Market,R6,inbound,7,Max Suniel Street
+19,Bulua R6 - Carmen Public Market,R6,inbound,8,V. Neri Street
+19,Bulua R6 - Carmen Public Market,R6,outbound,1,V. Neri Street
+19,Bulua R6 - Carmen Public Market,R6,outbound,2,Castro Street
+19,Bulua R6 - Carmen Public Market,R6,outbound,3,Vamenta Boulevard
+19,Bulua R6 - Carmen Public Market,R6,outbound,4,J. V. Seriña Street
+19,Bulua R6 - Carmen Public Market,R6,outbound,5,Villarin Street
+19,Bulua R6 - Carmen Public Market,R6,outbound,6,Carmen-Canitoan Road
+19,Bulua R6 - Carmen Public Market,R6,outbound,7,Canitoan Road
+19,Bulua R6 - Carmen Public Market,R6,outbound,8,Macapagal Drive
+19,Bulua R6 - Carmen Public Market,R6,outbound,9,C. M. Recto Avenue
+19,Bulua R6 - Carmen Public Market,R6,outbound,10,Saarenas Avenue
+19,Bulua R6 - Carmen Public Market,R6,outbound,11,West Coastal Road
+19,Bulua R6 - Carmen Public Market,R6,both,1,Saarenas Avenue
+19,Bulua R6 - Carmen Public Market,R6,both,2,C. M. Recto Avenue
+19,Bulua R6 - Carmen Public Market,R6,both,3,Macapagal Drive
+19,Bulua R6 - Carmen Public Market,R6,both,4,Canitoan Road
+19,Bulua R6 - Carmen Public Market,R6,both,5,Carmen-Canitoan Road
+19,Bulua R6 - Carmen Public Market,R6,both,6,Villarin Street
+19,Bulua R6 - Carmen Public Market,R6,both,7,Max Suniel Street
+19,Bulua R6 - Carmen Public Market,R6,both,8,V. Neri Street
+19,Bulua R6 - Carmen Public Market,R6,both,9,Castro Street
+19,Bulua R6 - Carmen Public Market,R6,both,10,Vamenta Boulevard
+19,Bulua R6 - Carmen Public Market,R6,both,11,J. V. Seriña Street
+19,Bulua R6 - Carmen Public Market,R6,both,12,West Coastal Road
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,1,Galaxy Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,2,Eva Velez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,3,Doña Leona Velez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,4,Mayor P.N. Roa Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,5,Vamenta Boulevard
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,6,J. V. Seriña Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,7,Gaston Circle
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,8,San Agustin Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,9,Pabayo Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,10,M. Clemente Fernandez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,inbound,11,Corrales Avenue
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,1,Corrales Avenue
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,2,Tirso Neri Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,3,J. Rizal Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,4,Archbishop Hayes Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,5,General Capistrano Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,6,J. V. Seriña Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,7,Vamenta Boulevard
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,8,Castro Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,9,Max Suniel Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,10,Yakal Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,11,Ferrabrel Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,12,Mayor P.N. Roa Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,13,Doña Leona Velez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,14,Eva Velez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,outbound,15,Galaxy Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,1,Galaxy Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,2,Eva Velez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,3,Doña Leona Velez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,4,Mayor P.N. Roa Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,5,Vamenta Boulevard
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,6,J. V. Seriña Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,7,Gaston Circle
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,8,San Agustin Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,9,Pabayo Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,10,M. Clemente Fernandez Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,11,Corrales Avenue
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,12,Tirso Neri Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,13,J. Rizal Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,14,Archbishop Hayes Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,15,General Capistrano Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,16,Castro Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,17,Max Suniel Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,18,Yakal Street
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,R7,both,19,Ferrabrel Street
+21,Canitoan R1 - Cogon Public Market,R1,inbound,1,Calaanan Road
+21,Canitoan R1 - Cogon Public Market,R1,inbound,2,Carmen-Canitoan Road
+21,Canitoan R1 - Cogon Public Market,R1,inbound,3,Concordio Diel Street
+21,Canitoan R1 - Cogon Public Market,R1,inbound,4,Masterson Avenue
+21,Canitoan R1 - Cogon Public Market,R1,inbound,5,15th Street Extension
+21,Canitoan R1 - Cogon Public Market,R1,inbound,6,Tomas Saco Street
+21,Canitoan R1 - Cogon Public Market,R1,inbound,7,M. Clemente Fernandez Street
+21,Canitoan R1 - Cogon Public Market,R1,inbound,8,Corrales Avenue
+21,Canitoan R1 - Cogon Public Market,R1,inbound,9,Archbishop Hayes Street
+21,Canitoan R1 - Cogon Public Market,R1,inbound,10,Sotero Daumar Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,1,Sotero Daumar Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,2,Mayor J. R. Borja Avenue
+21,Canitoan R1 - Cogon Public Market,R1,outbound,3,Captain Vicente Roa Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,4,8th Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,5,2nd Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,6,21st Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,7,6th Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,8,Tomas Saco Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,9,15th Street Extension
+21,Canitoan R1 - Cogon Public Market,R1,outbound,10,Masterson Avenue
+21,Canitoan R1 - Cogon Public Market,R1,outbound,11,Concordio Diel Street
+21,Canitoan R1 - Cogon Public Market,R1,outbound,12,Carmen-Canitoan Road
+21,Canitoan R1 - Cogon Public Market,R1,outbound,13,Calaanan Road
+21,Canitoan R1 - Cogon Public Market,R1,both,1,Calaanan Road
+21,Canitoan R1 - Cogon Public Market,R1,both,2,Carmen-Canitoan Road
+21,Canitoan R1 - Cogon Public Market,R1,both,3,Concordio Diel Street
+21,Canitoan R1 - Cogon Public Market,R1,both,4,Masterson Avenue
+21,Canitoan R1 - Cogon Public Market,R1,both,5,15th Street Extension
+21,Canitoan R1 - Cogon Public Market,R1,both,6,Tomas Saco Street
+21,Canitoan R1 - Cogon Public Market,R1,both,7,M. Clemente Fernandez Street
+21,Canitoan R1 - Cogon Public Market,R1,both,8,Corrales Avenue
+21,Canitoan R1 - Cogon Public Market,R1,both,9,Archbishop Hayes Street
+21,Canitoan R1 - Cogon Public Market,R1,both,10,Sotero Daumar Street
+21,Canitoan R1 - Cogon Public Market,R1,both,11,Mayor J. R. Borja Avenue
+21,Canitoan R1 - Cogon Public Market,R1,both,12,Captain Vicente Roa Street
+21,Canitoan R1 - Cogon Public Market,R1,both,13,8th Street
+21,Canitoan R1 - Cogon Public Market,R1,both,14,2nd Street
+21,Canitoan R1 - Cogon Public Market,R1,both,15,21st Street
+21,Canitoan R1 - Cogon Public Market,R1,both,16,6th Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,1,Calaanan Road
+22,Canitoan R2 - Cogon Public Market,R2,inbound,2,Carmen-Canitoan Road
+22,Canitoan R2 - Cogon Public Market,R2,inbound,3,Concordio Diel Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,4,Masterson Avenue
+22,Canitoan R2 - Cogon Public Market,R2,inbound,5,15th Street Extension
+22,Canitoan R2 - Cogon Public Market,R2,inbound,6,Tomas Saco Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,7,16th Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,8,12th Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,9,22nd Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,10,8th Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,11,Archbishop Hayes Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,12,Sergio Osmeña Street
+22,Canitoan R2 - Cogon Public Market,R2,inbound,13,Yacapin Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,1,Yacapin Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,2,Captain Vicente Roa Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,3,8th Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,4,2nd Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,5,21st Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,6,6th Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,7,Tomas Saco Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,8,15th Street Extension
+22,Canitoan R2 - Cogon Public Market,R2,outbound,9,Masterson Avenue
+22,Canitoan R2 - Cogon Public Market,R2,outbound,10,Concordio Diel Street
+22,Canitoan R2 - Cogon Public Market,R2,outbound,11,Carmen-Canitoan Road
+22,Canitoan R2 - Cogon Public Market,R2,outbound,12,Calaanan Road
+22,Canitoan R2 - Cogon Public Market,R2,both,1,Calaanan Road
+22,Canitoan R2 - Cogon Public Market,R2,both,2,Carmen-Canitoan Road
+22,Canitoan R2 - Cogon Public Market,R2,both,3,Concordio Diel Street
+22,Canitoan R2 - Cogon Public Market,R2,both,4,Masterson Avenue
+22,Canitoan R2 - Cogon Public Market,R2,both,5,15th Street Extension
+22,Canitoan R2 - Cogon Public Market,R2,both,6,Tomas Saco Street
+22,Canitoan R2 - Cogon Public Market,R2,both,7,16th Street
+22,Canitoan R2 - Cogon Public Market,R2,both,8,12th Street
+22,Canitoan R2 - Cogon Public Market,R2,both,9,22nd Street
+22,Canitoan R2 - Cogon Public Market,R2,both,10,8th Street
+22,Canitoan R2 - Cogon Public Market,R2,both,11,Archbishop Hayes Street
+22,Canitoan R2 - Cogon Public Market,R2,both,12,Sergio Osmeña Street
+22,Canitoan R2 - Cogon Public Market,R2,both,13,Yacapin Street
+22,Canitoan R2 - Cogon Public Market,R2,both,14,Captain Vicente Roa Street
+22,Canitoan R2 - Cogon Public Market,R2,both,15,2nd Street
+22,Canitoan R2 - Cogon Public Market,R2,both,16,21st Street
+22,Canitoan R2 - Cogon Public Market,R2,both,17,6th Street
+23,Carmen R1 - Cogon Public Market,R1,inbound,1,Carmen-Canitoan Road
+23,Carmen R1 - Cogon Public Market,R1,inbound,2,Concordio Diel Street
+23,Carmen R1 - Cogon Public Market,R1,inbound,3,Masterson Avenue
+23,Carmen R1 - Cogon Public Market,R1,inbound,4,Rodelsa Circle
+23,Carmen R1 - Cogon Public Market,R1,inbound,5,Don Apolinar Velez Street
+23,Carmen R1 - Cogon Public Market,R1,inbound,6,M. Clemente Fernandez Street
+23,Carmen R1 - Cogon Public Market,R1,inbound,7,Corrales Avenue
+23,Carmen R1 - Cogon Public Market,R1,inbound,8,Archbishop Hayes Street
+23,Carmen R1 - Cogon Public Market,R1,inbound,9,Sergio Osmeña Street
+23,Carmen R1 - Cogon Public Market,R1,inbound,10,Yacapin Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,1,Yacapin Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,2,Captain Vicente Roa Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,3,8th Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,4,2nd Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,5,1st Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,6,18th Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,7,M. Clemente Fernandez Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,8,Corrales Avenue
+23,Carmen R1 - Cogon Public Market,R1,outbound,9,Archbishop Hayes Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,10,Don Apolinar Velez Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,11,Masterson Avenue
+23,Carmen R1 - Cogon Public Market,R1,outbound,12,Concordio Diel Street
+23,Carmen R1 - Cogon Public Market,R1,outbound,13,Carmen-Canitoan Road
+23,Carmen R1 - Cogon Public Market,R1,both,1,Carmen-Canitoan Road
+23,Carmen R1 - Cogon Public Market,R1,both,2,Concordio Diel Street
+23,Carmen R1 - Cogon Public Market,R1,both,3,Masterson Avenue
+23,Carmen R1 - Cogon Public Market,R1,both,4,Rodelsa Circle
+23,Carmen R1 - Cogon Public Market,R1,both,5,Don Apolinar Velez Street
+23,Carmen R1 - Cogon Public Market,R1,both,6,M. Clemente Fernandez Street
+23,Carmen R1 - Cogon Public Market,R1,both,7,Corrales Avenue
+23,Carmen R1 - Cogon Public Market,R1,both,8,Archbishop Hayes Street
+23,Carmen R1 - Cogon Public Market,R1,both,9,Sergio Osmeña Street
+23,Carmen R1 - Cogon Public Market,R1,both,10,Yacapin Street
+23,Carmen R1 - Cogon Public Market,R1,both,11,Captain Vicente Roa Street
+23,Carmen R1 - Cogon Public Market,R1,both,12,8th Street
+23,Carmen R1 - Cogon Public Market,R1,both,13,2nd Street
+23,Carmen R1 - Cogon Public Market,R1,both,14,1st Street
+23,Carmen R1 - Cogon Public Market,R1,both,15,18th Street
+24,Carmen R2 - Cogon Public Market,R2,inbound,1,Abel Street
+24,Carmen R2 - Cogon Public Market,R2,inbound,2,Daniel Street
+24,Carmen R2 - Cogon Public Market,R2,inbound,3,Job Street
+24,Carmen R2 - Cogon Public Market,R2,inbound,4,Pedro N. Roa Sr. Avenue
+24,Carmen R2 - Cogon Public Market,R2,inbound,5,Macapagal Drive
+24,Carmen R2 - Cogon Public Market,R2,inbound,6,Masterson Avenue
+24,Carmen R2 - Cogon Public Market,R2,inbound,7,Vamenta Boulevard
+24,Carmen R2 - Cogon Public Market,R2,inbound,8,Mayor J. R. Borja Avenue
+24,Carmen R2 - Cogon Public Market,R2,inbound,9,Mortola Street
+24,Carmen R2 - Cogon Public Market,R2,inbound,10,Archbishop Hayes Street
+24,Carmen R2 - Cogon Public Market,R2,inbound,11,Sotero Daumar Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,1,Sotero Daumar Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,2,Mayor J. R. Borja Avenue
+24,Carmen R2 - Cogon Public Market,R2,outbound,3,Pabayo Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,4,Cruz Taal Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,5,J. Rizal Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,6,Tirso Neri Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,7,General Capistrano Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,8,J. V. Seriña Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,9,Vamenta Boulevard
+24,Carmen R2 - Cogon Public Market,R2,outbound,10,Masterson Avenue
+24,Carmen R2 - Cogon Public Market,R2,outbound,11,Macapagal Drive
+24,Carmen R2 - Cogon Public Market,R2,outbound,12,Pedro N. Roa Sr. Avenue
+24,Carmen R2 - Cogon Public Market,R2,outbound,13,Job Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,14,Daniel Street
+24,Carmen R2 - Cogon Public Market,R2,outbound,15,Abel Street
+24,Carmen R2 - Cogon Public Market,R2,both,1,Abel Street
+24,Carmen R2 - Cogon Public Market,R2,both,2,Daniel Street
+24,Carmen R2 - Cogon Public Market,R2,both,3,Job Street
+24,Carmen R2 - Cogon Public Market,R2,both,4,Pedro N. Roa Sr. Avenue
+24,Carmen R2 - Cogon Public Market,R2,both,5,Macapagal Drive
+24,Carmen R2 - Cogon Public Market,R2,both,6,Masterson Avenue
+24,Carmen R2 - Cogon Public Market,R2,both,7,Vamenta Boulevard
+24,Carmen R2 - Cogon Public Market,R2,both,8,Mayor J. R. Borja Avenue
+24,Carmen R2 - Cogon Public Market,R2,both,9,Mortola Street
+24,Carmen R2 - Cogon Public Market,R2,both,10,Archbishop Hayes Street
+24,Carmen R2 - Cogon Public Market,R2,both,11,Sotero Daumar Street
+24,Carmen R2 - Cogon Public Market,R2,both,12,Pabayo Street
+24,Carmen R2 - Cogon Public Market,R2,both,13,Cruz Taal Street
+24,Carmen R2 - Cogon Public Market,R2,both,14,J. Rizal Street
+24,Carmen R2 - Cogon Public Market,R2,both,15,Tirso Neri Street
+24,Carmen R2 - Cogon Public Market,R2,both,16,General Capistrano Street
+24,Carmen R2 - Cogon Public Market,R2,both,17,J. V. Seriña Street
+25,Carmen R3 - Carmen Public Market,R3,inbound,1,Masterson Avenue
+25,Carmen R3 - Carmen Public Market,R3,inbound,2,Vamenta Boulevard
+25,Carmen R3 - Carmen Public Market,R3,inbound,3,Mayor P.N. Roa Street
+25,Carmen R3 - Carmen Public Market,R3,inbound,4,Villarin Street
+25,Carmen R3 - Carmen Public Market,R3,inbound,5,Max Suniel Street
+25,Carmen R3 - Carmen Public Market,R3,inbound,6,V. Neri Street
+25,Carmen R3 - Carmen Public Market,R3,outbound,1,V. Neri Street
+25,Carmen R3 - Carmen Public Market,R3,outbound,2,Castro Street
+25,Carmen R3 - Carmen Public Market,R3,outbound,3,Vamenta Boulevard
+25,Carmen R3 - Carmen Public Market,R3,outbound,4,Masterson Avenue
+25,Carmen R3 - Carmen Public Market,R3,both,1,Masterson Avenue
+25,Carmen R3 - Carmen Public Market,R3,both,2,Vamenta Boulevard
+25,Carmen R3 - Carmen Public Market,R3,both,3,Mayor P.N. Roa Street
+25,Carmen R3 - Carmen Public Market,R3,both,4,Villarin Street
+25,Carmen R3 - Carmen Public Market,R3,both,5,Max Suniel Street
+25,Carmen R3 - Carmen Public Market,R3,both,6,V. Neri Street
+25,Carmen R3 - Carmen Public Market,R3,both,7,Castro Street
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,1,Masterson Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,2,Don Apolinar Velez Street
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,3,M. Clemente Fernandez Street
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,4,Corrales Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,5,C. M. Recto Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,6,Valenzuela Road
+26,Carmen R4 - Agora Market City and Terminal,R4,inbound,7,Gaabucayan Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,1,Gaabucayan Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,2,Mambato Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,3,Santo Niño Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,4,Valenzuela Road
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,5,C. M. Recto Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,6,Corrales Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,7,Yacapin Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,8,General Capistrano Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,9,Justo Gaerlan Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,10,Gaston Circle
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,11,Rizal Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,12,M. Clemente Fernandez Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,13,Don Apolinar Velez Street
+26,Carmen R4 - Agora Market City and Terminal,R4,outbound,14,Masterson Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,both,1,Masterson Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,both,2,Don Apolinar Velez Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,3,M. Clemente Fernandez Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,4,Corrales Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,both,5,C. M. Recto Avenue
+26,Carmen R4 - Agora Market City and Terminal,R4,both,6,Valenzuela Road
+26,Carmen R4 - Agora Market City and Terminal,R4,both,7,Gaabucayan Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,8,Mambato Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,9,Santo Niño Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,10,Yacapin Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,11,General Capistrano Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,12,Justo Gaerlan Street
+26,Carmen R4 - Agora Market City and Terminal,R4,both,13,Gaston Circle
+26,Carmen R4 - Agora Market City and Terminal,R4,both,14,Rizal Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,1,Max Suniel Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,2,Villarin Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,3,J. V. Seriña Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,4,Justo Gaerlan Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,5,Pabayo Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,6,M. Clemente Fernandez Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,7,Corrales Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,8,Archbishop Hayes Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,9,Roxas Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,10,Yacapin Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,11,President Quirino Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,12,Justo Ramonal Street
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,13,Limketkai Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,14,C. M. Recto Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,15,Valenzuela Road
+27,Carmen R5 - Agora Market City and Terminal,R5,inbound,16,Gaabucayan Street
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,1,Gaabucayan Street
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,2,Sergio Osmeña Extension
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,3,C. M. Recto Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,4,Limketkai Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,5,Justo Ramonal Street
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,6,Captain Vicente Roa Street
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,7,Mayor J. R. Borja Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,8,J. Rizal Street
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,9,Justo Gaerlan Street
+27,Carmen R5 - Agora Market City and Terminal,R5,outbound,10,General Capistrano Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,1,Max Suniel Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,2,Villarin Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,3,J. V. Seriña Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,4,Justo Gaerlan Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,5,Pabayo Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,6,M. Clemente Fernandez Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,7,Corrales Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,both,8,Archbishop Hayes Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,9,Roxas Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,10,Yacapin Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,11,President Quirino Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,12,Justo Ramonal Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,13,Limketkai Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,both,14,C. M. Recto Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,both,15,Valenzuela Road
+27,Carmen R5 - Agora Market City and Terminal,R5,both,16,Gaabucayan Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,17,Sergio Osmeña Extension
+27,Carmen R5 - Agora Market City and Terminal,R5,both,18,Captain Vicente Roa Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,19,Mayor J. R. Borja Avenue
+27,Carmen R5 - Agora Market City and Terminal,R5,both,20,J. Rizal Street
+27,Carmen R5 - Agora Market City and Terminal,R5,both,21,General Capistrano Street
+28,Carmen R6 - Cogon Public Market,R6,inbound,1,Carmen-Canitoan Road
+28,Carmen R6 - Cogon Public Market,R6,inbound,2,Concordio Diel Street
+28,Carmen R6 - Cogon Public Market,R6,inbound,3,Masterson Avenue
+28,Carmen R6 - Cogon Public Market,R6,inbound,4,15th Street Extension
+28,Carmen R6 - Cogon Public Market,R6,inbound,5,Tomas Saco Street
+28,Carmen R6 - Cogon Public Market,R6,inbound,6,M. Clemente Fernandez Street
+28,Carmen R6 - Cogon Public Market,R6,inbound,7,Corrales Avenue
+28,Carmen R6 - Cogon Public Market,R6,inbound,8,Archbishop Hayes Street
+28,Carmen R6 - Cogon Public Market,R6,inbound,9,Sergio Osmeña Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,1,Sergio Osmeña Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,2,Yacapin Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,3,Captain Vicente Roa Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,4,8th Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,5,2nd Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,6,1st Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,7,18th Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,8,M. Clemente Fernandez Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,9,Corrales Avenue
+28,Carmen R6 - Cogon Public Market,R6,outbound,10,Archbishop Hayes Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,11,Don Apolinar Velez Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,12,Masterson Avenue
+28,Carmen R6 - Cogon Public Market,R6,outbound,13,Concordio Diel Street
+28,Carmen R6 - Cogon Public Market,R6,outbound,14,Carmen-Canitoan Road
+28,Carmen R6 - Cogon Public Market,R6,both,1,Carmen-Canitoan Road
+28,Carmen R6 - Cogon Public Market,R6,both,2,Concordio Diel Street
+28,Carmen R6 - Cogon Public Market,R6,both,3,Masterson Avenue
+28,Carmen R6 - Cogon Public Market,R6,both,4,15th Street Extension
+28,Carmen R6 - Cogon Public Market,R6,both,5,Tomas Saco Street
+28,Carmen R6 - Cogon Public Market,R6,both,6,M. Clemente Fernandez Street
+28,Carmen R6 - Cogon Public Market,R6,both,7,Corrales Avenue
+28,Carmen R6 - Cogon Public Market,R6,both,8,Archbishop Hayes Street
+28,Carmen R6 - Cogon Public Market,R6,both,9,Sergio Osmeña Street
+28,Carmen R6 - Cogon Public Market,R6,both,10,Yacapin Street
+28,Carmen R6 - Cogon Public Market,R6,both,11,Captain Vicente Roa Street
+28,Carmen R6 - Cogon Public Market,R6,both,12,8th Street
+28,Carmen R6 - Cogon Public Market,R6,both,13,2nd Street
+28,Carmen R6 - Cogon Public Market,R6,both,14,1st Street
+28,Carmen R6 - Cogon Public Market,R6,both,15,18th Street
+28,Carmen R6 - Cogon Public Market,R6,both,16,Don Apolinar Velez Street
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,1,Dansolihon-Rogongon Road
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,2,Cagayan de Oro-Bukidnon Road
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,3,Masterson Avenue
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,4,Macapagal Drive
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,5,SM Bypass Road
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,6,Carmen-Canitoan Road
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,7,Villarin Street
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,8,Max Suniel Street
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,9,V. Neri Street
+29,Dansolihon R1 - Carmen Public Market,R1,inbound,10,Castro Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,1,Castro Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,2,Max Suniel Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,3,Villarin Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,4,Gumamela Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,5,Rabanes Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,6,Concordio Diel Street
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,7,Carmen-Canitoan Road
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,8,SM Bypass Road
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,9,Macapagal Drive
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,10,Masterson Avenue
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,11,Cagayan de Oro-Bukidnon Road
+29,Dansolihon R1 - Carmen Public Market,R1,outbound,12,Dansolihon-Rogongon Road
+29,Dansolihon R1 - Carmen Public Market,R1,both,1,Dansolihon-Rogongon Road
+29,Dansolihon R1 - Carmen Public Market,R1,both,2,Cagayan de Oro-Bukidnon Road
+29,Dansolihon R1 - Carmen Public Market,R1,both,3,Masterson Avenue
+29,Dansolihon R1 - Carmen Public Market,R1,both,4,Macapagal Drive
+29,Dansolihon R1 - Carmen Public Market,R1,both,5,SM Bypass Road
+29,Dansolihon R1 - Carmen Public Market,R1,both,6,Carmen-Canitoan Road
+29,Dansolihon R1 - Carmen Public Market,R1,both,7,Villarin Street
+29,Dansolihon R1 - Carmen Public Market,R1,both,8,Max Suniel Street
+29,Dansolihon R1 - Carmen Public Market,R1,both,9,V. Neri Street
+29,Dansolihon R1 - Carmen Public Market,R1,both,10,Castro Street
+29,Dansolihon R1 - Carmen Public Market,R1,both,11,Gumamela Street
+29,Dansolihon R1 - Carmen Public Market,R1,both,12,Rabanes Street
+29,Dansolihon R1 - Carmen Public Market,R1,both,13,Concordio Diel Street
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,1,Cagayan de Oro-Bukidnon Road
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,2,Masterson Avenue
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,3,Macapagal Drive
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,4,SM Bypass Road
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,5,Carmen-Canitoan Road
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,6,Villarin Street
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,7,Max Suniel Street
+30,Dansolihon R2 - Carmen Public Market,R2,inbound,8,V. Neri Street
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,1,V. Neri Street
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,2,Castro Street
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,3,Max Suniel Street
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,4,Villarin Street
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,5,Carmen-Canitoan Road
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,6,SM Bypass Road
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,7,Macapagal Drive
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,8,Masterson Avenue
+30,Dansolihon R2 - Carmen Public Market,R2,outbound,9,Cagayan de Oro-Bukidnon Road
+30,Dansolihon R2 - Carmen Public Market,R2,both,1,Cagayan de Oro-Bukidnon Road
+30,Dansolihon R2 - Carmen Public Market,R2,both,2,Masterson Avenue
+30,Dansolihon R2 - Carmen Public Market,R2,both,3,Macapagal Drive
+30,Dansolihon R2 - Carmen Public Market,R2,both,4,SM Bypass Road
+30,Dansolihon R2 - Carmen Public Market,R2,both,5,Carmen-Canitoan Road
+30,Dansolihon R2 - Carmen Public Market,R2,both,6,Villarin Street
+30,Dansolihon R2 - Carmen Public Market,R2,both,7,Max Suniel Street
+30,Dansolihon R2 - Carmen Public Market,R2,both,8,V. Neri Street
+30,Dansolihon R2 - Carmen Public Market,R2,both,9,Castro Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,1,Iponan-Baikingon Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,2,Captain Jabulin Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,3,Butuan-Cagayan de Oro-Iligan Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,4,C. M. Recto Avenue
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,5,Macapagal Drive
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,6,West Coastal Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,7,Saarenas Avenue
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,8,R. N. Pelaez Boulevard
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,9,Vamenta Boulevard
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,10,J. V. Seriña Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,11,Villarin Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,12,Max Suniel Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,inbound,13,V. Neri Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,1,V. Neri Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,2,Castro Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,3,Max Suniel Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,4,Yakal Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,5,Lirio Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,6,Vamenta Boulevard
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,7,R. N. Pelaez Boulevard
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,8,C. M. Recto Avenue
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,9,Saarenas Avenue
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,10,West Coastal Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,11,Butuan-Cagayan de Oro-Iligan Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,12,Captain Jabulin Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,outbound,13,Iponan-Baikingon Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,1,Iponan-Baikingon Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,2,Captain Jabulin Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,3,Butuan-Cagayan de Oro-Iligan Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,4,C. M. Recto Avenue
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,5,Macapagal Drive
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,6,West Coastal Road
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,7,Saarenas Avenue
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,8,R. N. Pelaez Boulevard
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,9,Vamenta Boulevard
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,10,J. V. Seriña Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,11,Villarin Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,12,Max Suniel Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,13,V. Neri Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,14,Castro Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,15,Yakal Street
+31,Iponan R1 Bulao - Carmen Public Market,R1,both,16,Lirio Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,1,Captain Jabulin Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,2,Butuan-Cagayan de Oro-Iligan Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,3,C. M. Recto Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,4,Macapagal Drive
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,5,West Coastal Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,6,Saarenas Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,7,San Pedro Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,8,Julio Pacana Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,9,Gaabucayan Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,10,Corrales Extension
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,11,Mambato Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,12,Santo Niño Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,13,Valenzuela Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,inbound,14,Limketkai Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,1,Limketkai Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,2,C. M. Recto Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,3,Valenzuela Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,4,Gaabucayan Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,5,Julio Pacana Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,6,San Pedro Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,7,West Coastal Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,8,Butuan-Cagayan de Oro-Iligan Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,outbound,9,Captain Jabulin Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,1,Captain Jabulin Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,2,Butuan-Cagayan de Oro-Iligan Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,3,C. M. Recto Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,4,Macapagal Drive
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,5,West Coastal Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,6,Saarenas Avenue
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,7,San Pedro Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,8,Julio Pacana Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,9,Gaabucayan Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,10,Corrales Extension
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,11,Mambato Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,12,Santo Niño Street
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,13,Valenzuela Road
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,R3,both,14,Limketkai Avenue
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,1,Saint Francis Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,2,Bonifacio Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,3,Butuan-Cagayan de Oro-Iligan Road
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,4,C. M. Recto Avenue
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,5,General Capistrano Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,6,R. N. Abejuela Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,inbound,7,Corrales Avenue
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,outbound,1,C. M. Recto Avenue
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,outbound,2,Butuan-Cagayan de Oro-Iligan Road
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,outbound,3,Bonifacio Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,outbound,4,Commitment Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,outbound,5,Saint Francis Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,1,Saint Francis Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,2,Bonifacio Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,3,Butuan-Cagayan de Oro-Iligan Road
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,4,C. M. Recto Avenue
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,5,General Capistrano Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,6,R. N. Abejuela Street
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,7,Corrales Avenue
+33,Iponan R4 Kisanlu/Regency - Gaisano City,R4,both,8,Commitment Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,1,Iponan-Baikingon Road
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,2,Captain Jabulin Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,3,Butuan-Cagayan de Oro-Iligan Road
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,4,C. M. Recto Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,5,General Capistrano Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,6,Toribio Chaves Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,7,Corrales Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,8,Archbishop Hayes Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,9,Sotero Daumar Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,inbound,10,Mayor J. R. Borja Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,outbound,1,Mayor J. R. Borja Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,outbound,2,Don Apolinar Velez Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,outbound,3,C. M. Recto Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,outbound,4,Butuan-Cagayan de Oro-Iligan Road
+34,Iponan R5 Bulao - Cogon Public Market,R5,outbound,5,Captain Jabulin Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,outbound,6,Iponan-Baikingon Road
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,1,Iponan-Baikingon Road
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,2,Captain Jabulin Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,3,Butuan-Cagayan de Oro-Iligan Road
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,4,C. M. Recto Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,5,General Capistrano Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,6,Toribio Chaves Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,7,Corrales Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,8,Archbishop Hayes Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,9,Sotero Daumar Street
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,10,Mayor J. R. Borja Avenue
+34,Iponan R5 Bulao - Cogon Public Market,R5,both,11,Don Apolinar Velez Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,1,San Restituto Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,2,Saint Michael Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,3,F. Pacaña Sr. Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,4,C. M. Recto Avenue
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,5,Valenzuela Road
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,6,Gaabucayan Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,inbound,7,Mambato Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,1,Mambato Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,2,Santo Niño Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,3,Valenzuela Road
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,4,C. M. Recto Avenue
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,5,Abellanosa Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,6,Burgos Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,7,Evangelista Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,8,F. Pacaña Sr. Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,9,Saint Michael Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,outbound,10,San Restituto Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,1,San Restituto Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,2,Saint Michael Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,3,F. Pacaña Sr. Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,4,C. M. Recto Avenue
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,5,Valenzuela Road
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,6,Gaabucayan Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,7,Mambato Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,8,Santo Niño Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,9,Abellanosa Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,10,Burgos Street
+35,Kauswagan R1 NHA - Agora Terminal,R1,both,11,Evangelista Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,1,San Restituto Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,2,Saint Michael Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,3,Eagle Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,4,Saint Ignatius Extension
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,5,Saint Ignatius Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,6,R. N. Pelaez Boulevard
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,7,Vamenta Boulevard
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,8,Masterson Avenue
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,9,Concordio Diel Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,10,Villarin Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,11,Max Suniel Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,12,V. Neri Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,inbound,13,Castro Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,1,Castro Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,2,Vamenta Boulevard
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,3,R. N. Pelaez Boulevard
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,4,Saint Ignatius Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,5,Saint Ignatius Extension
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,6,Eagle Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,7,Saint Michael Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,outbound,8,San Restituto Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,1,San Restituto Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,2,Saint Michael Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,3,Eagle Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,4,Saint Ignatius Extension
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,5,Saint Ignatius Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,6,R. N. Pelaez Boulevard
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,7,Vamenta Boulevard
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,8,Masterson Avenue
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,9,Concordio Diel Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,10,Villarin Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,11,Max Suniel Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,12,V. Neri Street
+36,Kauswagan R2 NHA - Carmen Public Market,R2,both,13,Castro Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,1,San Pedro Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,2,San Lucas Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,3,Saint Michael Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,4,C. M. Recto Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,5,Saarenas Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,6,West Coastal Road
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,7,Mother of Perpetual Help Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,8,Mayor P.N. Roa Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,9,Vamenta Boulevard
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,10,J. V. Seriña Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,11,Villarin Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,12,Max Suniel Street
+37,Kauswagan R3 - Carmen Public Market,R3,inbound,13,V. Neri Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,1,V. Neri Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,2,Castro Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,3,Max Suniel Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,4,Yakal Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,5,Ferrabrel Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,6,Mayor P.N. Roa Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,7,C. M. Recto Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,8,Saarenas Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,9,West Coastal Road
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,10,Saint Michael Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,11,San Lucas Street
+37,Kauswagan R3 - Carmen Public Market,R3,outbound,12,San Pedro Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,1,San Pedro Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,2,San Lucas Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,3,Saint Michael Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,4,C. M. Recto Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,both,5,Saarenas Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,both,6,West Coastal Road
+37,Kauswagan R3 - Carmen Public Market,R3,both,7,Mother of Perpetual Help Avenue
+37,Kauswagan R3 - Carmen Public Market,R3,both,8,Mayor P.N. Roa Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,9,Vamenta Boulevard
+37,Kauswagan R3 - Carmen Public Market,R3,both,10,J. V. Seriña Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,11,Villarin Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,12,Max Suniel Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,13,V. Neri Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,14,Castro Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,15,Yakal Street
+37,Kauswagan R3 - Carmen Public Market,R3,both,16,Ferrabrel Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,1,Eagle Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,2,Saint Michael Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,3,F. Pacaña Sr. Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,4,C. M. Recto Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,5,Don Apolinar Velez Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,6,15th Street Extension
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,7,Tomas Saco Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,8,M. Clemente Fernandez Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,9,Corrales Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,10,Archbishop Hayes Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,11,Sergio Osmeña Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,12,Yacapin Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,13,President Quirino Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,14,Justo Ramonal Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,15,Limketkai Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,16,Valenzuela Road
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,inbound,17,Gaabucayan Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,1,Gaabucayan Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,2,Mambato Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,3,Santo Niño Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,4,Valenzuela Road
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,5,C. M. Recto Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,6,Limketkai Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,7,Justo Ramonal Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,8,Captain Vicente Roa Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,9,8th Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,10,2nd Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,11,19th Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,12,6th Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,13,Tomas Saco Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,14,15th Street Extension
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,15,Don Apolinar Velez Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,16,F. Pacaña Sr. Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,17,Saint Michael Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,outbound,18,Eagle Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,1,Eagle Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,2,Saint Michael Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,3,F. Pacaña Sr. Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,4,C. M. Recto Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,5,Don Apolinar Velez Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,6,15th Street Extension
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,7,Tomas Saco Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,8,M. Clemente Fernandez Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,9,Corrales Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,10,Archbishop Hayes Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,11,Sergio Osmeña Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,12,Yacapin Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,13,President Quirino Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,14,Justo Ramonal Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,15,Limketkai Avenue
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,16,Valenzuela Road
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,17,Gaabucayan Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,18,Mambato Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,19,Santo Niño Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,20,Captain Vicente Roa Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,21,8th Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,22,2nd Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,23,19th Street
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,R4,both,24,6th Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,1,Andres Pagalan Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,2,F. Delima Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,3,D. Sabalo Sr. Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,4,Ysalina Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,5,Masterson Avenue
+39,Lumbia R1 - Cogon Public Market,R1,inbound,6,15th Street Extension
+39,Lumbia R1 - Cogon Public Market,R1,inbound,7,Tomas Saco Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,8,M. Clemente Fernandez Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,9,Corrales Avenue
+39,Lumbia R1 - Cogon Public Market,R1,inbound,10,Archbishop Hayes Street
+39,Lumbia R1 - Cogon Public Market,R1,inbound,11,Sotero Daumar Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,1,Sotero Daumar Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,2,Mayor J. R. Borja Avenue
+39,Lumbia R1 - Cogon Public Market,R1,outbound,3,Captain Vicente Roa Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,4,8th Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,5,2nd Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,6,21st Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,7,6th Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,8,Tomas Saco Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,9,15th Street Extension
+39,Lumbia R1 - Cogon Public Market,R1,outbound,10,Masterson Avenue
+39,Lumbia R1 - Cogon Public Market,R1,outbound,11,Ysalina Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,12,D. Sabalo Sr. Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,13,F. Delima Street
+39,Lumbia R1 - Cogon Public Market,R1,outbound,14,Andres Pagalan Street
+39,Lumbia R1 - Cogon Public Market,R1,both,1,Andres Pagalan Street
+39,Lumbia R1 - Cogon Public Market,R1,both,2,F. Delima Street
+39,Lumbia R1 - Cogon Public Market,R1,both,3,D. Sabalo Sr. Street
+39,Lumbia R1 - Cogon Public Market,R1,both,4,Ysalina Street
+39,Lumbia R1 - Cogon Public Market,R1,both,5,Masterson Avenue
+39,Lumbia R1 - Cogon Public Market,R1,both,6,15th Street Extension
+39,Lumbia R1 - Cogon Public Market,R1,both,7,Tomas Saco Street
+39,Lumbia R1 - Cogon Public Market,R1,both,8,M. Clemente Fernandez Street
+39,Lumbia R1 - Cogon Public Market,R1,both,9,Corrales Avenue
+39,Lumbia R1 - Cogon Public Market,R1,both,10,Archbishop Hayes Street
+39,Lumbia R1 - Cogon Public Market,R1,both,11,Sotero Daumar Street
+39,Lumbia R1 - Cogon Public Market,R1,both,12,Mayor J. R. Borja Avenue
+39,Lumbia R1 - Cogon Public Market,R1,both,13,Captain Vicente Roa Street
+39,Lumbia R1 - Cogon Public Market,R1,both,14,8th Street
+39,Lumbia R1 - Cogon Public Market,R1,both,15,2nd Street
+39,Lumbia R1 - Cogon Public Market,R1,both,16,21st Street
+39,Lumbia R1 - Cogon Public Market,R1,both,17,6th Street
+40,Lumbia R2 - Carmen Public Market,R2,inbound,1,Andres Pagalan Street
+40,Lumbia R2 - Carmen Public Market,R2,inbound,2,F. Delima Street
+40,Lumbia R2 - Carmen Public Market,R2,inbound,3,Masterson Avenue
+40,Lumbia R2 - Carmen Public Market,R2,inbound,4,Macapagal Drive
+40,Lumbia R2 - Carmen Public Market,R2,inbound,5,SM Bypass Road
+40,Lumbia R2 - Carmen Public Market,R2,inbound,6,Carmen-Canitoan Road
+40,Lumbia R2 - Carmen Public Market,R2,inbound,7,Villarin Street
+40,Lumbia R2 - Carmen Public Market,R2,inbound,8,Max Suniel Street
+40,Lumbia R2 - Carmen Public Market,R2,inbound,9,V. Neri Street
+40,Lumbia R2 - Carmen Public Market,R2,inbound,10,Castro Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,1,Castro Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,2,Max Suniel Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,3,Villarin Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,4,Gumamela Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,5,Rabanes Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,6,Concordio Diel Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,7,Carmen-Canitoan Road
+40,Lumbia R2 - Carmen Public Market,R2,outbound,8,SM Bypass Road
+40,Lumbia R2 - Carmen Public Market,R2,outbound,9,Macapagal Drive
+40,Lumbia R2 - Carmen Public Market,R2,outbound,10,Masterson Avenue
+40,Lumbia R2 - Carmen Public Market,R2,outbound,11,F. Delima Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,12,Abellanosa Street
+40,Lumbia R2 - Carmen Public Market,R2,outbound,13,Andres Pagalan Street
+40,Lumbia R2 - Carmen Public Market,R2,both,1,Andres Pagalan Street
+40,Lumbia R2 - Carmen Public Market,R2,both,2,F. Delima Street
+40,Lumbia R2 - Carmen Public Market,R2,both,3,Masterson Avenue
+40,Lumbia R2 - Carmen Public Market,R2,both,4,Macapagal Drive
+40,Lumbia R2 - Carmen Public Market,R2,both,5,SM Bypass Road
+40,Lumbia R2 - Carmen Public Market,R2,both,6,Carmen-Canitoan Road
+40,Lumbia R2 - Carmen Public Market,R2,both,7,Villarin Street
+40,Lumbia R2 - Carmen Public Market,R2,both,8,Max Suniel Street
+40,Lumbia R2 - Carmen Public Market,R2,both,9,V. Neri Street
+40,Lumbia R2 - Carmen Public Market,R2,both,10,Castro Street
+40,Lumbia R2 - Carmen Public Market,R2,both,11,Gumamela Street
+40,Lumbia R2 - Carmen Public Market,R2,both,12,Rabanes Street
+40,Lumbia R2 - Carmen Public Market,R2,both,13,Concordio Diel Street
+40,Lumbia R2 - Carmen Public Market,R2,both,14,Abellanosa Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,inbound,1,Masterson Avenue
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,inbound,2,Vamenta Boulevard
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,inbound,3,Mayor P.N. Roa Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,inbound,4,Villarin Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,inbound,5,Max Suniel Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,inbound,6,V. Neri Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,outbound,1,Castro Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,outbound,2,Vamenta Boulevard
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,outbound,3,Masterson Avenue
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,1,Masterson Avenue
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,2,Vamenta Boulevard
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,3,Mayor P.N. Roa Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,4,Villarin Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,5,Max Suniel Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,6,V. Neri Street
+41,Lumbia R3 Gran Europa - Carmen Public Market,R3,both,7,Castro Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,1,Masterson Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,2,South Diversion Road
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,3,Ramos Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,4,Tibasak Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,5,P. Chavez Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,6,Fernhill Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,7,Tomas Saco Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,8,M. Clemente Fernandez Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,9,Corrales Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,10,Archbishop Hayes Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,11,Sotero Daumar Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,inbound,12,Mayor J. R. Borja Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,1,Mayor J. R. Borja Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,2,Captain Vicente Roa Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,3,Archbishop Hayes Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,4,12th Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,5,21st Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,6,15th Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,7,26th Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,8,Clementino Chavez Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,9,P. Chavez Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,10,Tibasak Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,11,Ramos Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,12,South Diversion Road
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,outbound,13,Masterson Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,1,Masterson Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,2,South Diversion Road
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,3,Ramos Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,4,Tibasak Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,5,P. Chavez Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,6,Fernhill Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,7,Tomas Saco Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,8,M. Clemente Fernandez Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,9,Corrales Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,10,Archbishop Hayes Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,11,Sotero Daumar Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,12,Mayor J. R. Borja Avenue
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,13,Captain Vicente Roa Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,14,12th Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,15,21st Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,16,15th Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,17,26th Street
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,R4,both,18,Clementino Chavez Street
+43,Pagalungan - Carmen Public Market,,inbound,1,F. Delima Street
+43,Pagalungan - Carmen Public Market,,inbound,2,Masterson Avenue
+43,Pagalungan - Carmen Public Market,,inbound,3,Macapagal Drive
+43,Pagalungan - Carmen Public Market,,inbound,4,SM Bypass Road
+43,Pagalungan - Carmen Public Market,,inbound,5,Carmen-Canitoan Road
+43,Pagalungan - Carmen Public Market,,inbound,6,Villarin Street
+43,Pagalungan - Carmen Public Market,,inbound,7,Max Suniel Street
+43,Pagalungan - Carmen Public Market,,inbound,8,V. Neri Street
+43,Pagalungan - Carmen Public Market,,inbound,9,Castro Street
+43,Pagalungan - Carmen Public Market,,outbound,1,Max Suniel Street
+43,Pagalungan - Carmen Public Market,,outbound,2,Villarin Street
+43,Pagalungan - Carmen Public Market,,outbound,3,Gumamela Street
+43,Pagalungan - Carmen Public Market,,outbound,4,Rabanes Street
+43,Pagalungan - Carmen Public Market,,outbound,5,Concordio Diel Street
+43,Pagalungan - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+43,Pagalungan - Carmen Public Market,,outbound,7,SM Bypass Road
+43,Pagalungan - Carmen Public Market,,outbound,8,Macapagal Drive
+43,Pagalungan - Carmen Public Market,,outbound,9,Masterson Avenue
+43,Pagalungan - Carmen Public Market,,outbound,10,F. Delima Street
+43,Pagalungan - Carmen Public Market,,both,1,F. Delima Street
+43,Pagalungan - Carmen Public Market,,both,2,Masterson Avenue
+43,Pagalungan - Carmen Public Market,,both,3,Macapagal Drive
+43,Pagalungan - Carmen Public Market,,both,4,SM Bypass Road
+43,Pagalungan - Carmen Public Market,,both,5,Carmen-Canitoan Road
+43,Pagalungan - Carmen Public Market,,both,6,Villarin Street
+43,Pagalungan - Carmen Public Market,,both,7,Max Suniel Street
+43,Pagalungan - Carmen Public Market,,both,8,V. Neri Street
+43,Pagalungan - Carmen Public Market,,both,9,Castro Street
+43,Pagalungan - Carmen Public Market,,both,10,Gumamela Street
+43,Pagalungan - Carmen Public Market,,both,11,Rabanes Street
+43,Pagalungan - Carmen Public Market,,both,12,Concordio Diel Street
+44,Pagatpat R1 Centro - Westbound Terminal,R1,inbound,1,Canitoan-Pagatpat Road
+44,Pagatpat R1 Centro - Westbound Terminal,R1,inbound,2,Macapagal Drive
+44,Pagatpat R1 Centro - Westbound Terminal,R1,inbound,3,C. M. Recto Avenue
+44,Pagatpat R1 Centro - Westbound Terminal,R1,inbound,4,Saarenas Avenue
+44,Pagatpat R1 Centro - Westbound Terminal,R1,inbound,5,West Coastal Road
+44,Pagatpat R1 Centro - Westbound Terminal,R1,outbound,1,Saarenas Avenue
+44,Pagatpat R1 Centro - Westbound Terminal,R1,outbound,2,C. M. Recto Avenue
+44,Pagatpat R1 Centro - Westbound Terminal,R1,outbound,3,Macapagal Drive
+44,Pagatpat R1 Centro - Westbound Terminal,R1,outbound,4,Canitoan-Pagatpat Road
+44,Pagatpat R1 Centro - Westbound Terminal,R1,both,1,Canitoan-Pagatpat Road
+44,Pagatpat R1 Centro - Westbound Terminal,R1,both,2,Macapagal Drive
+44,Pagatpat R1 Centro - Westbound Terminal,R1,both,3,C. M. Recto Avenue
+44,Pagatpat R1 Centro - Westbound Terminal,R1,both,4,Saarenas Avenue
+44,Pagatpat R1 Centro - Westbound Terminal,R1,both,5,West Coastal Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,1,Canitoan-Pagatpat Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,2,Canitoan Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,3,Carmen-Canitoan Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,4,Villarin Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,5,Max Suniel Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,6,V. Neri Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,inbound,7,Castro Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,outbound,1,Max Suniel Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,outbound,2,Villarin Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,outbound,3,Carmen-Canitoan Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,outbound,4,Canitoan Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,outbound,5,Canitoan-Pagatpat Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,1,Canitoan-Pagatpat Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,2,Canitoan Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,3,Carmen-Canitoan Road
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,4,Villarin Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,5,Max Suniel Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,6,V. Neri Street
+45,Pagatpat R2 Centro - Carmen Public Market,R2,both,7,Castro Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,1,Pamalihi Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,2,Canitoan-Pagatpat Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,3,Canitoan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,4,Calaanan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,5,Carmen-Canitoan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,6,Villarin Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,7,Max Suniel Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,8,V. Neri Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,inbound,9,Castro Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,1,Max Suniel Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,2,Villarin Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,3,Gumamela Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,4,Rabanes Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,5,Concordio Diel Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,6,Carmen-Canitoan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,7,Canitoan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,8,Canitoan-Pagatpat Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,outbound,9,Pamalihi Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,1,Pamalihi Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,2,Canitoan-Pagatpat Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,3,Canitoan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,4,Calaanan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,5,Carmen-Canitoan Road
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,6,Villarin Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,7,Max Suniel Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,8,V. Neri Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,9,Castro Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,10,Gumamela Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,11,Rabanes Street
+46,Pagatpat R3 Pamalihi - Carmen Public Market,R3,both,12,Concordio Diel Street
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,1,CDO-Cadre Road
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,2,Mayor P.N. Roa Street
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,3,R. N. Pelaez Boulevard
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,4,C. M. Recto Avenue
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,5,Don Apolinar Velez Street
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,6,Cruz Taal Street
+47,Patag Camp Evangelsita - Divisoria Park,,inbound,7,J. Rizal Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,1,J. Rizal Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,2,Justo Gaerlan Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,3,J. V. Seriña Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,4,Vamenta Boulevard
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,5,Castro Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,6,Max Suniel Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,7,Yakal Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,8,Ferrabrel Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,9,Mayor P.N. Roa Street
+47,Patag Camp Evangelsita - Divisoria Park,,outbound,10,CDO-Cadre Road
+47,Patag Camp Evangelsita - Divisoria Park,,both,1,CDO-Cadre Road
+47,Patag Camp Evangelsita - Divisoria Park,,both,2,Mayor P.N. Roa Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,3,R. N. Pelaez Boulevard
+47,Patag Camp Evangelsita - Divisoria Park,,both,4,C. M. Recto Avenue
+47,Patag Camp Evangelsita - Divisoria Park,,both,5,Don Apolinar Velez Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,6,Cruz Taal Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,7,J. Rizal Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,8,Justo Gaerlan Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,9,J. V. Seriña Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,10,Vamenta Boulevard
+47,Patag Camp Evangelsita - Divisoria Park,,both,11,Castro Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,12,Max Suniel Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,13,Yakal Street
+47,Patag Camp Evangelsita - Divisoria Park,,both,14,Ferrabrel Street
+48,Pigsag-an - Carmen Public Market,,inbound,1,F. Delima Street
+48,Pigsag-an - Carmen Public Market,,inbound,2,Masterson Avenue
+48,Pigsag-an - Carmen Public Market,,inbound,3,Macapagal Drive
+48,Pigsag-an - Carmen Public Market,,inbound,4,SM Bypass Road
+48,Pigsag-an - Carmen Public Market,,inbound,5,Carmen-Canitoan Road
+48,Pigsag-an - Carmen Public Market,,inbound,6,Villarin Street
+48,Pigsag-an - Carmen Public Market,,inbound,7,Max Suniel Street
+48,Pigsag-an - Carmen Public Market,,inbound,8,V. Neri Street
+48,Pigsag-an - Carmen Public Market,,inbound,9,Castro Street
+48,Pigsag-an - Carmen Public Market,,outbound,1,Max Suniel Street
+48,Pigsag-an - Carmen Public Market,,outbound,2,Villarin Street
+48,Pigsag-an - Carmen Public Market,,outbound,3,Gumamela Street
+48,Pigsag-an - Carmen Public Market,,outbound,4,Rabanes Street
+48,Pigsag-an - Carmen Public Market,,outbound,5,Concordio Diel Street
+48,Pigsag-an - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+48,Pigsag-an - Carmen Public Market,,outbound,7,SM Bypass Road
+48,Pigsag-an - Carmen Public Market,,outbound,8,Macapagal Drive
+48,Pigsag-an - Carmen Public Market,,outbound,9,Masterson Avenue
+48,Pigsag-an - Carmen Public Market,,outbound,10,F. Delima Street
+48,Pigsag-an - Carmen Public Market,,both,1,F. Delima Street
+48,Pigsag-an - Carmen Public Market,,both,2,Masterson Avenue
+48,Pigsag-an - Carmen Public Market,,both,3,Macapagal Drive
+48,Pigsag-an - Carmen Public Market,,both,4,SM Bypass Road
+48,Pigsag-an - Carmen Public Market,,both,5,Carmen-Canitoan Road
+48,Pigsag-an - Carmen Public Market,,both,6,Villarin Street
+48,Pigsag-an - Carmen Public Market,,both,7,Max Suniel Street
+48,Pigsag-an - Carmen Public Market,,both,8,V. Neri Street
+48,Pigsag-an - Carmen Public Market,,both,9,Castro Street
+48,Pigsag-an - Carmen Public Market,,both,10,Gumamela Street
+48,Pigsag-an - Carmen Public Market,,both,11,Rabanes Street
+48,Pigsag-an - Carmen Public Market,,both,12,Concordio Diel Street
+49,San Simon - Carmen Public Market,,inbound,1,Canitoan-Pagatpat Road
+49,San Simon - Carmen Public Market,,inbound,2,Canitoan Road
+49,San Simon - Carmen Public Market,,inbound,3,Carmen-Canitoan Road
+49,San Simon - Carmen Public Market,,inbound,4,Villarin Street
+49,San Simon - Carmen Public Market,,inbound,5,Max Suniel Street
+49,San Simon - Carmen Public Market,,inbound,6,V. Neri Street
+49,San Simon - Carmen Public Market,,inbound,7,Castro Street
+49,San Simon - Carmen Public Market,,outbound,1,Castro Street
+49,San Simon - Carmen Public Market,,outbound,2,Vamenta Boulevard
+49,San Simon - Carmen Public Market,,outbound,3,J. V. Seriña Street
+49,San Simon - Carmen Public Market,,outbound,4,Gumamela Street
+49,San Simon - Carmen Public Market,,outbound,5,Villarin Street
+49,San Simon - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+49,San Simon - Carmen Public Market,,outbound,7,Canitoan Road
+49,San Simon - Carmen Public Market,,outbound,8,Canitoan-Pagatpat Road
+49,San Simon - Carmen Public Market,,both,1,Canitoan-Pagatpat Road
+49,San Simon - Carmen Public Market,,both,2,Canitoan Road
+49,San Simon - Carmen Public Market,,both,3,Carmen-Canitoan Road
+49,San Simon - Carmen Public Market,,both,4,Villarin Street
+49,San Simon - Carmen Public Market,,both,5,Max Suniel Street
+49,San Simon - Carmen Public Market,,both,6,V. Neri Street
+49,San Simon - Carmen Public Market,,both,7,Castro Street
+49,San Simon - Carmen Public Market,,both,8,Vamenta Boulevard
+49,San Simon - Carmen Public Market,,both,9,J. V. Seriña Street
+49,San Simon - Carmen Public Market,,both,10,Gumamela Street
+50,Taglimao - Carmen Public Market,,inbound,1,F. Delima Street
+50,Taglimao - Carmen Public Market,,inbound,2,Masterson Avenue
+50,Taglimao - Carmen Public Market,,inbound,3,Macapagal Drive
+50,Taglimao - Carmen Public Market,,inbound,4,SM Bypass Road
+50,Taglimao - Carmen Public Market,,inbound,5,Carmen-Canitoan Road
+50,Taglimao - Carmen Public Market,,inbound,6,Villarin Street
+50,Taglimao - Carmen Public Market,,inbound,7,Max Suniel Street
+50,Taglimao - Carmen Public Market,,inbound,8,V. Neri Street
+50,Taglimao - Carmen Public Market,,inbound,9,Castro Street
+50,Taglimao - Carmen Public Market,,outbound,1,Max Suniel Street
+50,Taglimao - Carmen Public Market,,outbound,2,Villarin Street
+50,Taglimao - Carmen Public Market,,outbound,3,Gumamela Street
+50,Taglimao - Carmen Public Market,,outbound,4,Rabanes Street
+50,Taglimao - Carmen Public Market,,outbound,5,Concordio Diel Street
+50,Taglimao - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+50,Taglimao - Carmen Public Market,,outbound,7,SM Bypass Road
+50,Taglimao - Carmen Public Market,,outbound,8,Macapagal Drive
+50,Taglimao - Carmen Public Market,,outbound,9,Masterson Avenue
+50,Taglimao - Carmen Public Market,,outbound,10,F. Delima Street
+50,Taglimao - Carmen Public Market,,both,1,F. Delima Street
+50,Taglimao - Carmen Public Market,,both,2,Masterson Avenue
+50,Taglimao - Carmen Public Market,,both,3,Macapagal Drive
+50,Taglimao - Carmen Public Market,,both,4,SM Bypass Road
+50,Taglimao - Carmen Public Market,,both,5,Carmen-Canitoan Road
+50,Taglimao - Carmen Public Market,,both,6,Villarin Street
+50,Taglimao - Carmen Public Market,,both,7,Max Suniel Street
+50,Taglimao - Carmen Public Market,,both,8,V. Neri Street
+50,Taglimao - Carmen Public Market,,both,9,Castro Street
+50,Taglimao - Carmen Public Market,,both,10,Gumamela Street
+50,Taglimao - Carmen Public Market,,both,11,Rabanes Street
+50,Taglimao - Carmen Public Market,,both,12,Concordio Diel Street
+51,Tuburan - Carmen Public Market,,inbound,1,F. Delima Street
+51,Tuburan - Carmen Public Market,,inbound,2,Masterson Avenue
+51,Tuburan - Carmen Public Market,,inbound,3,Macapagal Drive
+51,Tuburan - Carmen Public Market,,inbound,4,SM Bypass Road
+51,Tuburan - Carmen Public Market,,inbound,5,Carmen-Canitoan Road
+51,Tuburan - Carmen Public Market,,inbound,6,Villarin Street
+51,Tuburan - Carmen Public Market,,inbound,7,Max Suniel Street
+51,Tuburan - Carmen Public Market,,inbound,8,V. Neri Street
+51,Tuburan - Carmen Public Market,,inbound,9,Castro Street
+51,Tuburan - Carmen Public Market,,outbound,1,Max Suniel Street
+51,Tuburan - Carmen Public Market,,outbound,2,Villarin Street
+51,Tuburan - Carmen Public Market,,outbound,3,Gumamela Street
+51,Tuburan - Carmen Public Market,,outbound,4,Rabanes Street
+51,Tuburan - Carmen Public Market,,outbound,5,Concordio Diel Street
+51,Tuburan - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+51,Tuburan - Carmen Public Market,,outbound,7,SM Bypass Road
+51,Tuburan - Carmen Public Market,,outbound,8,Macapagal Drive
+51,Tuburan - Carmen Public Market,,outbound,9,Masterson Avenue
+51,Tuburan - Carmen Public Market,,outbound,10,F. Delima Street
+51,Tuburan - Carmen Public Market,,both,1,F. Delima Street
+51,Tuburan - Carmen Public Market,,both,2,Masterson Avenue
+51,Tuburan - Carmen Public Market,,both,3,Macapagal Drive
+51,Tuburan - Carmen Public Market,,both,4,SM Bypass Road
+51,Tuburan - Carmen Public Market,,both,5,Carmen-Canitoan Road
+51,Tuburan - Carmen Public Market,,both,6,Villarin Street
+51,Tuburan - Carmen Public Market,,both,7,Max Suniel Street
+51,Tuburan - Carmen Public Market,,both,8,V. Neri Street
+51,Tuburan - Carmen Public Market,,both,9,Castro Street
+51,Tuburan - Carmen Public Market,,both,10,Gumamela Street
+51,Tuburan - Carmen Public Market,,both,11,Rabanes Street
+51,Tuburan - Carmen Public Market,,both,12,Concordio Diel Street
+52,Tagpangi - Carmen Public Market,,inbound,1,F. Delima Street
+52,Tagpangi - Carmen Public Market,,inbound,2,Masterson Avenue
+52,Tagpangi - Carmen Public Market,,inbound,3,Macapagal Drive
+52,Tagpangi - Carmen Public Market,,inbound,4,SM Bypass Road
+52,Tagpangi - Carmen Public Market,,inbound,5,Carmen-Canitoan Road
+52,Tagpangi - Carmen Public Market,,inbound,6,Villarin Street
+52,Tagpangi - Carmen Public Market,,inbound,7,Max Suniel Street
+52,Tagpangi - Carmen Public Market,,inbound,8,V. Neri Street
+52,Tagpangi - Carmen Public Market,,inbound,9,Castro Street
+52,Tagpangi - Carmen Public Market,,outbound,1,Max Suniel Street
+52,Tagpangi - Carmen Public Market,,outbound,2,Villarin Street
+52,Tagpangi - Carmen Public Market,,outbound,3,Gumamela Street
+52,Tagpangi - Carmen Public Market,,outbound,4,Rabanes Street
+52,Tagpangi - Carmen Public Market,,outbound,5,Concordio Diel Street
+52,Tagpangi - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+52,Tagpangi - Carmen Public Market,,outbound,7,SM Bypass Road
+52,Tagpangi - Carmen Public Market,,outbound,8,Macapagal Drive
+52,Tagpangi - Carmen Public Market,,outbound,9,Masterson Avenue
+52,Tagpangi - Carmen Public Market,,outbound,10,F. Delima Street
+52,Tagpangi - Carmen Public Market,,both,1,F. Delima Street
+52,Tagpangi - Carmen Public Market,,both,2,Masterson Avenue
+52,Tagpangi - Carmen Public Market,,both,3,Macapagal Drive
+52,Tagpangi - Carmen Public Market,,both,4,SM Bypass Road
+52,Tagpangi - Carmen Public Market,,both,5,Carmen-Canitoan Road
+52,Tagpangi - Carmen Public Market,,both,6,Villarin Street
+52,Tagpangi - Carmen Public Market,,both,7,Max Suniel Street
+52,Tagpangi - Carmen Public Market,,both,8,V. Neri Street
+52,Tagpangi - Carmen Public Market,,both,9,Castro Street
+52,Tagpangi - Carmen Public Market,,both,10,Gumamela Street
+52,Tagpangi - Carmen Public Market,,both,11,Rabanes Street
+52,Tagpangi - Carmen Public Market,,both,12,Concordio Diel Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,1,Iligan-Bukidnon Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,2,Tignapoloan-Besigan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,3,Dansolihon-Tignapoloan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,4,Cagayan de Oro-Bukidnon Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,5,Masterson Avenue
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,6,Macapagal Drive
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,7,SM Bypass Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,8,Carmen-Canitoan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,9,Villarin Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,10,Max Suniel Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,11,V. Neri Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,inbound,12,Castro Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,1,Max Suniel Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,2,Villarin Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,3,Gumamela Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,4,Rabanes Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,5,Concordio Diel Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,6,Carmen-Canitoan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,7,SM Bypass Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,8,Macapagal Drive
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,9,Masterson Avenue
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,10,Cagayan de Oro-Bukidnon Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,11,Dansolihon-Tignapoloan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,12,Tignapoloan-Besigan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,outbound,13,Iligan-Bukidnon Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,1,Iligan-Bukidnon Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,2,Tignapoloan-Besigan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,3,Dansolihon-Tignapoloan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,4,Cagayan de Oro-Bukidnon Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,5,Masterson Avenue
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,6,Macapagal Drive
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,7,SM Bypass Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,8,Carmen-Canitoan Road
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,9,Villarin Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,10,Max Suniel Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,11,V. Neri Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,12,Castro Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,13,Gumamela Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,14,Rabanes Street
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),,both,15,Concordio Diel Street
+54,Tumpagon - Carmen Public Market,,inbound,1,Tumpagon Road
+54,Tumpagon - Carmen Public Market,,inbound,2,F. Delima Street
+54,Tumpagon - Carmen Public Market,,inbound,3,Masterson Avenue
+54,Tumpagon - Carmen Public Market,,inbound,4,Macapagal Drive
+54,Tumpagon - Carmen Public Market,,inbound,5,SM Bypass Road
+54,Tumpagon - Carmen Public Market,,inbound,6,Carmen-Canitoan Road
+54,Tumpagon - Carmen Public Market,,inbound,7,Villarin Street
+54,Tumpagon - Carmen Public Market,,inbound,8,Max Suniel Street
+54,Tumpagon - Carmen Public Market,,inbound,9,V. Neri Street
+54,Tumpagon - Carmen Public Market,,inbound,10,Castro Street
+54,Tumpagon - Carmen Public Market,,outbound,1,Max Suniel Street
+54,Tumpagon - Carmen Public Market,,outbound,2,Villarin Street
+54,Tumpagon - Carmen Public Market,,outbound,3,Gumamela Street
+54,Tumpagon - Carmen Public Market,,outbound,4,Rabanes Street
+54,Tumpagon - Carmen Public Market,,outbound,5,Concordio Diel Street
+54,Tumpagon - Carmen Public Market,,outbound,6,Carmen-Canitoan Road
+54,Tumpagon - Carmen Public Market,,outbound,7,SM Bypass Road
+54,Tumpagon - Carmen Public Market,,outbound,8,Macapagal Drive
+54,Tumpagon - Carmen Public Market,,outbound,9,Masterson Avenue
+54,Tumpagon - Carmen Public Market,,outbound,10,F. Delima Street
+54,Tumpagon - Carmen Public Market,,outbound,11,Tumpagon Road
+54,Tumpagon - Carmen Public Market,,both,1,Tumpagon Road
+54,Tumpagon - Carmen Public Market,,both,2,F. Delima Street
+54,Tumpagon - Carmen Public Market,,both,3,Masterson Avenue
+54,Tumpagon - Carmen Public Market,,both,4,Macapagal Drive
+54,Tumpagon - Carmen Public Market,,both,5,SM Bypass Road
+54,Tumpagon - Carmen Public Market,,both,6,Carmen-Canitoan Road
+54,Tumpagon - Carmen Public Market,,both,7,Villarin Street
+54,Tumpagon - Carmen Public Market,,both,8,Max Suniel Street
+54,Tumpagon - Carmen Public Market,,both,9,V. Neri Street
+54,Tumpagon - Carmen Public Market,,both,10,Castro Street
+54,Tumpagon - Carmen Public Market,,both,11,Gumamela Street
+54,Tumpagon - Carmen Public Market,,both,12,Rabanes Street
+54,Tumpagon - Carmen Public Market,,both,13,Concordio Diel Street
+55,Balubal R1 - Puerto Public Market,R1,inbound,1,Balubal Road
+55,Balubal R1 - Puerto Public Market,R1,inbound,2,Sayre Highway
+55,Balubal R1 - Puerto Public Market,R1,outbound,1,Sayre Highway
+55,Balubal R1 - Puerto Public Market,R1,outbound,2,C. M. Recto Avenue
+55,Balubal R1 - Puerto Public Market,R1,outbound,3,Agusan-Balubal Road
+55,Balubal R1 - Puerto Public Market,R1,both,1,Balubal Road
+55,Balubal R1 - Puerto Public Market,R1,both,2,Sayre Highway
+55,Balubal R1 - Puerto Public Market,R1,both,3,C. M. Recto Avenue
+55,Balubal R1 - Puerto Public Market,R1,both,4,Agusan-Balubal Road
+56,Balubal R2 - Puerto Public Market,R2,inbound,1,Agusan-Balubal Road
+56,Balubal R2 - Puerto Public Market,R2,inbound,2,C. M. Recto Avenue
+56,Balubal R2 - Puerto Public Market,R2,inbound,3,Sayre Highway
+56,Balubal R2 - Puerto Public Market,R2,outbound,1,Sayre Highway
+56,Balubal R2 - Puerto Public Market,R2,outbound,2,Balubal Road
+56,Balubal R2 - Puerto Public Market,R2,both,1,Agusan-Balubal Road
+56,Balubal R2 - Puerto Public Market,R2,both,2,C. M. Recto Avenue
+56,Balubal R2 - Puerto Public Market,R2,both,3,Sayre Highway
+56,Balubal R2 - Puerto Public Market,R2,both,4,Balubal Road
+57,Bugo R1 - Agora Market City and Terminal,R1,inbound,1,Bugo-Reyes Main Road
+57,Bugo R1 - Agora Market City and Terminal,R1,inbound,2,Pili Balite Street
+57,Bugo R1 - Agora Market City and Terminal,R1,inbound,3,C. M. Recto Avenue
+57,Bugo R1 - Agora Market City and Terminal,R1,inbound,4,Valenzuela Road
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,1,Valenzuela Road
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,2,Gaabucayan Street
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,3,Mambato Street
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,4,Santo Niño Street
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,5,C. M. Recto Avenue
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,6,Jamero Street
+57,Bugo R1 - Agora Market City and Terminal,R1,outbound,7,Bugo-Reyes Main Road
+57,Bugo R1 - Agora Market City and Terminal,R1,both,1,Bugo-Reyes Main Road
+57,Bugo R1 - Agora Market City and Terminal,R1,both,2,Pili Balite Street
+57,Bugo R1 - Agora Market City and Terminal,R1,both,3,C. M. Recto Avenue
+57,Bugo R1 - Agora Market City and Terminal,R1,both,4,Valenzuela Road
+57,Bugo R1 - Agora Market City and Terminal,R1,both,5,Gaabucayan Street
+57,Bugo R1 - Agora Market City and Terminal,R1,both,6,Mambato Street
+57,Bugo R1 - Agora Market City and Terminal,R1,both,7,Santo Niño Street
+57,Bugo R1 - Agora Market City and Terminal,R1,both,8,Jamero Street
+58,Bugo R2 - Cogon Public market,R2,inbound,1,Bugo-Reyes Main Road
+58,Bugo R2 - Cogon Public market,R2,inbound,2,Pili Balite Street
+58,Bugo R2 - Cogon Public market,R2,inbound,3,C. M. Recto Avenue
+58,Bugo R2 - Cogon Public market,R2,inbound,4,Galaxy Road
+58,Bugo R2 - Cogon Public market,R2,inbound,5,Mayor J. R. Borja Extension
+58,Bugo R2 - Cogon Public market,R2,inbound,6,Sergio Osmeña Street
+58,Bugo R2 - Cogon Public market,R2,outbound,1,Sergio Osmeña Street
+58,Bugo R2 - Cogon Public market,R2,outbound,2,Yacapin Street
+58,Bugo R2 - Cogon Public market,R2,outbound,3,President C. Garcia Street
+58,Bugo R2 - Cogon Public market,R2,outbound,4,Mayor J. R. Borja Extension
+58,Bugo R2 - Cogon Public market,R2,outbound,5,Galaxy Road
+58,Bugo R2 - Cogon Public market,R2,outbound,6,C. M. Recto Avenue
+58,Bugo R2 - Cogon Public market,R2,outbound,7,Jamero Street
+58,Bugo R2 - Cogon Public market,R2,outbound,8,Bugo-Reyes Main Road
+58,Bugo R2 - Cogon Public market,R2,both,1,Bugo-Reyes Main Road
+58,Bugo R2 - Cogon Public market,R2,both,2,Pili Balite Street
+58,Bugo R2 - Cogon Public market,R2,both,3,C. M. Recto Avenue
+58,Bugo R2 - Cogon Public market,R2,both,4,Galaxy Road
+58,Bugo R2 - Cogon Public market,R2,both,5,Mayor J. R. Borja Extension
+58,Bugo R2 - Cogon Public market,R2,both,6,Sergio Osmeña Street
+58,Bugo R2 - Cogon Public market,R2,both,7,Yacapin Street
+58,Bugo R2 - Cogon Public market,R2,both,8,President C. Garcia Street
+58,Bugo R2 - Cogon Public market,R2,both,9,Jamero Street
+59,Cugman - Cogon Public Market,,inbound,1,C. M. Recto Avenue
+59,Cugman - Cogon Public Market,,inbound,2,Don Apolinar Velez Street
+59,Cugman - Cogon Public Market,,inbound,3,General Antonio Luna Street
+59,Cugman - Cogon Public Market,,inbound,4,General Capistrano Street
+59,Cugman - Cogon Public Market,,inbound,5,Toribio Chaves Street
+59,Cugman - Cogon Public Market,,inbound,6,Corrales Avenue
+59,Cugman - Cogon Public Market,,inbound,7,Mayor J. R. Borja Avenue
+59,Cugman - Cogon Public Market,,inbound,8,Sotero Daumar Street
+59,Cugman - Cogon Public Market,,outbound,1,Sotero Daumar Street
+59,Cugman - Cogon Public Market,,outbound,2,Yacapin Street
+59,Cugman - Cogon Public Market,,outbound,3,Don Apolinar Velez Street
+59,Cugman - Cogon Public Market,,outbound,4,C. M. Recto Avenue
+59,Cugman - Cogon Public Market,,outbound,5,Cugman Bypass Road
+59,Cugman - Cogon Public Market,,both,1,C. M. Recto Avenue
+59,Cugman - Cogon Public Market,,both,2,Don Apolinar Velez Street
+59,Cugman - Cogon Public Market,,both,3,General Antonio Luna Street
+59,Cugman - Cogon Public Market,,both,4,General Capistrano Street
+59,Cugman - Cogon Public Market,,both,5,Toribio Chaves Street
+59,Cugman - Cogon Public Market,,both,6,Corrales Avenue
+59,Cugman - Cogon Public Market,,both,7,Mayor J. R. Borja Avenue
+59,Cugman - Cogon Public Market,,both,8,Sotero Daumar Street
+59,Cugman - Cogon Public Market,,both,9,Yacapin Street
+59,Cugman - Cogon Public Market,,both,10,Cugman Bypass Road
+60,FS Catanico - Agora Market City and Terminal,,inbound,1,F. S. Catanico Road
+60,FS Catanico - Agora Market City and Terminal,,inbound,2,C. M. Recto Avenue
+60,FS Catanico - Agora Market City and Terminal,,inbound,3,Cugman Bypass Road
+60,FS Catanico - Agora Market City and Terminal,,inbound,4,Corrales Extension
+60,FS Catanico - Agora Market City and Terminal,,inbound,5,Gaabucayan Street
+60,FS Catanico - Agora Market City and Terminal,,inbound,6,Mambato Street
+60,FS Catanico - Agora Market City and Terminal,,inbound,7,Santo Niño Street
+60,FS Catanico - Agora Market City and Terminal,,outbound,1,Santo Niño Street
+60,FS Catanico - Agora Market City and Terminal,,outbound,2,Valenzuela Road
+60,FS Catanico - Agora Market City and Terminal,,outbound,3,C. M. Recto Avenue
+60,FS Catanico - Agora Market City and Terminal,,outbound,4,Cugman Bypass Road
+60,FS Catanico - Agora Market City and Terminal,,outbound,5,F. S. Catanico Road
+60,FS Catanico - Agora Market City and Terminal,,both,1,F. S. Catanico Road
+60,FS Catanico - Agora Market City and Terminal,,both,2,C. M. Recto Avenue
+60,FS Catanico - Agora Market City and Terminal,,both,3,Cugman Bypass Road
+60,FS Catanico - Agora Market City and Terminal,,both,4,Corrales Extension
+60,FS Catanico - Agora Market City and Terminal,,both,5,Gaabucayan Street
+60,FS Catanico - Agora Market City and Terminal,,both,6,Mambato Street
+60,FS Catanico - Agora Market City and Terminal,,both,7,Santo Niño Street
+60,FS Catanico - Agora Market City and Terminal,,both,8,Valenzuela Road
+61,Gusa R1 - Puerto Public Market,R1,inbound,1,Gusa Old Road
+61,Gusa R1 - Puerto Public Market,R1,inbound,2,East Coastal Road
+61,Gusa R1 - Puerto Public Market,R1,inbound,3,C. M. Recto Avenue
+61,Gusa R1 - Puerto Public Market,R1,outbound,1,Sayre Highway
+61,Gusa R1 - Puerto Public Market,R1,outbound,2,C. M. Recto Avenue
+61,Gusa R1 - Puerto Public Market,R1,outbound,3,Emerald Street
+61,Gusa R1 - Puerto Public Market,R1,outbound,4,Gusa Old Road
+61,Gusa R1 - Puerto Public Market,R1,both,1,Gusa Old Road
+61,Gusa R1 - Puerto Public Market,R1,both,2,East Coastal Road
+61,Gusa R1 - Puerto Public Market,R1,both,3,C. M. Recto Avenue
+61,Gusa R1 - Puerto Public Market,R1,both,4,Sayre Highway
+61,Gusa R1 - Puerto Public Market,R1,both,5,Emerald Street
+62,Gusa R2 - Divisoria Park,R2,inbound,1,Gusa Old Road
+62,Gusa R2 - Divisoria Park,R2,inbound,2,East Coastal Road
+62,Gusa R2 - Divisoria Park,R2,inbound,3,Galaxy Road
+62,Gusa R2 - Divisoria Park,R2,inbound,4,Mayor J. R. Borja Extension
+62,Gusa R2 - Divisoria Park,R2,inbound,5,Mayor J. R. Borja Avenue
+62,Gusa R2 - Divisoria Park,R2,inbound,6,J. Rizal Street
+62,Gusa R2 - Divisoria Park,R2,inbound,7,Toribio Chaves Street
+62,Gusa R2 - Divisoria Park,R2,inbound,8,Corrales Avenue
+62,Gusa R2 - Divisoria Park,R2,outbound,1,Corrales Avenue
+62,Gusa R2 - Divisoria Park,R2,outbound,2,Mayor J. R. Borja Avenue
+62,Gusa R2 - Divisoria Park,R2,outbound,3,Mayor J. R. Borja Extension
+62,Gusa R2 - Divisoria Park,R2,outbound,4,Galaxy Road
+62,Gusa R2 - Divisoria Park,R2,outbound,5,C. M. Recto Avenue
+62,Gusa R2 - Divisoria Park,R2,outbound,6,Gusa Old Road
+62,Gusa R2 - Divisoria Park,R2,both,1,Gusa Old Road
+62,Gusa R2 - Divisoria Park,R2,both,2,East Coastal Road
+62,Gusa R2 - Divisoria Park,R2,both,3,Galaxy Road
+62,Gusa R2 - Divisoria Park,R2,both,4,Mayor J. R. Borja Extension
+62,Gusa R2 - Divisoria Park,R2,both,5,Mayor J. R. Borja Avenue
+62,Gusa R2 - Divisoria Park,R2,both,6,J. Rizal Street
+62,Gusa R2 - Divisoria Park,R2,both,7,Toribio Chaves Street
+62,Gusa R2 - Divisoria Park,R2,both,8,Corrales Avenue
+62,Gusa R2 - Divisoria Park,R2,both,9,C. M. Recto Avenue
+63,Indahag R1 - Cogon Public Market,R1,inbound,1,Libona-Indahag Road
+63,Indahag R1 - Cogon Public Market,R1,inbound,2,Bolonsiri Road
+63,Indahag R1 - Cogon Public Market,R1,inbound,3,Archbishop Hayes Street
+63,Indahag R1 - Cogon Public Market,R1,inbound,4,Roxas Street
+63,Indahag R1 - Cogon Public Market,R1,outbound,1,Roxas Street
+63,Indahag R1 - Cogon Public Market,R1,outbound,2,Mayor J. R. Borja Extension
+63,Indahag R1 - Cogon Public Market,R1,outbound,3,President Quirino Street
+63,Indahag R1 - Cogon Public Market,R1,outbound,4,Archbishop Hayes Street
+63,Indahag R1 - Cogon Public Market,R1,outbound,5,Bolonsiri Road
+63,Indahag R1 - Cogon Public Market,R1,outbound,6,Libona-Indahag Road
+63,Indahag R1 - Cogon Public Market,R1,both,1,Libona-Indahag Road
+63,Indahag R1 - Cogon Public Market,R1,both,2,Bolonsiri Road
+63,Indahag R1 - Cogon Public Market,R1,both,3,Archbishop Hayes Street
+63,Indahag R1 - Cogon Public Market,R1,both,4,Roxas Street
+63,Indahag R1 - Cogon Public Market,R1,both,5,Mayor J. R. Borja Extension
+63,Indahag R1 - Cogon Public Market,R1,both,6,President Quirino Street
+64,Indahag R2 - Cogon Public Market,R2,inbound,1,Libona-Indahag Road
+64,Indahag R2 - Cogon Public Market,R2,inbound,2,Indahag Road
+64,Indahag R2 - Cogon Public Market,R2,inbound,3,P. Chavez Street
+64,Indahag R2 - Cogon Public Market,R2,inbound,4,Fernhill Street
+64,Indahag R2 - Cogon Public Market,R2,inbound,5,Tomas Saco Street
+64,Indahag R2 - Cogon Public Market,R2,inbound,6,M. Clemente Fernandez Street
+64,Indahag R2 - Cogon Public Market,R2,inbound,7,Corrales Avenue
+64,Indahag R2 - Cogon Public Market,R2,inbound,8,Archbishop Hayes Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,1,Archbishop Hayes Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,2,12th Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,3,21st Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,4,15th Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,5,26th Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,6,Fernhill Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,7,P. Chavez Street
+64,Indahag R2 - Cogon Public Market,R2,outbound,8,Indahag Road
+64,Indahag R2 - Cogon Public Market,R2,outbound,9,Libona-Indahag Road
+64,Indahag R2 - Cogon Public Market,R2,both,1,Libona-Indahag Road
+64,Indahag R2 - Cogon Public Market,R2,both,2,Indahag Road
+64,Indahag R2 - Cogon Public Market,R2,both,3,P. Chavez Street
+64,Indahag R2 - Cogon Public Market,R2,both,4,Fernhill Street
+64,Indahag R2 - Cogon Public Market,R2,both,5,Tomas Saco Street
+64,Indahag R2 - Cogon Public Market,R2,both,6,M. Clemente Fernandez Street
+64,Indahag R2 - Cogon Public Market,R2,both,7,Corrales Avenue
+64,Indahag R2 - Cogon Public Market,R2,both,8,Archbishop Hayes Street
+64,Indahag R2 - Cogon Public Market,R2,both,9,12th Street
+64,Indahag R2 - Cogon Public Market,R2,both,10,21st Street
+64,Indahag R2 - Cogon Public Market,R2,both,11,15th Street
+64,Indahag R2 - Cogon Public Market,R2,both,12,26th Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,1,South Diversion Road
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,2,Indahag Road
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,3,P. Chavez Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,4,Fernhill Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,5,Tomas Saco Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,6,M. Clemente Fernandez Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,7,Corrales Avenue
+65,Indahag R3 Taguanao - Cogon Public Market,R3,inbound,8,Archbishop Hayes Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,1,Archbishop Hayes Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,2,12th Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,3,22nd Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,4,8th Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,5,2nd Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,6,21st Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,7,6th Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,8,Tomas Saco Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,9,P. Chavez Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,10,Indahag Road
+65,Indahag R3 Taguanao - Cogon Public Market,R3,outbound,11,South Diversion Road
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,1,South Diversion Road
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,2,Indahag Road
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,3,P. Chavez Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,4,Fernhill Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,5,Tomas Saco Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,6,M. Clemente Fernandez Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,7,Corrales Avenue
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,8,Archbishop Hayes Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,9,12th Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,10,22nd Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,11,8th Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,12,2nd Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,13,21st Street
+65,Indahag R3 Taguanao - Cogon Public Market,R3,both,14,6th Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,inbound,1,Archbishop Hayes Extension
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,inbound,2,Archbishop Hayes Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,inbound,3,Roxas Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,outbound,1,Roxas Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,outbound,2,Mayor J. R. Borja Extension
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,outbound,3,Archbishop Hayes Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,outbound,4,Archbishop Hayes Extension
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,both,1,Archbishop Hayes Extension
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,both,2,Archbishop Hayes Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,both,3,Roxas Street
+66,Camaman-an R3 Macapaya - Cogon Public Market,R3,both,4,Mayor J. R. Borja Extension
+67,Lapasan R1 - Carmen Public Market,R1,inbound,1,Mambato Street
+67,Lapasan R1 - Carmen Public Market,R1,inbound,2,Santo Niño Street
+67,Lapasan R1 - Carmen Public Market,R1,inbound,3,Valenzuela Road
+67,Lapasan R1 - Carmen Public Market,R1,inbound,4,C. M. Recto Avenue
+67,Lapasan R1 - Carmen Public Market,R1,inbound,5,R. N. Pelaez Boulevard
+67,Lapasan R1 - Carmen Public Market,R1,inbound,6,Vamenta Boulevard
+67,Lapasan R1 - Carmen Public Market,R1,inbound,7,Masterson Avenue
+67,Lapasan R1 - Carmen Public Market,R1,inbound,8,Concordio Diel Street
+67,Lapasan R1 - Carmen Public Market,R1,inbound,9,Villarin Street
+67,Lapasan R1 - Carmen Public Market,R1,inbound,10,Max Suniel Street
+67,Lapasan R1 - Carmen Public Market,R1,inbound,11,V. Neri Street
+67,Lapasan R1 - Carmen Public Market,R1,inbound,12,Castro Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,1,Castro Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,2,Max Suniel Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,3,Villarin Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,4,Concordio Diel Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,5,Masterson Avenue
+67,Lapasan R1 - Carmen Public Market,R1,outbound,6,Rodelsa Circle
+67,Lapasan R1 - Carmen Public Market,R1,outbound,7,Vamenta Boulevard
+67,Lapasan R1 - Carmen Public Market,R1,outbound,8,Everlasting Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,9,Banaba Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,10,Mayor H. Avanceña Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,11,R. N. Pelaez Boulevard
+67,Lapasan R1 - Carmen Public Market,R1,outbound,12,C. M. Recto Avenue
+67,Lapasan R1 - Carmen Public Market,R1,outbound,13,Valenzuela Road
+67,Lapasan R1 - Carmen Public Market,R1,outbound,14,Gaabucayan Street
+67,Lapasan R1 - Carmen Public Market,R1,outbound,15,Mambato Street
+67,Lapasan R1 - Carmen Public Market,R1,both,1,Mambato Street
+67,Lapasan R1 - Carmen Public Market,R1,both,2,Santo Niño Street
+67,Lapasan R1 - Carmen Public Market,R1,both,3,Valenzuela Road
+67,Lapasan R1 - Carmen Public Market,R1,both,4,C. M. Recto Avenue
+67,Lapasan R1 - Carmen Public Market,R1,both,5,R. N. Pelaez Boulevard
+67,Lapasan R1 - Carmen Public Market,R1,both,6,Vamenta Boulevard
+67,Lapasan R1 - Carmen Public Market,R1,both,7,Masterson Avenue
+67,Lapasan R1 - Carmen Public Market,R1,both,8,Concordio Diel Street
+67,Lapasan R1 - Carmen Public Market,R1,both,9,Villarin Street
+67,Lapasan R1 - Carmen Public Market,R1,both,10,Max Suniel Street
+67,Lapasan R1 - Carmen Public Market,R1,both,11,V. Neri Street
+67,Lapasan R1 - Carmen Public Market,R1,both,12,Castro Street
+67,Lapasan R1 - Carmen Public Market,R1,both,13,Rodelsa Circle
+67,Lapasan R1 - Carmen Public Market,R1,both,14,Everlasting Street
+67,Lapasan R1 - Carmen Public Market,R1,both,15,Banaba Street
+67,Lapasan R1 - Carmen Public Market,R1,both,16,Mayor H. Avanceña Street
+67,Lapasan R1 - Carmen Public Market,R1,both,17,Gaabucayan Street
+68,Lapasan R2 - Cogon Public Market,R2,inbound,1,Gaabucayan Street
+68,Lapasan R2 - Cogon Public Market,R2,inbound,2,Corrales Extension
+68,Lapasan R2 - Cogon Public Market,R2,inbound,3,C. M. Recto Avenue
+68,Lapasan R2 - Cogon Public Market,R2,inbound,4,Don Apolinar Velez Street
+68,Lapasan R2 - Cogon Public Market,R2,inbound,5,Echem Street
+68,Lapasan R2 - Cogon Public Market,R2,inbound,6,General Capistrano Street
+68,Lapasan R2 - Cogon Public Market,R2,inbound,7,Toribio Chaves Street
+68,Lapasan R2 - Cogon Public Market,R2,inbound,8,Corrales Avenue
+68,Lapasan R2 - Cogon Public Market,R2,inbound,9,Mayor J. R. Borja Avenue
+68,Lapasan R2 - Cogon Public Market,R2,inbound,10,Sergio Osmeña Street
+68,Lapasan R2 - Cogon Public Market,R2,outbound,1,Sergio Osmeña Street
+68,Lapasan R2 - Cogon Public Market,R2,outbound,2,Yacapin Street
+68,Lapasan R2 - Cogon Public Market,R2,outbound,3,Captain Vicente Roa Street
+68,Lapasan R2 - Cogon Public Market,R2,outbound,4,Mayor J. R. Borja Avenue
+68,Lapasan R2 - Cogon Public Market,R2,outbound,5,Don Apolinar Velez Street
+68,Lapasan R2 - Cogon Public Market,R2,outbound,6,C. M. Recto Avenue
+68,Lapasan R2 - Cogon Public Market,R2,outbound,7,Valenzuela Road
+68,Lapasan R2 - Cogon Public Market,R2,outbound,8,Gaabucayan Street
+68,Lapasan R2 - Cogon Public Market,R2,both,1,Gaabucayan Street
+68,Lapasan R2 - Cogon Public Market,R2,both,2,Corrales Extension
+68,Lapasan R2 - Cogon Public Market,R2,both,3,C. M. Recto Avenue
+68,Lapasan R2 - Cogon Public Market,R2,both,4,Don Apolinar Velez Street
+68,Lapasan R2 - Cogon Public Market,R2,both,5,Echem Street
+68,Lapasan R2 - Cogon Public Market,R2,both,6,General Capistrano Street
+68,Lapasan R2 - Cogon Public Market,R2,both,7,Toribio Chaves Street
+68,Lapasan R2 - Cogon Public Market,R2,both,8,Corrales Avenue
+68,Lapasan R2 - Cogon Public Market,R2,both,9,Mayor J. R. Borja Avenue
+68,Lapasan R2 - Cogon Public Market,R2,both,10,Sergio Osmeña Street
+68,Lapasan R2 - Cogon Public Market,R2,both,11,Yacapin Street
+68,Lapasan R2 - Cogon Public Market,R2,both,12,Captain Vicente Roa Street
+68,Lapasan R2 - Cogon Public Market,R2,both,13,Valenzuela Road
+69,Lapasan R3 - Cogon Public Market,R3,inbound,1,Gaabucayan Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,2,Mambato Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,3,Santo Niño Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,4,Valenzuela Road
+69,Lapasan R3 - Cogon Public Market,R3,inbound,5,Baconga Road
+69,Lapasan R3 - Cogon Public Market,R3,inbound,6,C. M. Recto Avenue
+69,Lapasan R3 - Cogon Public Market,R3,inbound,7,Don Apolinar Velez Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,8,Yacapin Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,9,General Capistrano Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,10,R. N. Abejuela Street
+69,Lapasan R3 - Cogon Public Market,R3,inbound,11,Corrales Avenue
+69,Lapasan R3 - Cogon Public Market,R3,inbound,12,Mayor J. R. Borja Avenue
+69,Lapasan R3 - Cogon Public Market,R3,inbound,13,Sergio Osmeña Street
+69,Lapasan R3 - Cogon Public Market,R3,outbound,1,Sergio Osmeña Street
+69,Lapasan R3 - Cogon Public Market,R3,outbound,2,Justo Ramonal Street
+69,Lapasan R3 - Cogon Public Market,R3,outbound,3,Limketkai Avenue
+69,Lapasan R3 - Cogon Public Market,R3,outbound,4,C. M. Recto Avenue
+69,Lapasan R3 - Cogon Public Market,R3,outbound,5,Valenzuela Road
+69,Lapasan R3 - Cogon Public Market,R3,outbound,6,Gaabucayan Street
+69,Lapasan R3 - Cogon Public Market,R3,both,1,Gaabucayan Street
+69,Lapasan R3 - Cogon Public Market,R3,both,2,Mambato Street
+69,Lapasan R3 - Cogon Public Market,R3,both,3,Santo Niño Street
+69,Lapasan R3 - Cogon Public Market,R3,both,4,Valenzuela Road
+69,Lapasan R3 - Cogon Public Market,R3,both,5,Baconga Road
+69,Lapasan R3 - Cogon Public Market,R3,both,6,C. M. Recto Avenue
+69,Lapasan R3 - Cogon Public Market,R3,both,7,Don Apolinar Velez Street
+69,Lapasan R3 - Cogon Public Market,R3,both,8,Yacapin Street
+69,Lapasan R3 - Cogon Public Market,R3,both,9,General Capistrano Street
+69,Lapasan R3 - Cogon Public Market,R3,both,10,R. N. Abejuela Street
+69,Lapasan R3 - Cogon Public Market,R3,both,11,Corrales Avenue
+69,Lapasan R3 - Cogon Public Market,R3,both,12,Mayor J. R. Borja Avenue
+69,Lapasan R3 - Cogon Public Market,R3,both,13,Sergio Osmeña Street
+69,Lapasan R3 - Cogon Public Market,R3,both,14,Justo Ramonal Street
+69,Lapasan R3 - Cogon Public Market,R3,both,15,Limketkai Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,1,Julio Pacana Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,2,Piaping Itum Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,3,Corrales Extension
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,4,Gaabucayan Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,5,Mambato Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,6,Santo Niño Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,7,Valenzuela Road
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,8,C. M. Recto Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,9,Limketkai Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,10,Justo Ramonal Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,inbound,11,Captain Vicente Roa Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,1,Captain Vicente Roa Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,2,Archbishop Hayes Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,3,Sergio Osmeña Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,4,Justo Ramonal Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,5,Limketkai Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,6,C. M. Recto Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,7,Valenzuela Road
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,8,Gaabucayan Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,9,Corrales Extension
+70,Macabalan R1 Centro - Cogon Public Market,R1,outbound,10,Julio Pacana Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,1,Julio Pacana Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,2,Piaping Itum Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,3,Corrales Extension
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,4,Gaabucayan Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,5,Mambato Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,6,Santo Niño Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,7,Valenzuela Road
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,8,C. M. Recto Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,9,Limketkai Avenue
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,10,Justo Ramonal Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,11,Captain Vicente Roa Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,12,Archbishop Hayes Street
+70,Macabalan R1 Centro - Cogon Public Market,R1,both,13,Sergio Osmeña Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,inbound,1,Julio Pacana Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,inbound,2,Piaping Itum Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,inbound,3,San Pedro Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,inbound,4,West Coastal Road
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,outbound,1,Saarenas Avenue
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,outbound,2,West Coastal Road
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,outbound,3,San Pedro Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,outbound,4,Julio Pacana Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,both,1,Julio Pacana Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,both,2,Piaping Itum Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,both,3,San Pedro Street
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,both,4,West Coastal Road
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,R2,both,5,Saarenas Avenue
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,1,Julio Pacana Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,2,Piaping Itum Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,3,Corrales Extension
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,4,Corrales Avenue
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,5,Tirso Neri Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,6,J. Rizal Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,7,Toribio Chaves Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,8,Mayor J. R. Borja Avenue
+72,Macabalan R3 Centro - Cogon Public Market,R3,inbound,9,Sergio Osmeña Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,1,Sergio Osmeña Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,2,Yacapin Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,3,President E. Aguinaldo Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,4,Domingo Velez Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,5,Corrales Avenue
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,6,Corrales Extension
+72,Macabalan R3 Centro - Cogon Public Market,R3,outbound,7,Julio Pacana Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,1,Julio Pacana Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,2,Piaping Itum Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,3,Corrales Extension
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,4,Corrales Avenue
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,5,Tirso Neri Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,6,J. Rizal Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,7,Toribio Chaves Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,8,Mayor J. R. Borja Avenue
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,9,Sergio Osmeña Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,10,Yacapin Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,11,President E. Aguinaldo Street
+72,Macabalan R3 Centro - Cogon Public Market,R3,both,12,Domingo Velez Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,1,Julio Pacana Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,2,Don Apolinar Velez Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,3,Tirso Neri Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,4,R. N. Abejuela Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,5,Corrales Avenue
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,6,Mayor J. R. Borja Avenue
+73,Macabalan R4 Centro - Cogon Public Market,R4,inbound,7,Sergio Osmeña Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,outbound,1,Sergio Osmeña Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,outbound,2,Yacapin Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,outbound,3,Don Apolinar Velez Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,outbound,4,Julio Pacana Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,1,Julio Pacana Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,2,Don Apolinar Velez Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,3,Tirso Neri Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,4,R. N. Abejuela Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,5,Corrales Avenue
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,6,Mayor J. R. Borja Avenue
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,7,Sergio Osmeña Street
+73,Macabalan R4 Centro - Cogon Public Market,R4,both,8,Yacapin Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,1,Julio Pacana Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,2,Piaping Itum Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,3,C. M. Recto Avenue
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,4,R. N. Pelaez Boulevard
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,5,Vamenta Boulevard
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,6,J. V. Seriña Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,7,Villarin Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,8,Max Suniel Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,9,V. Neri Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,inbound,10,Castro Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,outbound,1,Castro Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,outbound,2,Vamenta Boulevard
+74,Macabalan R5 Centro - Carmen Public Market,R5,outbound,3,R. N. Pelaez Boulevard
+74,Macabalan R5 Centro - Carmen Public Market,R5,outbound,4,C. M. Recto Avenue
+74,Macabalan R5 Centro - Carmen Public Market,R5,outbound,5,Julio Pacana Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,1,Julio Pacana Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,2,Piaping Itum Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,3,C. M. Recto Avenue
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,4,R. N. Pelaez Boulevard
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,5,Vamenta Boulevard
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,6,J. V. Seriña Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,7,Villarin Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,8,Max Suniel Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,9,V. Neri Street
+74,Macabalan R5 Centro - Carmen Public Market,R5,both,10,Castro Street
+75,Macasandig - Cogon Public Market,,inbound,1,Maandig Avenue
+75,Macasandig - Cogon Public Market,,inbound,2,Indahag Road
+75,Macasandig - Cogon Public Market,,inbound,3,P. Chavez Street
+75,Macasandig - Cogon Public Market,,inbound,4,Fernhill Street
+75,Macasandig - Cogon Public Market,,inbound,5,Tomas Saco Street
+75,Macasandig - Cogon Public Market,,inbound,6,16th Street
+75,Macasandig - Cogon Public Market,,inbound,7,12th Street
+75,Macasandig - Cogon Public Market,,inbound,8,22nd Street
+75,Macasandig - Cogon Public Market,,inbound,9,8th Street
+75,Macasandig - Cogon Public Market,,inbound,10,Archbishop Hayes Street
+75,Macasandig - Cogon Public Market,,inbound,11,Sergio Osmeña Street
+75,Macasandig - Cogon Public Market,,inbound,12,Yacapin Street
+75,Macasandig - Cogon Public Market,,outbound,1,Yacapin Street
+75,Macasandig - Cogon Public Market,,outbound,2,Captain Vicente Roa Street
+75,Macasandig - Cogon Public Market,,outbound,3,8th Street
+75,Macasandig - Cogon Public Market,,outbound,4,2nd Street
+75,Macasandig - Cogon Public Market,,outbound,5,21st Street
+75,Macasandig - Cogon Public Market,,outbound,6,6th Street
+75,Macasandig - Cogon Public Market,,outbound,7,Tomas Saco Street
+75,Macasandig - Cogon Public Market,,outbound,8,P. Chavez Street
+75,Macasandig - Cogon Public Market,,outbound,9,Indahag Road
+75,Macasandig - Cogon Public Market,,outbound,10,Maandig Avenue
+75,Macasandig - Cogon Public Market,,both,1,Maandig Avenue
+75,Macasandig - Cogon Public Market,,both,2,Indahag Road
+75,Macasandig - Cogon Public Market,,both,3,P. Chavez Street
+75,Macasandig - Cogon Public Market,,both,4,Fernhill Street
+75,Macasandig - Cogon Public Market,,both,5,Tomas Saco Street
+75,Macasandig - Cogon Public Market,,both,6,16th Street
+75,Macasandig - Cogon Public Market,,both,7,12th Street
+75,Macasandig - Cogon Public Market,,both,8,22nd Street
+75,Macasandig - Cogon Public Market,,both,9,8th Street
+75,Macasandig - Cogon Public Market,,both,10,Archbishop Hayes Street
+75,Macasandig - Cogon Public Market,,both,11,Sergio Osmeña Street
+75,Macasandig - Cogon Public Market,,both,12,Yacapin Street
+75,Macasandig - Cogon Public Market,,both,13,Captain Vicente Roa Street
+75,Macasandig - Cogon Public Market,,both,14,2nd Street
+75,Macasandig - Cogon Public Market,,both,15,21st Street
+75,Macasandig - Cogon Public Market,,both,16,6th Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,inbound,1,Sayre Highway
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,inbound,2,C. M. Recto Avenue
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,inbound,3,Corrales Extension
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,inbound,4,Gaabucayan Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,inbound,5,Mambato Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,inbound,6,Santo Niño Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,outbound,1,Santo Niño Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,outbound,2,Valenzuela Road
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,outbound,3,C. M. Recto Avenue
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,1,Sayre Highway
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,2,C. M. Recto Avenue
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,3,Corrales Extension
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,4,Gaabucayan Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,5,Mambato Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,6,Santo Niño Street
+76,Puerto R1 Puerto Public Market - Agora Terminal,R1,both,7,Valenzuela Road

@@ -1,0 +1,26 @@
+﻿import { test, expect } from "@playwright/test";
+test("vehicle comparison keeps the selected fare and breakdown consistent", async ({ page }, info) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/planner");
+  await page.getByRole("combobox", { name: "Origin", exact: true }).fill("8.47357, 124.608488");
+  await page.getByRole("combobox", { name: "Destination", exact: true }).fill("8.475241, 124.630949");
+  await page.getByRole("button", { name: "Find My Jeepney", exact: true }).click();
+  const card = page.locator(".prominent-fare");
+  await expect(card).toBeVisible();
+  await expect(card).not.toContainText("Unknown");
+  await expect(card).toContainText("Confirm with operator");
+  await card.getByRole("button", { name: "Modern", exact: true }).click();
+  await expect(card.getByRole("button", { name: "Modern", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(card.locator(".conditional-fares")).toContainText("If Modern");
+  await expect(card.locator(".conditional-fares")).not.toContainText("Traditional");
+  await expect(card.locator(":scope > strong")).toHaveText(await card.locator(".conditional-fares b").innerText());
+  await card.getByRole("button", { name: "View Fare Breakdown" }).click();
+  await expect(card.locator(".reference-breakdown")).toContainText("If Modern");
+  await expect(card.locator(".reference-breakdown")).not.toContainText("If Traditional");
+  expect(await card.evaluate(el => getComputedStyle(el).backgroundColor)).toBe("rgb(237, 245, 239)");
+  await card.screenshot({ path: `.local-admin/fare-${info.project.name}.png` });
+  await card.getByRole("button", { name: "Traditional", exact: true }).click();
+  await expect(card.locator(".conditional-fares")).toContainText("If Traditional");
+  await card.getByRole("button", { name: "All types", exact: true }).click();
+  await expect(card.locator(".conditional-fares > div")).toHaveCount(2);
+});

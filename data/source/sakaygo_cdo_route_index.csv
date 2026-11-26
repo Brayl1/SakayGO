@@ -1,0 +1,153 @@
+﻿route_id,route_name,direction,from_location,to_location,coordinate_count,updated_at
+1,Baikingon - Carmen Public Market,inbound,Baikingon,Carmen Public Market,641,2026-04-05 12:21:12
+1,Baikingon - Carmen Public Market,outbound,Baikingon,Carmen Public Market,660,2026-04-05 12:21:12
+2,Balulang R1 Centro - Carmen Public Market,inbound,Balulang,Carmen Public Market,262,2026-04-05 12:21:18
+2,Balulang R1 Centro - Carmen Public Market,outbound,Balulang,Carmen Public Market,205,2026-04-05 12:21:18
+3,Balulang R2 Villa Verde - Cogon Public Market,inbound,Balulang,Cogon Public Market,345,2026-04-05 12:21:22
+3,Balulang R2 Villa Verde - Cogon Public Market,outbound,Balulang,Cogon Public Market,357,2026-04-05 12:21:22
+4,Balulang R3 Xavier Heights - Cogon Public Market,inbound,Balulang,Cogon Public Market,326,2026-04-05 12:21:26
+4,Balulang R3 Xavier Heights - Cogon Public Market,outbound,Balulang,Cogon Public Market,300,2026-04-05 12:21:26
+5,Bayabas R1 - Cogon Public Market,inbound,Bayabas,Cogon Public Market,189,2026-04-05 12:21:30
+5,Bayabas R1 - Cogon Public Market,outbound,Bayabas,Cogon Public Market,194,2026-04-05 12:21:30
+6,Bayabas R2 - Carmen Public Market,inbound,Bayabas,Carmen Public Market,329,2026-04-05 12:21:32
+6,Bayabas R2 - Carmen Public Market,outbound,Bayabas,Carmen Public Market,262,2026-04-05 12:21:32
+7,Bayabas R3 - Carmen Public Market,inbound,Bayabas,Carmen Public Market,265,2026-04-05 12:21:34
+7,Bayabas R3 - Carmen Public Market,outbound,Bayabas,Carmen Public Market,173,2026-04-05 12:21:34
+8,Bayabas R4 - Carmen Public Market,inbound,Bayabas,Carmen Public Market,365,2026-04-05 12:21:36
+8,Bayabas R4 - Carmen Public Market,outbound,Bayabas,Carmen Public Market,278,2026-04-05 12:21:36
+9,Bayabas R5 - Agora Market City and Terminal,inbound,Bayabas,Agora Market City and Terminal,352,2026-04-05 12:21:38
+9,Bayabas R5 - Agora Market City and Terminal,outbound,Bayabas,Agora Market City and Terminal,172,2026-04-05 12:21:38
+10,Bonbon R1 - Cogon Public Market,inbound,Bonbon,Cogon Public Market,163,2026-04-05 12:21:40
+10,Bonbon R1 - Cogon Public Market,outbound,Bonbon,Cogon Public Market,180,2026-04-05 12:21:40
+11,Bonbon R2 - Carmen Public Market,inbound,Bonbon,Carmen Public Market,323,2026-04-05 12:21:42
+11,Bonbon R2 - Carmen Public Market,outbound,Bonbon,Carmen Public Market,223,2026-04-05 12:21:42
+12,Bonbon R3 - Agora Market City and Terminal,inbound,Bonbon,Agora Market City and Terminal,359,2026-04-05 12:23:47
+12,Bonbon R3 - Agora Market City and Terminal,outbound,Bonbon,Agora Market City and Terminal,173,2026-04-05 12:23:47
+13,Bonbon R4 - Carmen Public Market,inbound,Bonbon,Carmen Public Market,485,2026-04-05 12:23:49
+13,Bonbon R4 - Carmen Public Market,outbound,Bonbon,Carmen Public Market,492,2026-04-05 12:23:49
+14,Bulua R1 - Agora Market City and Terminal,inbound,Bulua,Agora Market City and Terminal,307,2026-04-05 12:23:51
+14,Bulua R1 - Agora Market City and Terminal,outbound,Bulua,Agora Market City and Terminal,162,2026-04-05 12:23:51
+15,Bulua R2 - Agora Market City and Terminal,inbound,Bulua,Agora Market City and Terminal,286,2026-04-05 12:23:53
+15,Bulua R2 - Agora Market City and Terminal,outbound,Bulua,Agora Market City and Terminal,391,2026-04-05 12:23:53
+16,Bulua R3 - Carmen Public Market,inbound,Bulua,Carmen Public Market,287,2026-04-05 12:23:55
+16,Bulua R3 - Carmen Public Market,outbound,Bulua,Carmen Public Market,205,2026-04-05 12:23:55
+17,Bulua R4 - Cogon Public Market,inbound,Bulua,Cogon Public Market,269,2026-04-05 12:25:48
+17,Bulua R4 - Cogon Public Market,outbound,Bulua,Cogon Public Market,253,2026-04-05 12:25:48
+18,Bulua R5 - Divisoria Park,inbound,Bulua,Divisoria Park,225,2026-04-05 12:25:51
+18,Bulua R5 - Divisoria Park,outbound,Bulua,Divisoria Park,188,2026-04-05 12:25:51
+19,Bulua R6 - Carmen Public Market,inbound,Bulua,Carmen Public Market,543,2026-04-05 12:25:52
+19,Bulua R6 - Carmen Public Market,outbound,Bulua,Carmen Public Market,575,2026-04-05 12:25:52
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,inbound,Bulua,Terry Hills Subdivision - Divisoria Park,190,2026-04-05 12:25:54
+20,Bulua R7 - Terry Hills Subdivision - Divisoria Park,outbound,Bulua,Terry Hills Subdivision - Divisoria Park,171,2026-04-05 12:25:54
+21,Canitoan R1 - Cogon Public Market,inbound,Canitoan,Cogon Public Market,373,2026-04-05 12:25:56
+21,Canitoan R1 - Cogon Public Market,outbound,Canitoan,Cogon Public Market,366,2026-04-05 12:25:56
+22,Canitoan R2 - Cogon Public Market,inbound,Canitoan,Cogon Public Market,400,2026-04-05 12:27:49
+22,Canitoan R2 - Cogon Public Market,outbound,Canitoan,Cogon Public Market,396,2026-04-05 12:27:49
+23,Carmen R1 - Cogon Public Market,inbound,Carmen,Cogon Public Market,293,2026-04-05 12:27:51
+23,Carmen R1 - Cogon Public Market,outbound,Carmen,Cogon Public Market,287,2026-04-05 12:27:51
+24,Carmen R2 - Cogon Public Market,inbound,Carmen,Cogon Public Market,293,2026-04-05 12:27:53
+24,Carmen R2 - Cogon Public Market,outbound,Carmen,Cogon Public Market,299,2026-04-05 12:27:53
+25,Carmen R3 - Carmen Public Market,inbound,Carmen,Carmen Public Market,305,2026-04-05 12:27:55
+25,Carmen R3 - Carmen Public Market,outbound,Carmen,Carmen Public Market,216,2026-04-05 12:27:55
+26,Carmen R4 - Agora Market City and Terminal,inbound,Carmen,Agora Market City and Terminal,318,2026-04-05 12:27:57
+26,Carmen R4 - Agora Market City and Terminal,outbound,Carmen,Agora Market City and Terminal,347,2026-04-05 12:27:57
+27,Carmen R5 - Agora Market City and Terminal,inbound,Carmen,Agora Market City and Terminal,198,2026-04-05 12:29:49
+27,Carmen R5 - Agora Market City and Terminal,outbound,Carmen,Agora Market City and Terminal,180,2026-04-05 12:29:49
+28,Carmen R6 - Cogon Public Market,inbound,Carmen,Cogon Public Market,197,2026-04-05 12:29:51
+28,Carmen R6 - Cogon Public Market,outbound,Carmen,Cogon Public Market,188,2026-04-05 12:29:51
+29,Dansolihon R1 - Carmen Public Market,inbound,Dansolihon,Carmen Public Market,1293,2026-04-05 12:29:53
+29,Dansolihon R1 - Carmen Public Market,outbound,Dansolihon,Carmen Public Market,1321,2026-04-05 12:29:53
+30,Dansolihon R2 - Carmen Public Market,inbound,Dansolihon,Carmen Public Market,834,2026-04-05 12:29:55
+30,Dansolihon R2 - Carmen Public Market,outbound,Dansolihon,Carmen Public Market,901,2026-04-05 12:29:55
+31,Iponan R1 Bulao - Carmen Public Market,inbound,Iponan,Carmen Public Market,442,2026-04-05 12:29:57
+31,Iponan R1 Bulao - Carmen Public Market,outbound,Iponan,Carmen Public Market,381,2026-04-05 12:29:57
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,inbound,Iponan,Limketkai via Agora Market City and Terminal,396,2026-04-05 12:31:50
+32,Iponan R3 Kinasanghan - Limketkai via Agora Market City and Terminal,outbound,Iponan,Limketkai via Agora Market City and Terminal,366,2026-04-05 12:31:50
+33,Iponan R4 Kisanlu/Regency - Gaisano City,inbound,Iponan,Gaisano City,288,2026-04-05 12:31:52
+33,Iponan R4 Kisanlu/Regency - Gaisano City,outbound,Iponan,Gaisano City,248,2026-04-05 12:31:52
+34,Iponan R5 Bulao - Cogon Public Market,inbound,Iponan,Cogon Public Market,338,2026-04-05 12:31:54
+34,Iponan R5 Bulao - Cogon Public Market,outbound,Iponan,Cogon Public Market,345,2026-04-05 12:31:54
+35,Kauswagan R1 NHA - Agora Terminal,inbound,Kauswagan,Agora Terminal,132,2026-04-05 12:31:56
+35,Kauswagan R1 NHA - Agora Terminal,outbound,Kauswagan,Agora Terminal,165,2026-04-05 12:31:56
+36,Kauswagan R2 NHA - Carmen Public Market,inbound,Kauswagan,Carmen Public Market,241,2026-04-05 12:31:58
+36,Kauswagan R2 NHA - Carmen Public Market,outbound,Kauswagan,Carmen Public Market,153,2026-04-05 12:31:58
+37,Kauswagan R3 - Carmen Public Market,inbound,Kauswagan,Carmen Public Market,435,2026-04-05 12:33:51
+37,Kauswagan R3 - Carmen Public Market,outbound,Kauswagan,Carmen Public Market,377,2026-04-05 12:33:51
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,inbound,Kauswagan,Agora Terminal,360,2026-04-05 12:33:53
+38,Kauswagan R4 Eagle St. (Kauswagan Brgy. Hall) - Agora Terminal,outbound,Kauswagan,Agora Terminal,349,2026-04-05 12:33:53
+39,Lumbia R1 - Cogon Public Market,inbound,Lumbia,Cogon Public Market,505,2026-04-05 12:33:55
+39,Lumbia R1 - Cogon Public Market,outbound,Lumbia,Cogon Public Market,569,2026-04-05 12:33:55
+40,Lumbia R2 - Carmen Public Market,inbound,Lumbia,Carmen Public Market,470,2026-04-05 12:33:57
+40,Lumbia R2 - Carmen Public Market,outbound,Lumbia,Carmen Public Market,486,2026-04-05 12:33:57
+41,Lumbia R3 Gran Europa - Carmen Public Market,inbound,Lumbia,Carmen Public Market,439,2026-04-05 12:33:59
+41,Lumbia R3 Gran Europa - Carmen Public Market,outbound,Lumbia,Carmen Public Market,306,2026-04-05 12:33:59
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,inbound,Lumbia,Cogon Public Market via Taguanao,542,2026-04-05 12:35:52
+42,Lumbia R4 Gran Europa - Cogon Public Market via Taguanao,outbound,Lumbia,Cogon Public Market via Taguanao,499,2026-04-05 12:35:52
+43,Pagalungan - Carmen Public Market,inbound,Pagalungan,Carmen Public Market,715,2026-04-05 12:35:54
+43,Pagalungan - Carmen Public Market,outbound,Pagalungan,Carmen Public Market,735,2026-04-05 12:35:54
+44,Pagatpat R1 Centro - Westbound Terminal,inbound,Pagatpat,Westbound Terminal,382,2026-04-05 12:35:56
+44,Pagatpat R1 Centro - Westbound Terminal,outbound,Pagatpat,Westbound Terminal,359,2026-04-05 12:35:56
+45,Pagatpat R2 Centro - Carmen Public Market,inbound,Pagatpat,Carmen Public Market,416,2026-04-05 12:35:58
+45,Pagatpat R2 Centro - Carmen Public Market,outbound,Pagatpat,Carmen Public Market,418,2026-04-05 12:35:58
+46,Pagatpat R3 Pamalihi - Carmen Public Market,inbound,Pagatpat,Carmen Public Market,530,2026-04-05 12:36:00
+46,Pagatpat R3 Pamalihi - Carmen Public Market,outbound,Pagatpat,Carmen Public Market,550,2026-04-05 12:36:00
+47,Patag Camp Evangelsita - Divisoria Park,inbound,Patag Camp Evangelsita,Divisoria Park,148,2026-04-05 12:37:53
+47,Patag Camp Evangelsita - Divisoria Park,outbound,Patag Camp Evangelsita,Divisoria Park,114,2026-04-05 12:37:53
+48,Pigsag-an - Carmen Public Market,inbound,Pigsag-an,Carmen Public Market,1714,2026-04-05 12:37:55
+48,Pigsag-an - Carmen Public Market,outbound,Pigsag-an,Carmen Public Market,1717,2026-04-05 12:37:55
+49,San Simon - Carmen Public Market,inbound,San Simon,Carmen Public Market,581,2026-04-05 12:37:57
+49,San Simon - Carmen Public Market,outbound,San Simon,Carmen Public Market,677,2026-04-05 12:37:57
+50,Taglimao - Carmen Public Market,inbound,Taglimao,Carmen Public Market,1209,2026-04-05 12:37:59
+50,Taglimao - Carmen Public Market,outbound,Taglimao,Carmen Public Market,1205,2026-04-05 12:37:59
+51,Tuburan - Carmen Public Market,inbound,Tuburan,Carmen Public Market,1450,2026-04-05 12:38:01
+51,Tuburan - Carmen Public Market,outbound,Tuburan,Carmen Public Market,1464,2026-04-05 12:38:01
+52,Tagpangi - Carmen Public Market,inbound,Tagpangi,Carmen Public Market,911,2026-04-05 12:39:54
+52,Tagpangi - Carmen Public Market,outbound,Tagpangi,Carmen Public Market,940,2026-04-05 12:39:54
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),inbound,Tignapoloan,Carmen Public Market (69.0km Roundtrip),2300,2026-04-05 12:39:56
+53,Tignapoloan - Carmen Public Market (69.0km Roundtrip),outbound,Tignapoloan,Carmen Public Market (69.0km Roundtrip),2317,2026-04-05 12:39:56
+54,Tumpagon - Carmen Public Market,inbound,Tumpagon,Carmen Public Market,2036,2026-04-05 12:39:58
+54,Tumpagon - Carmen Public Market,outbound,Tumpagon,Carmen Public Market,2060,2026-04-05 12:39:58
+55,Balubal R1 - Puerto Public Market,inbound,Balubal,Puerto Public Market,340,2026-04-05 12:40:00
+55,Balubal R1 - Puerto Public Market,outbound,Balubal,Puerto Public Market,387,2026-04-05 12:40:00
+56,Balubal R2 - Puerto Public Market,inbound,Balubal,Puerto Public Market,377,2026-04-05 12:40:02
+56,Balubal R2 - Puerto Public Market,outbound,Balubal,Puerto Public Market,343,2026-04-05 12:40:02
+57,Bugo R1 - Agora Market City and Terminal,inbound,Bugo,Agora Market City and Terminal,554,2026-04-05 12:41:51
+57,Bugo R1 - Agora Market City and Terminal,outbound,Bugo,Agora Market City and Terminal,585,2026-04-05 12:41:51
+58,Bugo R2 - Cogon Public market,inbound,Bugo,Cogon Public market,599,2026-04-05 12:41:53
+58,Bugo R2 - Cogon Public market,outbound,Bugo,Cogon Public market,586,2026-04-05 12:41:53
+59,Cugman - Cogon Public Market,inbound,Cugman,Cogon Public Market,281,2026-04-05 12:41:55
+59,Cugman - Cogon Public Market,outbound,Cugman,Cogon Public Market,265,2026-04-05 12:41:55
+60,FS Catanico - Agora Market City and Terminal,inbound,FS Catanico,Agora Market City and Terminal,395,2026-04-05 12:41:57
+60,FS Catanico - Agora Market City and Terminal,outbound,FS Catanico,Agora Market City and Terminal,329,2026-04-05 12:41:57
+61,Gusa R1 - Puerto Public Market,inbound,Gusa,Puerto Public Market,346,2026-04-05 12:41:59
+61,Gusa R1 - Puerto Public Market,outbound,Gusa,Puerto Public Market,363,2026-04-05 12:41:59
+62,Gusa R2 - Divisoria Park,inbound,Gusa,Divisoria Park,205,2026-04-05 12:42:11
+62,Gusa R2 - Divisoria Park,outbound,Gusa,Divisoria Park,188,2026-04-05 12:42:11
+63,Indahag R1 - Cogon Public Market,inbound,Indahag,Cogon Public Market,296,2026-04-05 12:42:13
+63,Indahag R1 - Cogon Public Market,outbound,Indahag,Cogon Public Market,302,2026-04-05 12:42:13
+64,Indahag R2 - Cogon Public Market,inbound,Indahag,Cogon Public Market,307,2026-04-05 12:42:15
+64,Indahag R2 - Cogon Public Market,outbound,Indahag,Cogon Public Market,292,2026-04-05 12:42:15
+65,Indahag R3 Taguanao - Cogon Public Market,inbound,Indahag,Cogon Public Market,306,2026-04-05 12:42:17
+65,Indahag R3 Taguanao - Cogon Public Market,outbound,Indahag,Cogon Public Market,306,2026-04-05 12:42:17
+66,Camaman-an R3 Macapaya - Cogon Public Market,inbound,Camaman-an,Cogon Public Market,322,2026-04-05 12:42:19
+66,Camaman-an R3 Macapaya - Cogon Public Market,outbound,Camaman-an,Cogon Public Market,329,2026-04-05 12:42:19
+67,Lapasan R1 - Carmen Public Market,inbound,Lapasan,Carmen Public Market,208,2026-04-05 12:42:44
+67,Lapasan R1 - Carmen Public Market,outbound,Lapasan,Carmen Public Market,274,2026-04-05 12:42:44
+68,Lapasan R2 - Cogon Public Market,inbound,Lapasan,Cogon Public Market,118,2026-04-05 12:42:55
+68,Lapasan R2 - Cogon Public Market,outbound,Lapasan,Cogon Public Market,111,2026-04-05 12:42:55
+69,Lapasan R3 - Cogon Public Market,inbound,Lapasan,Cogon Public Market,233,2026-04-05 12:43:07
+69,Lapasan R3 - Cogon Public Market,outbound,Lapasan,Cogon Public Market,92,2026-04-05 12:43:07
+70,Macabalan R1 Centro - Cogon Public Market,inbound,Macabalan,Cogon Public Market,206,2026-04-05 12:43:19
+70,Macabalan R1 Centro - Cogon Public Market,outbound,Macabalan,Cogon Public Market,228,2026-04-05 12:43:19
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,inbound,Macabalan,Westbound Terminal and Public Market,228,2026-04-05 12:43:31
+71,Macabalan R2 Centro - Westbound Terminal and Public Market,outbound,Macabalan,Westbound Terminal and Public Market,250,2026-04-05 12:43:31
+72,Macabalan R3 Centro - Cogon Public Market,inbound,Macabalan,Cogon Public Market,190,2026-04-05 12:43:36
+72,Macabalan R3 Centro - Cogon Public Market,outbound,Macabalan,Cogon Public Market,178,2026-04-05 12:43:36
+73,Macabalan R4 Centro - Cogon Public Market,inbound,Macabalan,Cogon Public Market,222,2026-04-05 12:43:42
+73,Macabalan R4 Centro - Cogon Public Market,outbound,Macabalan,Cogon Public Market,203,2026-04-05 12:43:42
+74,Macabalan R5 Centro - Carmen Public Market,inbound,Macabalan,Carmen Public Market,234,2026-04-05 12:43:44
+74,Macabalan R5 Centro - Carmen Public Market,outbound,Macabalan,Carmen Public Market,200,2026-04-05 12:43:44
+75,Macasandig - Cogon Public Market,inbound,Macasandig,Cogon Public Market,185,2026-04-05 12:43:46
+75,Macasandig - Cogon Public Market,outbound,Macasandig,Cogon Public Market,180,2026-04-05 12:43:46
+76,Puerto R1 Puerto Public Market - Agora Terminal,inbound,Puerto,Agora Terminal,521,2026-04-05 12:43:48
+76,Puerto R1 Puerto Public Market - Agora Terminal,outbound,Puerto,Agora Terminal,434,2026-04-05 12:43:48

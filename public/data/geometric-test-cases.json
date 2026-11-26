@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Geometric test A — not independently verified travel advice",
+    "routeId": "1",
+    "direction": "inbound",
+    "origin": [
+      8.472827,
+      124.573064
+    ],
+    "destination": [
+      8.474138,
+      124.613327
+    ],
+    "note": "Coordinates taken directly from supplied geometry. Vertices are not official stops."
+  },
+  {
+    "label": "Geometric test B — not independently verified travel advice",
+    "routeId": "3",
+    "direction": "inbound",
+    "origin": [
+      8.438273,
+      124.631824
+    ],
+    "destination": [
+      8.471611,
+      124.635034
+    ],
+    "note": "Coordinates taken directly from supplied geometry. Vertices are not official stops."
+  },
+  {
+    "label": "Geometric test C — not independently verified travel advice",
+    "routeId": "21",
+    "direction": "inbound",
+    "origin": [
+      8.47357,
+      124.608488
+    ],
+    "destination": [
+      8.475241,
+      124.630949
+    ],
+    "note": "Coordinates taken directly from supplied geometry. Vertices are not official stops."
+  }
+]

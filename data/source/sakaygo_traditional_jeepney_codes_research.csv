@@ -1,0 +1,11 @@
+code,reported_service_area,source_type,verification_status,source_url,notes
+C2,Patag - Gaisano - Limketkai - Cogon,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,Community report adds Carmen; report says C2 does not pass Agora
+R1,Gaisano - Carmen,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,Traditional code not LPTRP R1
+R2,Gaisano - Agora - Cogon - Carmen,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,Traditional code not LPTRP R2
+LA,Lapasan - Cogon - Agora,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,
+LB,Lapasan - Agora,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,
+RA,Pier - Cogon Market,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,
+RB,Pier - Cogon Market,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,
+RBC,Pier - Macabalan - Agora - Limketkai - Cogon - Velez,transport_guide,unverified_current_operations,https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/,
+B3,Bulua - Gaisano / city center,community_report_2022_2023,unverified_current_operations,https://www.reddit.com/r/cagayandeoro/comments/zju4tl,Community also mentions Limketkai; not necessarily entering Bulua terminal
+C1,,not_found,unknown,,No reliable CDO jeepney mapping established

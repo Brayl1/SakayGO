@@ -1,0 +1,25 @@
+BEGIN;
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE TABLE IF NOT EXISTS schema_migrations(version text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE sources(id text PRIMARY KEY,organization text NOT NULL,reference text NOT NULL,collected_on date NOT NULL,verification_status text NOT NULL CHECK(verification_status IN ('demo','verified','unverified')));
+CREATE TABLE locations(id text PRIMARY KEY,name text NOT NULL,category text NOT NULL,position geography(Point,4326) NOT NULL,description text NOT NULL DEFAULT '');
+CREATE INDEX locations_position_gist ON locations USING gist(position);
+CREATE INDEX locations_name_idx ON locations(lower(name));
+CREATE TABLE fare_policies(id text PRIMARY KEY,source_id text NOT NULL REFERENCES sources(id),effective_on date NOT NULL,expires_on date NOT NULL,classification text NOT NULL,base numeric(10,2) NOT NULL CHECK(base>=0),base_km numeric(8,3) NOT NULL CHECK(base_km>=0),per_km numeric(10,2) NOT NULL CHECK(per_km>=0),discount numeric(4,3) NOT NULL CHECK(discount BETWEEN 0 AND 1),round_to numeric(10,2) NOT NULL CHECK(round_to>0),demo boolean NOT NULL, CHECK(expires_on>=effective_on));
+CREATE INDEX fare_policies_source_idx ON fare_policies(source_id);
+CREATE TABLE routes(id text PRIMARY KEY,name text NOT NULL,signboard text NOT NULL,direction text NOT NULL,area text NOT NULL,status text NOT NULL CHECK(status IN ('demo','verified','unverified')),verified_on date,source_id text NOT NULL REFERENCES sources(id),policy_id text REFERENCES fare_policies(id),CHECK(status<>'verified' OR verified_on IS NOT NULL));
+CREATE INDEX routes_source_idx ON routes(source_id);
+CREATE INDEX routes_policy_idx ON routes(policy_id);
+CREATE INDEX routes_verified_idx ON routes(area) WHERE status='verified';
+CREATE TABLE route_geometry(route_id text PRIMARY KEY REFERENCES routes(id) ON DELETE CASCADE,path geometry(LineString,4326) NOT NULL);
+CREATE INDEX route_geometry_gist ON route_geometry USING gist(path);
+CREATE TABLE stops(id text PRIMARY KEY REFERENCES locations(id),landmark text NOT NULL,notes text NOT NULL DEFAULT '',source_id text NOT NULL REFERENCES sources(id));
+CREATE INDEX stops_source_idx ON stops(source_id);
+CREATE TABLE route_stops(route_id text NOT NULL REFERENCES routes(id) ON DELETE CASCADE,stop_id text NOT NULL REFERENCES stops(id),sequence integer NOT NULL CHECK(sequence>=0),pickup boolean NOT NULL,dropoff boolean NOT NULL,PRIMARY KEY(route_id,sequence),UNIQUE(route_id,stop_id));
+CREATE INDEX route_stops_stop_idx ON route_stops(stop_id);
+CREATE TABLE dataset_releases(id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,created_at timestamptz NOT NULL DEFAULT now(),active boolean NOT NULL DEFAULT false,payload jsonb NOT NULL);
+CREATE UNIQUE INDEX one_active_release ON dataset_releases(active) WHERE active;
+-- No public administrative API. Use a separate read-only role for the runtime.
+REVOKE ALL ON sources,locations,fare_policies,routes,route_geometry,stops,route_stops,dataset_releases FROM PUBLIC;
+INSERT INTO schema_migrations(version) VALUES('001');
+COMMIT;

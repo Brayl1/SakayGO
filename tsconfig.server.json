@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": ".server-build",
+    "rootDir": ".",
+    "noEmit": false
+  },
+  "include": ["server", "shared", "scripts/import.ts", "scripts/seed.ts"]
+}

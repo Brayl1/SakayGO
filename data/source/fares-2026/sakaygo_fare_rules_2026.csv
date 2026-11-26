@@ -1,0 +1,3 @@
+vehicle_type,effective_date,base_distance_km,base_fare_php,additional_per_km_php,currency,verification_status,source_url
+traditional_jeepney,2026-09-28,4,14,2,PHP,national_published_not_local_matrix,https://www.topgear.com.ph/news/industry-news/dotr-fare-hike-september-28-2026-a6941-20260928
+modern_jeepney,2026-09-28,4,17,2.4,PHP,national_published_not_local_matrix,https://www.topgear.com.ph/news/industry-news/dotr-fare-hike-september-28-2026-a6941-20260928

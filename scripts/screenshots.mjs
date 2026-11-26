@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5174/');await page.getByRole('link',{name:'Get Started'}).waitFor();await page.waitForTimeout(600);await page.screenshot({path:'../sakaygo-welcome.png',fullPage:true});
+await page.getByRole('link',{name:'Get Started'}).click();await page.getByRole('button',{name:'Find My Jeepney',exact:true}).waitFor();await page.waitForTimeout(900);await page.screenshot({path:'../sakaygo-desktop.png',fullPage:true});
+await page.getByRole('combobox',{name:'Origin',exact:true}).fill('8.472827, 124.573064');await page.getByRole('combobox',{name:'Destination',exact:true}).fill('8.474138, 124.613327');await page.getByRole('button',{name:'Find My Jeepney',exact:true}).click();await page.locator('.jeepney-preview-marker[data-progress="1"]').waitFor();await page.screenshot({path:'../sakaygo-results.png',fullPage:true});
+await page.setViewportSize({width:390,height:844});await page.goto('http://127.0.0.1:5174/');await page.waitForTimeout(700);await page.screenshot({path:'../sakaygo-welcome-mobile.png',fullPage:true});await page.goto('http://127.0.0.1:5174/planner');await page.waitForTimeout(700);await page.screenshot({path:'../sakaygo-mobile.png',fullPage:true});
+await page.getByRole('combobox',{name:'Origin',exact:true}).fill('8.472827, 124.573064');await page.getByRole('combobox',{name:'Destination',exact:true}).fill('8.474138, 124.613327');await page.getByRole('button',{name:'Find My Jeepney',exact:true}).click();await page.locator('.jeepney-preview-marker[data-progress="1"]').waitFor();await page.screenshot({path:'../sakaygo-results-mobile.png',fullPage:true});
+console.log(JSON.stringify({browserErrors:errors}));await browser.close();

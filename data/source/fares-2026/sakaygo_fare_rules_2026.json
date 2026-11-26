@@ -1,0 +1,42 @@
+{
+  "dataset_id": "sakaygo_fare_reference_2026_09_28",
+  "effective_date": "2026-09-28",
+  "compiled_on": "2026-11-08",
+  "geographic_scope": "Philippines national fare schedule; Cagayan de Oro applicability and route-specific matrices require confirmation",
+  "status": "published_rates_not_cdo_route_specific_matrix",
+  "currency": "PHP",
+  "rounding": "nearest 0.25 PHP, half-up; verify against current official LTFRB fare guide",
+  "discounts": {
+    "regular": 0,
+    "student": 0.2,
+    "senior": 0.2,
+    "pwd": 0.2
+  },
+  "rules": [
+    {
+      "vehicle_type": "traditional_jeepney",
+      "base_fare_php": 14,
+      "base_distance_km": 4,
+      "additional_per_km_php": 2
+    },
+    {
+      "vehicle_type": "modern_jeepney",
+      "base_fare_php": 17,
+      "base_distance_km": 4,
+      "additional_per_km_php": 2.4
+    }
+  ],
+  "sources": [
+    "https://www.topgear.com.ph/news/industry-news/dotr-fare-hike-september-28-2026-a6941-20260928",
+    "https://www.untvnews.com/news/ltfrb-issues-new-fare-matrix-for-puvs-transport-group-to-launch-nationwide-transport-strike",
+    "https://www.foi.gov.ph/agencies/ltfrb/how-fare-matrix-is-made/",
+    "https://parkinganph.com/guides/fare-matrix"
+  ],
+  "limitations": [
+    "Not an LTFRB Region 10 route-specific fare matrix",
+    "Distances in CSV are illustrative; actual trip distances must come from directional route geometry",
+    "Fare computation and rounding should be validated against latest official LTFRB Region 10 matrix",
+    "Each boarding/transfer ride is charged separately",
+    "Traditional/modern vehicle type cannot be inferred from route geometry alone"
+  ]
+}

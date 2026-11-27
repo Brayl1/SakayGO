@@ -73,6 +73,8 @@ export interface TripResult {
   };
 }
 export interface ResearchCode {
+  verification_basis?: "owner_approval";
+  verified_at?: string;
   code: string;
   reported_service_area: string;
   source_type: string;

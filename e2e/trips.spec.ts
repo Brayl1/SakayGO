@@ -236,6 +236,8 @@ test("traditional code research stays separate and C1 stays unknown", async ({
 }) => {
   await page.goto("/codes");
   await expect(page.locator(".research-card")).toHaveCount(10);
+  await expect(page.locator(".research-card .demo-pill").filter({ hasText: /^Verified$/ })).toHaveCount(9);
+  await expect(page.getByText("Owner approved on 2026-11-27", { exact: true })).toHaveCount(9);
   await page
     .getByRole("textbox", { name: "Search traditional codes" })
     .fill("C1");

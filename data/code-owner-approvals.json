@@ -1,0 +1,56 @@
+{
+  "C2": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Patag - Gaisano - Limketkai - Cogon"
+  },
+  "R1": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Gaisano - Carmen"
+  },
+  "R2": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Gaisano - Agora - Cogon - Carmen"
+  },
+  "LA": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Lapasan - Cogon - Agora"
+  },
+  "LB": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Lapasan - Agora"
+  },
+  "RA": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Pier - Cogon Market"
+  },
+  "RB": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Pier - Cogon Market"
+  },
+  "RBC": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Pier - Macabalan - Agora - Limketkai - Cogon - Velez"
+  },
+  "B3": {
+    "verification_status": "verified",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27",
+    "reported_service_area": "Bulua - Gaisano / city center"
+  }
+}

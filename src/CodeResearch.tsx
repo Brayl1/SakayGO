@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-import { Search, ExternalLink, ShieldAlert } from "lucide-react";
+import { Search, ExternalLink, ShieldCheck } from "lucide-react";
 import type { ResearchCode } from "../shared/trip-types";
 export default function CodeResearch() {
   const [records, setRecords] = useState<ResearchCode[]>([]),
@@ -42,7 +42,7 @@ export default function CodeResearch() {
         jeepneys.
       </p>
       <div className="notice">
-        <ShieldAlert size={20} />
+        <ShieldCheck size={20} />
         <span>
           <strong>Unverified — confirm with operator/driver.</strong>
           <br />
@@ -76,11 +76,14 @@ export default function CodeResearch() {
               <div>
                 <span className="research-code">{r.code}</span>
                 <span className="demo-pill">
-                  {r.verification_status === "unknown"
+                  {r.verification_status === "verified"
+                    ? "Verified"
+                    : r.verification_status === "unknown"
                     ? "Unknown"
                     : "Unverified"}
                 </span>
               </div>
+              {r.verification_basis === "owner_approval" && <small>Owner approved on {r.verified_at}</small>}
               <h2>{r.reported_service_area || "Service area unknown"}</h2>
               <p>
                 {r.notes ||

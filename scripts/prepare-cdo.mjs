@@ -189,7 +189,14 @@ fs.writeFileSync(
   "public/data/geometric-test-cases.json",
   JSON.stringify(cases, null, 2),
 );
-fs.writeFileSync("public/data/code-research.json", JSON.stringify(research));
+const codeApprovals = JSON.parse(fs.readFileSync(new URL("../data/code-owner-approvals.json", import.meta.url), "utf8"));
+const reviewedResearch = research.map((record) => {
+  const approval = codeApprovals[record.code];
+  return approval && approval.reported_service_area === record.reported_service_area
+    ? { ...record, verification_status: approval.verification_status, verification_basis: approval.verification_basis, verified_at: approval.verified_at }
+    : record;
+});
+fs.writeFileSync("public/data/code-research.json", JSON.stringify(reviewedResearch));
 fs.writeFileSync(
   "public/data/route-signboards.json",
   JSON.stringify(

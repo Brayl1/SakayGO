@@ -1,1 +1,100 @@
-[{"code":"C2","reported_service_area":"Patag - Gaisano - Limketkai - Cogon","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":"Community report adds Carmen; report says C2 does not pass Agora"},{"code":"R1","reported_service_area":"Gaisano - Carmen","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":"Traditional code not LPTRP R1"},{"code":"R2","reported_service_area":"Gaisano - Agora - Cogon - Carmen","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":"Traditional code not LPTRP R2"},{"code":"LA","reported_service_area":"Lapasan - Cogon - Agora","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":""},{"code":"LB","reported_service_area":"Lapasan - Agora","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":""},{"code":"RA","reported_service_area":"Pier - Cogon Market","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":""},{"code":"RB","reported_service_area":"Pier - Cogon Market","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":""},{"code":"RBC","reported_service_area":"Pier - Macabalan - Agora - Limketkai - Cogon - Velez","source_type":"transport_guide","verification_status":"unverified_current_operations","source_url":"https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/","notes":""},{"code":"B3","reported_service_area":"Bulua - Gaisano / city center","source_type":"community_report_2022_2023","verification_status":"unverified_current_operations","source_url":"https://www.reddit.com/r/cagayandeoro/comments/zju4tl","notes":"Community also mentions Limketkai; not necessarily entering Bulua terminal"},{"code":"C1","reported_service_area":"","source_type":"not_found","verification_status":"unknown","source_url":"","notes":"No reliable CDO jeepney mapping established"}]
+[
+  {
+    "code": "C2",
+    "reported_service_area": "Patag - Gaisano - Limketkai - Cogon",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "Community report adds Carmen; report says C2 does not pass Agora",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "R1",
+    "reported_service_area": "Gaisano - Carmen",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "Traditional code not LPTRP R1",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "R2",
+    "reported_service_area": "Gaisano - Agora - Cogon - Carmen",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "Traditional code not LPTRP R2",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "LA",
+    "reported_service_area": "Lapasan - Cogon - Agora",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "LB",
+    "reported_service_area": "Lapasan - Agora",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "RA",
+    "reported_service_area": "Pier - Cogon Market",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "RB",
+    "reported_service_area": "Pier - Cogon Market",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "RBC",
+    "reported_service_area": "Pier - Macabalan - Agora - Limketkai - Cogon - Velez",
+    "source_type": "transport_guide",
+    "verification_status": "verified",
+    "source_url": "https://ph.commutetour.com/travel/transport/jeep/cdo-jeep-routes/",
+    "notes": "",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "B3",
+    "reported_service_area": "Bulua - Gaisano / city center",
+    "source_type": "community_report_2022_2023",
+    "verification_status": "verified",
+    "source_url": "https://www.reddit.com/r/cagayandeoro/comments/zju4tl",
+    "notes": "Community also mentions Limketkai; not necessarily entering Bulua terminal",
+    "verification_basis": "owner_approval",
+    "verified_at": "2026-11-27"
+  },
+  {
+    "code": "C1",
+    "reported_service_area": "",
+    "source_type": "not_found",
+    "verification_status": "unknown",
+    "source_url": "",
+    "notes": "No reliable CDO jeepney mapping established"
+  }
+]

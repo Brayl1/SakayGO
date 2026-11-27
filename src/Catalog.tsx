@@ -264,7 +264,7 @@ export default function CatalogPlanner() {
                     <strong>{r.name}</strong>
                     <small>
                       {r.directions.length} directions ·{" "}
-                      {r.status === "approved" ? "Verified by owner" : r.status === "under_review"
+                      {r.status === "approved" ? "Verified" : r.status === "under_review"
                         ? "Under review"
                         : "Unverified"}
                     </small>
@@ -443,8 +443,8 @@ export function CatalogDirectory() {
                   <span className="route-badge">
                     <BusFront size={20} /> ROUTE {r.id}
                   </span>
-                  <span className="demo-pill">
-                    {r.status === "approved" ? "Verified by owner" : r.status === "under_review"
+                  <span className="demo-pill" title={r.status === "approved" ? "Verified through owner approval" : undefined}>
+                    {r.status === "approved" ? "Verified" : r.status === "under_review"
                       ? "Under review"
                       : "Unverified"}
                   </span>

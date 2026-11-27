@@ -1,0 +1,48 @@
+.kasakay-page { max-width: 1220px; margin: auto; padding: 36px 24px 64px; }
+.kasakay-heading { display: flex; align-items: center; gap: 24px; margin-bottom: 28px; }
+.kasakay-heading img { object-fit: contain; flex-shrink: 0; }
+.kasakay-heading h1 { font-size: clamp(28px,4vw,42px); letter-spacing: -1.3px; margin: 8px 0; }
+.kasakay-heading p { color: var(--text-body); line-height: 1.6; }
+.kasakay-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: start; }
+.kasakay-chat,.kasakay-tools { min-width: 0; padding: 24px; border: 1px solid var(--border); border-radius: 24px; background: var(--white); box-shadow: var(--card-shadow); }
+.kasakay-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--text-body); }
+.kasakay-page button { cursor: pointer; }
+.kasakay-page button:disabled { opacity: .55; cursor: not-allowed; }
+.kasakay-toolbar button,.kasakay-starters button,.kasakay-error button { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 12px; color: var(--sage-900); background: var(--sage-50); }
+.kasakay-greeting { font-size: 19px; line-height: 1.65; color: var(--text-heading); }
+.kasakay-starters { display: grid; gap: 8px; margin: 20px 0; }
+.kasakay-starters button { text-align: left; }
+.kasakay-message { border-radius: 18px; margin: 18px 0; padding: 18px; background: var(--sage-50); overflow-wrap: anywhere; }
+.kasakay-message.user { margin-left: 28px; background: var(--sage-100); }
+.kasakay-message small { color: var(--text-body); }
+.kasakay-message p { white-space: pre-wrap; line-height: 1.7; }
+.kasakay-page .primary { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 12px 18px; min-height: 46px; border: 0; border-radius: 12px; text-align: center; }
+.kasakay-choices { display: grid; gap: 16px; }
+.kasakay-choices label { display: grid; gap: 8px; font-weight: 700; }
+.kasakay-choices select { width: 100%; min-width: 0; min-height: 48px; padding: 10px; border: 1px solid var(--input-border); border-radius: 10px; background: white; color: var(--text-heading); }
+.kasakay-status { min-height: 28px; color: var(--sage-700); font-size: 14px; }
+.kasakay-error { padding: 16px; margin: 12px 0; border: 1px solid var(--sage-600); border-radius: 14px; background: var(--sage-100); line-height: 1.6; }
+.kasakay-compose { border-top: 1px solid var(--border); padding-top: 20px; }
+.kasakay-compose label { display: block; margin-bottom: 10px; font-weight: 700; }
+.kasakay-compose textarea { width: 100%; resize: vertical; min-height: 100px; padding: 14px; border: 1px solid var(--input-border); border-radius: 14px; background: white; color: var(--text-heading); line-height: 1.6; }
+.kasakay-compose > div { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 10px; }
+.kasakay-compose > p,.kasakay-caveat { color: var(--text-body); font-size: 12px; line-height: 1.7; }
+.kasakay-tools h2 { font-size: 23px; line-height: 1.4; }
+.kasakay-tools > p { color: var(--text-body); line-height: 1.7; }
+.kasakay-tools > a { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 18px 0; border-top: 1px solid var(--border); color: var(--sage-900); }
+.kasakay-tools > a span { grid-column: 1; color: var(--text-body); font-size: 13px; line-height: 1.6; }
+.kasakay-tools > a svg { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+.kasakay-route { padding: 16px; margin: 16px 0; border: 1px solid var(--border); border-radius: 16px; background: white; }
+.kasakay-route h2 { font-size: 19px; }
+@media (min-width: 1101px) and (max-width: 1400px) { .navigation-city { display: none; } }
+@media (max-width: 850px) { .kasakay-layout { grid-template-columns: 1fr; } }
+@media (max-width: 540px) {
+  .kasakay-page { padding: 24px 14px 40px; }
+  .kasakay-heading { gap: 12px; align-items: flex-start; }
+  .kasakay-heading img { width: 82px; height: 82px; }
+  .kasakay-heading .eyebrow { font-size: 9px; }
+  .kasakay-chat,.kasakay-tools { padding: 16px; border-radius: 18px; }
+  .kasakay-message { padding: 12px; }
+  .kasakay-message.user { margin-left: 12px; }
+  .kasakay-route { padding: 10px; }
+}

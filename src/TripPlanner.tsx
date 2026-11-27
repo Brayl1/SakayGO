@@ -22,14 +22,14 @@ const TripMap = lazy(() => import("./TripMap"));
 export default function TripPlanner() {
   const { data } = useCatalog();
   const location = useLocation();
-  const launchSearch = location.state as { originQuery?: string; destinationQuery?: string } | null;
+  const launchSearch = location.state as { originQuery?: string; destinationQuery?: string; origin?: Place; destination?: Place; passenger?: string } | null;
   const [originSearchQuery] = useState(() => ({ text: launchSearch?.originQuery || "", version: launchSearch?.originQuery ? 1 : 0 }));
-  const [origin, setOrigin] = useState<Place | null>(null),
-    [destination, setDestination] = useState<Place | null>(null),
+  const [origin, setOrigin] = useState<Place | null>(() => validLaunchPlace(launchSearch?.origin)),
+    [destination, setDestination] = useState<Place | null>(() => validLaunchPlace(launchSearch?.destination)),
     [picking, setPicking] = useState<"origin" | "destination" | null>(null),
     [maxWalk, setMaxWalk] = useState(500),
     [sort, setSort] = useState("walking"),
-    [passenger, setPassenger] = useState("regular"),
+    [passenger, setPassenger] = useState(() => ["regular", "student", "senior", "pwd"].includes(launchSearch?.passenger || "") ? launchSearch!.passenger! : "regular"),
     [planning, setPlanning] = useState<{
       result?: TripResult;
       selectedId?: string;
@@ -590,3 +590,7 @@ function validPoint(p: Point) {
 
 
 
+
+function validLaunchPlace(value: Place | undefined): Place | null {
+  return value && typeof value.label === "string" && value.label.length <= 300 && typeof value.source === "string" && Array.isArray(value.point) && value.point.length === 2 && validPoint(value.point) ? value : null;
+}

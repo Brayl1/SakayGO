@@ -153,3 +153,6 @@ Set a long random `SAKAYGO_ADMIN_TOKEN` in the server environment (local `.env` 
 Express saves catalog and reviewed verification data in `.local-admin/` when no remote store is configured. Vercel requires the existing persistent storage configuration before writes are enabled; local files are not durable there. Client-supplied owner headers do not grant access. Concurrent stale saves return a conflict instead of overwriting newer data.
 
 To add a route, enter its name, from/to areas and source reference, then upload geometry JSON such as `{"inbound":[[8.48,124.65],[8.49,124.65]]}` using your actual surveyed coordinates. Each supplied direction needs at least two `[latitude, longitude]` points in the CDO region. New routes start archived; select **Make visible**, then **Save changes** to publish. **Remove new route** cancels an unsaved addition; **Archive route** hides an existing record without deleting it. Website settings, backup restoration, and reviewed fare/code imports use the same authenticated save flow.
+## KaSakay assistant
+
+Ask KaSakay is available through desktop and mobile navigation. See [setup, privacy, free-tier activation and operational limits](docs/kasakay.md). AI is disabled until the server-only Gemini key and explicit free-tier activation flag are configured. The regular planner remains available independently.

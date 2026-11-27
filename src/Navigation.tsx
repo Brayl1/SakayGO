@@ -1,9 +1,10 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, LayoutGroup, motion, useReducedMotion } from "motion/react";
 import { ArrowUpRight, BusFront, MapPin, Menu, Settings2, X } from "lucide-react";
 
 const links = [
+  { to: "/kasakay", label: "Ask KaSakay" },
   { to: "/planner", label: "Route Planner" },
   { to: "/explore", label: "Explore Routes" },
   { to: "/codes", label: "Jeepney Codes" },

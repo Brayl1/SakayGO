@@ -5,7 +5,8 @@
   "outputDirectory": "dist/client",
   "functions": {
     "api/index.mjs": {
-      "includeFiles": "public/data/**"
+      "includeFiles": "public/data/**",
+      "maxDuration": 30
     }
   },
   "routes": [

@@ -46,9 +46,11 @@ function Breakdown({ value }: { value: FareBreakdown }) {
 export default function FareCard({
   trip,
   passenger,
+  breakdownId = "fare-breakdown",
 }: {
   trip: Trip;
   passenger: string;
+  breakdownId?: string;
 }) {
   const [expanded, setExpanded] = useState(false),
     ref = trip.referenceFare;
@@ -138,14 +140,14 @@ export default function FareCard({
       )}
       <button
         aria-expanded={expanded}
-        aria-controls="fare-breakdown"
+        aria-controls={breakdownId}
         onClick={() => setExpanded((v) => !v)}
       >
         View Fare Breakdown <ChevronDown size={15} />
       </button>
       {expanded && (
         <div
-          id="fare-breakdown"
+          id={breakdownId}
           className="fare-breakdown"
           data-itinerary-id={trip.id}
         >

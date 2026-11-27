@@ -5,6 +5,7 @@ import { Info } from "lucide-react";
 import Navigation from "./Navigation";
 import { CatalogProvider, useCatalog } from "./CatalogContext";
 import CatalogPlanner, { CatalogDirectory, CatalogDetail } from "./Catalog";
+const KaSakay = lazy(() => import("./KaSakay"));
 const Admin = lazy(() => import("./Admin"));
 const Guide = lazy(() => import("./Guide"));
 const TripPlanner = lazy(() => import("./TripPlanner"));
@@ -56,6 +57,7 @@ function Shell() {
         >
           <Routes>
             <Route path="/" element={<Welcome />} />
+            <Route path="/kasakay" element={<KaSakay />} />
             <Route path="/planner" element={<TripPlanner />} />
             <Route path="/network" element={<CatalogPlanner />} />
             <Route path="/codes" element={<CodeResearch />} />

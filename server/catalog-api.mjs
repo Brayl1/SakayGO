@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { createKaSakay } from "./kasakay.mjs";
 import { existsSync } from "node:fs";
 import { createHash, timingSafeEqual } from "node:crypto";
 import { createHandler } from "../worker/handler.mjs";
@@ -80,8 +81,10 @@ export function createCatalogApi(
       return task;
     },
   };
-  return async (request) => {
+  const assistant = createKaSakay({ env, api: (request) => dispatch(request) });
+  const dispatch = async (request) => {
     const path = new URL(request.url).pathname;
+    if (path === "/api/kasakay") return assistant(request);
     // Only a configured server secret grants access. Client identity headers are never trusted.
     const supplied = request.headers.get("authorization") || "";
     const expected = env.SAKAYGO_ADMIN_TOKEN
@@ -141,4 +144,6 @@ export function createCatalogApi(
       WALK_ROUTER_TOKEN: env.WALK_ROUTER_TOKEN,
     });
   };
+
+  return dispatch;
 }

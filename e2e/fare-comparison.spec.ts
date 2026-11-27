@@ -1,4 +1,4 @@
-﻿import { test, expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 test("vehicle comparison keeps the selected fare and breakdown consistent", async ({ page }, info) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/planner");
@@ -17,7 +17,7 @@ test("vehicle comparison keeps the selected fare and breakdown consistent", asyn
   await card.getByRole("button", { name: "View Fare Breakdown" }).click();
   await expect(card.locator(".reference-breakdown")).toContainText("If Modern");
   await expect(card.locator(".reference-breakdown")).not.toContainText("If Traditional");
-  expect(await card.evaluate(el => getComputedStyle(el).backgroundColor)).toBe("rgb(237, 245, 239)");
+  expect(await card.evaluate(el => getComputedStyle(el).backgroundColor)).toBe("rgb(227, 233, 218)");
   await card.screenshot({ path: `.local-admin/fare-${info.project.name}.png` });
   await card.getByRole("button", { name: "Traditional", exact: true }).click();
   await expect(card.locator(".conditional-fares")).toContainText("If Traditional");

@@ -5,9 +5,9 @@ test("refreshed home and navigation work across viewports", async ({ page }, inf
   page.on("pageerror", error => errors.push(error.message));
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Less guessing. More going." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sakay na. Know your jeepney." })).toBeVisible();
   await page.evaluate(() => document.fonts.ready);
-  await expect(page.locator(".route-count")).toContainText("76");
+  await expect(page.locator(".hero-route-badge")).toContainText("76");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: `.local-admin/ui-${info.project.name}.png`, fullPage: true, animations: "disabled" });
   const menu = page.locator(".menu-toggle");

@@ -147,7 +147,7 @@ app.post("/api/plan", async (req, res) => {
 });
 const catalogApi = createCatalogApi();
 const currentApiPaths = new Set([
-  "/api/session", "/api/catalog", "/api/fare-policies/current",
+  "/api/kasakay", "/api/session", "/api/catalog", "/api/fare-policies/current",
   "/api/fare-reference", "/api/route-codes", "/api/places",
   "/api/trips/plan", "/api/test-cases",
 ]);

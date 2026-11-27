@@ -16,7 +16,7 @@ test("welcome → trip → animated route → alternatives → edit and reset", 
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: "Less guessing. More going." }),
+    page.getByRole("heading", { name: "Sakay na. Know your jeepney." }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Plan a trip", exact: true }).click();
   await expect(page).toHaveURL(/planner/);

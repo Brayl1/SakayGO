@@ -9,6 +9,8 @@ import { createCatalogApi } from "./catalog-api.mjs";
 export const app = express();
 app.disable("x-powered-by");
 app.use(helmet());
+app.use("/api/admin/state", express.json({ limit: 6000000 }));
+app.use("/api/admin/verification", express.json({ limit: 2000000 }));
 app.use(express.json({ limit: "16kb" }));
 app.use(
   "/api",
@@ -153,10 +155,10 @@ app.use(async (req, res, next) => {
   if (!currentApiPaths.has(req.path) && !req.path.startsWith("/api/catalog/") && !req.path.startsWith("/api/admin/"))
     return next();
   const headers = new Headers();
-  for (const name of ["content-type", "if-match", "origin"])
+  for (const name of ["content-type", "if-match", "origin", "authorization"])
     if (req.get(name)) headers.set(name, req.get(name)!);
   headers.set("cf-connecting-ip", req.socket.remoteAddress || "local");
-  const response = await catalogApi(new Request(`http://127.0.0.1:3001${req.originalUrl}`, {
+  const response = await catalogApi(new Request(`${req.protocol}://${req.get("host")}${req.originalUrl}`, {
     method: req.method,
     headers,
     ...(!["GET", "HEAD"].includes(req.method) && req.body !== undefined

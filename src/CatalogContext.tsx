@@ -1,4 +1,5 @@
-﻿import {
+import { adminFetch } from "./adminAccess";
+import {
   createContext,
   useCallback,
   useContext,
@@ -42,9 +43,13 @@ export function CatalogProvider({ children }: { children: ReactNode }) {
       const response = await fetch("/api/catalog", { cache: "no-store" });
       if (!response.ok) throw new Error();
       const value = await response.json();
-      if (!Array.isArray(value.routes) || !value.settings ||
-          typeof value.settings.maintenance !== "boolean" ||
-          typeof value.revision !== "number" || typeof value.updatedAt !== "string")
+      if (
+        !Array.isArray(value.routes) ||
+        !value.settings ||
+        typeof value.settings.maintenance !== "boolean" ||
+        typeof value.revision !== "number" ||
+        typeof value.updatedAt !== "string"
+      )
         throw new Error("Invalid catalog response");
       setData(value);
     } catch {
@@ -54,34 +59,46 @@ export function CatalogProvider({ children }: { children: ReactNode }) {
     }
   }, []);
   useEffect(() => {
-  void reload();
+    void reload();
 
-  const controller = new AbortController();
-  fetch("/api/session", { signal: controller.signal })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Session endpoint unavailable");
-      }
-      return response.json();
-    })
-    .then((session) => {
-      if (typeof session.admin !== "boolean" || typeof session.signedIn !== "boolean")
-        throw new Error("Invalid session response");
-      setAdmin(session.admin === true);
-      setSessionError("");
-    })
-    .catch(() => {
-      if (controller.signal.aborted) return;
-      setAdmin(false);
-      setSessionError("Account status could not load. Reload to retry; admin access is unavailable.");
-    });
-  return () => controller.abort();
-}, [reload]);
+    const controller = new AbortController();
+    const session = () =>
+      adminFetch("/api/session", { signal: controller.signal })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Session endpoint unavailable");
+          }
+          return response.json();
+        })
+        .then((session) => {
+          if (
+            typeof session.admin !== "boolean" ||
+            typeof session.signedIn !== "boolean"
+          )
+            throw new Error("Invalid session response");
+          setAdmin(session.admin === true);
+          setSessionError("");
+        })
+        .catch(() => {
+          if (controller.signal.aborted) return;
+          setAdmin(false);
+          setSessionError(
+            "Account status could not load. Reload to retry; admin access is unavailable.",
+          );
+        });
+    void session();
+    window.addEventListener("sakaygo-session", session);
+    return () => {
+      controller.abort();
+      window.removeEventListener("sakaygo-session", session);
+    };
+  }, [reload]);
   return (
-    <CatalogContext.Provider value={{ data, loading, error, reload, admin, sessionError }}>
+    <CatalogContext.Provider
+      value={{ data, loading, error, reload, admin, sessionError }}
+    >
       {children}
     </CatalogContext.Provider>
   );
 }
 export const useCatalog = () => useContext(CatalogContext);
-

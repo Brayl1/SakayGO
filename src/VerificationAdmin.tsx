@@ -1,3 +1,4 @@
+import { AdminAccess, AdminSignOut, adminFetch } from "./adminAccess";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FileUp, Save, ShieldCheck } from "lucide-react";
@@ -12,13 +13,18 @@ export default function VerificationAdmin() {
     [events, setEvents] = useState<
       { at: string; actor: string; action: string }[]
     >([]);
+  const [accessKey, setAccessKey] = useState(false);
+  const original = useRef("");
   const etag = useRef("");
   const file = useRef<HTMLInputElement>(null);
   async function load() {
     setError("");
     try {
-      const res = await fetch("/api/admin/verification");
+      const res = await adminFetch("/api/admin/verification");
       if (res.status === 403) {
+        const body = await res.json();
+        setAccessKey(body.auth === "access-key");
+        setError(body.error || "Owner access required.");
         setDenied(true);
         return;
       }
@@ -36,7 +42,17 @@ export default function VerificationAdmin() {
           2,
         ),
       );
-      setEvents(data.events);
+      original.current = JSON.stringify(
+        {
+          crosswalks: data.crosswalks,
+          farePolicies: data.farePolicies,
+          vehicleClassifications: data.vehicleClassifications || [],
+        },
+        null,
+        2,
+      );
+      setDenied(false);
+      setEvents(data.events || []);
       setReady(true);
       setApprove(false);
     } catch (e) {
@@ -46,6 +62,16 @@ export default function VerificationAdmin() {
   useEffect(() => {
     void load();
   }, []);
+  useEffect(() => {
+    const before = (event: BeforeUnloadEvent) => {
+      if (ready && text !== original.current) {
+        event.preventDefault();
+        event.returnValue = "";
+      }
+    };
+    window.addEventListener("beforeunload", before);
+    return () => window.removeEventListener("beforeunload", before);
+  }, [ready, text]);
   async function save() {
     setError("");
     setMessage("");
@@ -53,6 +79,7 @@ export default function VerificationAdmin() {
     try {
       draft = JSON.parse(text);
       if (
+        !draft ||
         !Array.isArray(draft.crosswalks) ||
         !Array.isArray(draft.farePolicies)
       )
@@ -63,7 +90,7 @@ export default function VerificationAdmin() {
     }
     setSaving(true);
     try {
-      const res = await fetch("/api/admin/verification", {
+      const res = await adminFetch("/api/admin/verification", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -83,6 +110,19 @@ export default function VerificationAdmin() {
       setSaving(false);
     }
   }
+  if (denied && accessKey)
+    return (
+      <div className="content-page admin-denied">
+        <h1>Administrator sign in</h1>
+        <p>{error}</p>
+        <AdminAccess
+          onSuccess={() => {
+            setDenied(false);
+            void load();
+          }}
+        />
+      </div>
+    );
   if (denied)
     return (
       <div className="content-page">
@@ -102,6 +142,7 @@ export default function VerificationAdmin() {
         <ShieldCheck size={16} /> EXPLICIT EVIDENCE REVIEW
       </div>
       <h1>Codes & fare policies</h1>
+      <AdminSignOut />
       <p>
         Import an authoritative crosswalk or CDO-applicable matrix. Nothing is
         verified by matching names, roads or research descriptions.
@@ -135,16 +176,32 @@ export default function VerificationAdmin() {
           accept="application/json,.json"
           onChange={async (e) => {
             const f = e.target.files?.[0];
+            e.target.value = "";
             if (f) {
               if (f.size > 2000000) {
                 setError("Import exceeds 2 MB limit.");
                 return;
               }
-              setText(await f.text());
+              try {
+                const imported = await f.text();
+                const parsed = JSON.parse(imported);
+                if (
+                  !parsed ||
+                  !Array.isArray(parsed.crosswalks) ||
+                  !Array.isArray(parsed.farePolicies)
+                )
+                  throw new Error(
+                    "Expected crosswalks and farePolicies arrays.",
+                  );
+                setText(imported);
+                setError("");
+              } catch (error) {
+                setError((error as Error).message);
+                return;
+              }
               setApprove(false);
               setMessage("Draft loaded. Review before saving.");
             }
-            e.target.value = "";
           }}
         />
         <label className="json-editor-label">
@@ -156,6 +213,7 @@ export default function VerificationAdmin() {
             onChange={(e) => {
               setText(e.target.value);
               setApprove(false);
+              setMessage("");
             }}
             spellCheck={false}
           />
@@ -220,4 +278,3 @@ export default function VerificationAdmin() {
     </div>
   );
 }
-

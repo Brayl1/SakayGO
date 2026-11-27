@@ -1,3 +1,4 @@
+import { AdminAccess, AdminSignOut, adminFetch } from "./adminAccess";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
@@ -45,6 +46,7 @@ export default function Admin() {
     [saving, setSaving] = useState(false),
     [loading, setLoading] = useState(true),
     [denied, setDenied] = useState(false);
+  const [accessKey, setAccessKey] = useState(false);
   const etag = useRef("");
   const snapshot = useRef<CatalogState | undefined>(undefined);
   const geometryInput = useRef<HTMLInputElement>(null);
@@ -53,8 +55,11 @@ export default function Admin() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/admin/state", { cache: "no-store" });
+      const res = await adminFetch("/api/admin/state", { cache: "no-store" });
       if (res.status === 403) {
+        const body = await res.json();
+        setAccessKey(body.auth === "access-key");
+        setError(body.error || "Owner access required.");
         setDenied(true);
         return;
       }
@@ -106,11 +111,28 @@ export default function Admin() {
   }
   async function save() {
     if (!state) return;
+    for (const r of state.routes) {
+      const missing = (["name", "from", "to", "source"] as const).filter(
+        (key) => !r[key].trim(),
+      );
+      if (
+        missing.length ||
+        (!r.geometry &&
+          !snapshot.current?.routes.some((saved) => saved.id === r.id))
+      ) {
+        setSelected(r.id);
+        setTab("routes");
+        setError(
+          `${r.name || r.id}: ${missing.length ? "Fill in " + missing.join(", ") + "." : "Upload directional geometry before saving a new route."}`,
+        );
+        return;
+      }
+    }
     setSaving(true);
     setError("");
     setMessage("");
     try {
-      const res = await fetch("/api/admin/state", {
+      const res = await adminFetch("/api/admin/state", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -135,6 +157,11 @@ export default function Admin() {
   function discard() {
     if (snapshot.current) {
       setState(structuredClone(snapshot.current));
+      setSelected((id) =>
+        snapshot.current?.routes.some((r) => r.id === id)
+          ? id
+          : snapshot.current?.routes[0]?.id || "",
+      );
       setDirty(false);
       setError("");
       setMessage("Unsaved changes discarded.");
@@ -145,6 +172,10 @@ export default function Admin() {
       if (file.size > 1500000)
         throw new Error("Geometry file must be smaller than 1.5 MB.");
       const value = JSON.parse(await file.text());
+      if (!value || typeof value !== "object" || Array.isArray(value))
+        throw new Error(
+          "Choose a geometry object with inbound or outbound coordinates.",
+        );
       const dirs = Object.keys(value);
       if (
         !dirs.length ||
@@ -182,7 +213,12 @@ export default function Admin() {
     try {
       if (file.size > 6000000) throw new Error("Backup exceeds 6 MB limit.");
       const v = JSON.parse(await file.text());
-      if (!Array.isArray(v.routes) || !v.settings || v.routes.length > 250)
+      if (
+        !v ||
+        !Array.isArray(v.routes) ||
+        !v.settings ||
+        v.routes.length > 250
+      )
         throw new Error("Choose a SakayGo configuration backup.");
       if (
         !["headline", "description", "announcement"].every(
@@ -217,7 +253,11 @@ export default function Admin() {
         throw new Error(
           "Backup contains malformed settings or route fields. No changes were imported.",
         );
-      setState(v);
+      setState({
+        ...v,
+        revision: state?.revision || 0,
+        updatedAt: state?.updatedAt || "",
+      });
       setSelected(v.routes[0]?.id || "");
       setDirty(true);
       setMessage(
@@ -241,6 +281,19 @@ export default function Admin() {
     a.click();
     URL.revokeObjectURL(url);
   }
+  if (denied && accessKey)
+    return (
+      <div className="content-page admin-denied">
+        <h1>Administrator sign in</h1>
+        <p>{error}</p>
+        <AdminAccess
+          onSuccess={() => {
+            setDenied(false);
+            void load();
+          }}
+        />
+      </div>
+    );
   if (denied)
     return (
       <div className="content-page admin-denied">
@@ -291,8 +344,11 @@ export default function Admin() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <Link className="verification-link" to="/admin/verification">Manage reviewed code crosswalks & fare policies →</Link>
+      <Link className="verification-link" to="/admin/verification">
+        Manage reviewed code crosswalks & fare policies →
+      </Link>
       <fieldset className="admin-fields" disabled={saving}>
+        <AdminSignOut />
         <div className="admin-top">
           <div>
             <div className="eyebrow">
@@ -416,11 +472,16 @@ export default function Admin() {
                   <option value="visible">Visible</option>
                   <option value="archived">Archived</option>
                   <option value="under_review">Under review</option>
-                        <option value="approved">Approved</option>
+                  <option value="approved">Verified by owner</option>
                   <option value="unverified">Unverified</option>
                 </select>
                 <button
                   onClick={() => {
+                    if (state.routes.length >= 250) {
+                      setError("The catalog supports up to 250 routes.");
+                      return;
+                    }
+                    setMessage("");
                     const r = emptyRoute();
                     setState((s) =>
                       s ? { ...s, routes: [r, ...s.routes] } : s,
@@ -447,9 +508,11 @@ export default function Admin() {
                       <strong>{r.name}</strong>
                       <small>
                         {r.visible ? "Visible" : "Archived"} ·{" "}
-                        {r.status === "approved" ? "Approved" : r.status === "under_review"
-                          ? "Under review"
-                          : "Unverified"}
+                        {r.status === "approved"
+                          ? "Verified by owner"
+                          : r.status === "under_review"
+                            ? "Under review"
+                            : "Unverified"}
                       </small>
                     </div>
                   </button>
@@ -473,6 +536,29 @@ export default function Admin() {
                       {route.visible ? "Archive route" : "Make visible"}
                     </button>
                   </div>
+                  {!snapshot.current?.routes.some(
+                    (saved) => saved.id === route.id,
+                  ) && (
+                    <button
+                      className="secondary"
+                      onClick={() => {
+                        const remaining = state.routes.filter(
+                          (r) => r.id !== route.id,
+                        );
+                        setState({ ...state, routes: remaining });
+                        setSelected(remaining[0]?.id || "");
+                        setDirty(true);
+                        setError("");
+                      }}
+                    >
+                      Remove new route
+                    </button>
+                  )}
+                  <p>
+                    Route name, from area, to area, source reference and
+                    geometry are required. New routes start archived; choose
+                    Make visible to publish.
+                  </p>
                   <div className="form-grid">
                     <label className="wide">
                       Route name
@@ -510,7 +596,7 @@ export default function Admin() {
                       >
                         <option value="unverified">Unverified</option>
                         <option value="under_review">Under review</option>
-                        <option value="approved">Approved</option>
+                        <option value="approved">Verified by owner</option>
                       </select>
                     </label>
                     <label>
@@ -560,7 +646,7 @@ export default function Admin() {
                         value={route.roads.join("\n")}
                         onChange={(e) =>
                           patchRoute({
-                            roads: e.target.value.split("\n").filter(Boolean),
+                            roads: e.target.value.split("\n"),
                           })
                         }
                       />
@@ -572,7 +658,11 @@ export default function Admin() {
                       <p>
                         {route.geometry
                           ? "Custom geometry in this draft"
-                          : "Original source geometry preserved"}{" "}
+                          : snapshot.current?.routes.some(
+                                (saved) => saved.id === route.id,
+                              )
+                            ? "Original source geometry preserved"
+                            : "Geometry required before saving"}{" "}
                         · {route.directions.join(" / ")}
                       </p>
                       <small>
@@ -714,4 +804,3 @@ export default function Admin() {
     </motion.div>
   );
 }
-

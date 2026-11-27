@@ -144,3 +144,12 @@ Original edited source and test files are preserved under `.release-backups/2026
 ### Owner approval recorded November 25
 
 Following the owner's explicit approval, all 76 supplied catalog route records now have editorial status `approved` and review date `2026-11-25`. The route directory, detail pages, and admin controls display Approved; server validation preserves this status on save. This supersedes the earlier pending editorial approval note. Field verification, absent fare policies, and external deployment state remain separate.
+
+
+### Admin access on Express and Vercel
+
+Set a long random `SAKAYGO_ADMIN_TOKEN` in the server environment (local `.env` or Vercel environment settings), restart the server, and open `/admin`. Enter that key in the administrator sign-in form. Never prefix the key with `VITE_`. Sign out removes the key from this browser tab. The Sites owner login and explicitly enabled local preview owner mode continue to work separately.
+
+Express saves catalog and reviewed verification data in `.local-admin/` when no remote store is configured. Vercel requires the existing persistent storage configuration before writes are enabled; local files are not durable there. Client-supplied owner headers do not grant access. Concurrent stale saves return a conflict instead of overwriting newer data.
+
+To add a route, enter its name, from/to areas and source reference, then upload geometry JSON such as `{"inbound":[[8.48,124.65],[8.49,124.65]]}` using your actual surveyed coordinates. Each supplied direction needs at least two `[latitude, longitude]` points in the CDO region. New routes start archived; select **Make visible**, then **Save changes** to publish. **Remove new route** cancels an unsaved addition; **Archive route** hides an existing record without deleting it. Website settings, backup restoration, and reviewed fare/code imports use the same authenticated save flow.

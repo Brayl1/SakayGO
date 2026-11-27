@@ -74,3 +74,24 @@ it("surfaces misconfigured storage instead of silently switching datasets", asyn
   expect(response.status).toBe(503);
   expect(await response.text()).not.toContain("stack");
 });
+
+it("forwards access keys and accepts full admin payloads through Express on its actual origin", async () => {
+  const previous = process.env.SAKAYGO_ADMIN_TOKEN;
+  process.env.SAKAYGO_ADMIN_TOKEN = "express-admin-regression-key";
+  try {
+    const headers = { Authorization: "Bearer express-admin-regression-key" };
+    expect(await (await fetch(base + "/api/session", { headers })).json()).toEqual({ admin: true, signedIn: true });
+    const response = await fetch(base + "/api/admin/state", { headers });
+    expect(response.status).toBe(200);
+    const draft = await response.json();
+    draft.routes.push(draft.routes[0]); // Invalid duplicate: exercises validation without modifying real data.
+    const body = JSON.stringify(draft);
+    expect(Buffer.byteLength(body)).toBeGreaterThan(16384);
+    const saved = await fetch(base + "/api/admin/state", { method: "PUT", headers: { ...headers, Origin: base, "Content-Type": "application/json", "If-Match": response.headers.get("etag")! }, body });
+    expect(saved.status).toBe(400);
+    expect((await saved.json()).error).toContain("Invalid settings or route data");
+  } finally {
+    if (previous === undefined) delete process.env.SAKAYGO_ADMIN_TOKEN;
+    else process.env.SAKAYGO_ADMIN_TOKEN = previous;
+  }
+});

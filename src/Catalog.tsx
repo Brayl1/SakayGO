@@ -264,7 +264,7 @@ export default function CatalogPlanner() {
                     <strong>{r.name}</strong>
                     <small>
                       {r.directions.length} directions ·{" "}
-                      {r.status === "approved" ? "Approved" : r.status === "under_review"
+                      {r.status === "approved" ? "Verified by owner" : r.status === "under_review"
                         ? "Under review"
                         : "Unverified"}
                     </small>
@@ -444,7 +444,7 @@ export function CatalogDirectory() {
                     <BusFront size={20} /> ROUTE {r.id}
                   </span>
                   <span className="demo-pill">
-                    {r.status === "approved" ? "Approved" : r.status === "under_review"
+                    {r.status === "approved" ? "Verified by owner" : r.status === "under_review"
                       ? "Under review"
                       : "Unverified"}
                   </span>
@@ -582,7 +582,7 @@ export function CatalogDetail() {
                 Source updated: {route.sourceUpdated || "Unknown"}
                 <br />
                 Review status:{" "}
-                {route.status === "approved" ? "Approved" : route.status === "under_review"
+                {route.status === "approved" ? "Verified by owner" : route.status === "under_review"
                   ? "Under review"
                   : "Unverified"}
                 <br />

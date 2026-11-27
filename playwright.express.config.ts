@@ -2,8 +2,8 @@ import { defineConfig } from "@playwright/test";
 import base from "./playwright.config";
 export default defineConfig({
   ...base,
-  // Express intentionally has no authenticated owner session. The existing
-  // owner-write test belongs to the separate trusted/local-owner preview.
+  // This suite runs without an administrator key. The owner-write test uses
+  // the separate trusted/local-owner preview.
   grepInvert: /owner saves a website announcement/,
   use: { ...base.use, baseURL: "http://127.0.0.1:5173" },
   webServer: [

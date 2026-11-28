@@ -19,3 +19,4 @@ import "./refresh.css";
 
 
 import "./mobile-ride.css";
+import "./polish.css";

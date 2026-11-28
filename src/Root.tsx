@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig, motion } from "motion/react";
+import useReducedMotionNow from "./useReducedMotionNow";
 import { Info } from "lucide-react";
 import KaSakayLoader from "./KaSakayLoader";
 import Navigation from "./Navigation";
@@ -17,6 +18,7 @@ const VerificationAdmin = lazy(() => import("./VerificationAdmin"));
 function Shell() {
   const { data, admin, sessionError } = useCatalog();
   const location = useLocation();
+  const reduced = useReducedMotionNow();
   return (
     <>
       <a className="skip" href="#main">
@@ -55,6 +57,13 @@ function Shell() {
             <KaSakayLoader />
           }
         >
+          <motion.div
+            key={location.pathname}
+            className="page-transition"
+            initial={reduced ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ opacity: { duration: 0.2, ease: "easeOut" }, y: { type: "spring", stiffness: 300, damping: 32, restDelta: 0.5 } }}
+          >
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="/kasakay" element={<KaSakay />} />
@@ -82,6 +91,7 @@ function Shell() {
               }
             />
           </Routes>
+          </motion.div>
         </Suspense>
       </main>
       {location.pathname !== "/kasakay" && <KaSakayWidget />}

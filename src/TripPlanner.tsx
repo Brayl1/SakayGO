@@ -17,6 +17,7 @@ import type { Point } from "../shared/model";
 import type { Place, TripResult } from "../shared/trip-types";
 import KaSakayLoader, { KaSakaySpinner } from "./KaSakayLoader";
 import PlaceInput from "./PlaceInput";
+import SheetHandle from "./SheetHandle";
 import TripResults from "./TripResults";
 import { useCatalog } from "./CatalogContext";
 import { requestDeviceLocation } from "./deviceLocation";
@@ -255,6 +256,7 @@ export default function TripPlanner() {
           "trip-workspace" + (view === "results" ? " has-results" : "")
         }
       >
+        <SheetHandle />
         <aside className="trip-panel" ref={panel}>
           <AnimatePresence mode="wait" initial={false}>
             {view === "results" && result && trip && origin && destination ? (

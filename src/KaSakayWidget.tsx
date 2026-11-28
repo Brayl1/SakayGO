@@ -1,11 +1,27 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { LayoutGroup, motion, useReducedMotion } from "motion/react";
 import KaSakayLoader from "./KaSakayLoader";
 import { House, Map, Route, X } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./kasakay-widget.css";
 
 const KaSakay = lazy(() => import("./KaSakay"));
+
+const tabs = [
+  { to: "/", label: "Home", icon: House, end: true },
+  { to: "/planner", label: "Planner", icon: Map, end: false },
+  { to: "/explore", label: "Routes", icon: Route, end: false },
+];
+
+function TabLink({ to, label, icon: Icon, end, reduced }: (typeof tabs)[number] & { reduced: boolean }) {
+  return <NavLink to={to} end={end}>
+    {({ isActive }) => <>
+      {isActive && <motion.span className="mobile-tab-indicator" layoutId="mobile-tab-indicator" transition={reduced ? { duration: 0 } : { type: "spring", stiffness: 520, damping: 38 }} />}
+      <motion.span className="mobile-tab-icon" animate={isActive && !reduced ? { y: [0, -3, 0] } : { y: 0 }} transition={{ duration: 0.35 }}><Icon size={20} strokeWidth={isActive ? 2.4 : 2} /></motion.span>
+      <span>{label}</span>
+    </>}
+  </NavLink>;
+}
 
 export default function KaSakayWidget() {
   const reduced = useReducedMotion();
@@ -73,12 +89,11 @@ export default function KaSakayWidget() {
       <img src="/images/kasakay.png" alt="" width="64" height="64" />
       <span>Ask KaSakay</span>
     </button>
-    {(location.pathname === "/" || location.pathname === "/planner") && <nav className="mobile-only mobile-bottom-tabs" aria-label="Quick navigation">
-      <NavLink to="/" end><House size={20} /><span>Home</span></NavLink>
-      <NavLink to="/planner"><Map size={20} /><span>Planner</span></NavLink>
-      <button ref={mobileLauncher} type="button" aria-label="Open KaSakay assistant" aria-haspopup="dialog" aria-expanded={opened} aria-controls="kasakay-panel" onClick={() => { setStarted(true); setOpened(true); dialog.current?.showModal(); closeButton.current?.focus(); }}><span className="mobile-kasakay-icon"><img src="/images/kasakay.png" alt="" width="36" height="36" /></span><span>KaSakay</span></button>
-      <NavLink to="/explore"><Route size={20} /><span>Routes</span></NavLink>
-    </nav>}
+    {!location.pathname.startsWith("/admin") && <LayoutGroup id="mobile-tabs"><nav className="mobile-only mobile-bottom-tabs" aria-label="Quick navigation">
+      {tabs.slice(0, 2).map((tab) => <TabLink key={tab.to} {...tab} reduced={!!reduced} />)}
+      <motion.button whileTap={reduced ? undefined : { scale: 0.92 }} ref={mobileLauncher} type="button" aria-label="Open KaSakay assistant" aria-haspopup="dialog" aria-expanded={opened} aria-controls="kasakay-panel" onClick={() => { setStarted(true); setOpened(true); dialog.current?.showModal(); closeButton.current?.focus(); }}><span className="mobile-kasakay-icon"><img src="/images/kasakay.png" alt="" width="36" height="36" /></span><span>KaSakay</span></motion.button>
+      {tabs.slice(2).map((tab) => <TabLink key={tab.to} {...tab} reduced={!!reduced} />)}
+    </nav></LayoutGroup>}
     <dialog ref={dialog} id="kasakay-panel" className="kasakay-panel" aria-labelledby="kasakay-panel-title"
       onKeyDown={(event) => {
         if (event.key !== "Tab") return;

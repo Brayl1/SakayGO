@@ -94,26 +94,28 @@ export default function Guide({ page }: { page: "fares" | "how" | "about" }) {
                 Reference effective date: {reference.effective_date}. These are
                 not verified route-specific CDO fares.
               </p>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Vehicle</th>
-                    <th>First kilometers</th>
-                    <th>Base reference</th>
-                    <th>Per succeeding km</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {reference.rules.map((r) => (
-                    <tr key={r.vehicle}>
-                      <td>{r.vehicle}</td>
-                      <td>{r.base_distance_km} km</td>
-                      <td>₱{r.base_fare_php.toFixed(2)}</td>
-                      <td>₱{r.additional_per_km_php.toFixed(2)}</td>
+              <div className="policy-table" role="region" aria-label="National fare reference" tabIndex={0}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Vehicle</th>
+                      <th>First kilometers</th>
+                      <th>Base reference</th>
+                      <th>Per succeeding km</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {reference.rules.map((r) => (
+                      <tr key={r.vehicle}>
+                        <td>{r.vehicle}</td>
+                        <td>{r.base_distance_km} km</td>
+                        <td>₱{r.base_fare_php.toFixed(2)}</td>
+                        <td>₱{r.additional_per_km_php.toFixed(2)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <p>
                 The supplied examples apply a single 20% student/senior/PWD
                 discount and nearest ₱0.25 half-up rounding. Local eligibility

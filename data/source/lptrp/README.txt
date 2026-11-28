@@ -11,7 +11,9 @@ Import:
   node --env-file=.env scripts/import-lptrp.mjs data/source/lptrp/cdo_lptrp_routes.json --supabase [--write --backup <dir>]
 
 Notes:
-- The source repository has no license file, so reuse permission is not stated.
+- Reuse permission: the source repository has no license file; its owner (jrequiroso)
+  approved SakayGo's use of the data on 2026-11-28 (permission reported by the SakayGo owner).
+  Credit is shown on the About page.
 - Route plan paths are reference alignments; actual jeepney operations may differ.
 - "stops" are route plan reference points (areas, markets, terminals), not designated stops.
 - Routes marked not_yet_operational are shown but never offered by the trip planner.

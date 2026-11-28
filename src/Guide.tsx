@@ -158,24 +158,31 @@ export default function Guide({ page }: { page: "fares" | "how" | "about" }) {
             SakayGo: A Web-Based Jeepney Route Navigation and Fare Estimation
             System for Cagayan de Oro City.
           </p>
-          <h2>The supplied route dataset</h2>
+          <h2>Where the route data comes from</h2>
           <p>
-            The original dataset contains 76 route records and 152 directional
-            line features exported from a user-supplied SakayCDO JavaScript
-            bundle. Its export timestamp is 2026-08-04 06:28:21. The current
-            directory contains {data.routes.length} visible records.
+            Route paths, street lists, landmarks and route status come from the{" "}
+            <a href="https://sites.google.com/view/cdo-routes-lptrp/district-1" target="_blank" rel="noreferrer">
+              CDO Local Public Transport Route Plan (LPTRP)
+            </a>
+            , as organised by{" "}
+            <a href="https://github.com/jrequiroso/cdo-jeepney-routes" target="_blank" rel="noreferrer">
+              jrequiroso/cdo-jeepney-routes
+            </a>{" "}
+            and used with the maintainer&apos;s permission. Thank you for making
+            this data easier to use. The directory contains {data.routes.length}{" "}
+            visible routes.
           </p>
           <p>
-            The JSON coordinates, GeoJSON geometries and CSV index were
-            cross-checked during import. Original coordinate precision and
-            direction labels are preserved. That structural check does not
-            independently verify transport operations.
+            Each route keeps its inbound and outbound paths exactly as supplied.
+            Routes the plan marks as not yet operational are shown with a label
+            and are never suggested by the trip planner. The route plan
+            describes planned alignments; actual jeepney operations may still
+            differ.
           </p>
           <h2>What remains unverified</h2>
           <p>
             Route accuracy, current operation, boarding locations, signboards,
-            schedules, fare rules and reuse permission have not been
-            independently verified. Shape vertices and line endpoints are not
+            schedules and fare rules have not been independently verified. Shape vertices and line endpoints are not
             designated boarding stops. Catalog records are approved by the project owner. Editorial approval is recorded separately from independent field verification.
           </p>
           <h2>Responsible administration</h2>

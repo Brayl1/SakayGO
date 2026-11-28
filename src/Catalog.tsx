@@ -635,7 +635,7 @@ export function CatalogDetail() {
                 <br />
                 Independent verification: Not completed
                 <br />
-                Reuse permission: Not independently verified
+                Reuse permission: Used with the dataset maintainer&apos;s permission
               </p>
               <Link to="/about">About this dataset</Link>
             </>

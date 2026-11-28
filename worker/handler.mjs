@@ -7,6 +7,7 @@ import {
 } from "../shared/trips.mjs";
 import { readVerification, verificationEndpoint } from "./verification.mjs";
 import { withConfiguredStorage } from "./supabase-store.mjs";
+import { buildGazetteer, onlineQuery, searchGazetteer } from "../shared/places.mjs";
 
 // Route states from the CDO LPTRP. Routes that are not yet operational stay
 // visible in the directory (clearly labelled) but are never offered as trips.
@@ -209,6 +210,8 @@ export function createHandler({
   fareReference = null,
 }) {
   const baseIds = new Set(baseRoutes.map((r) => r.id));
+  // Local names people actually use ("cogon", "ketkai", "agora"), from route data.
+  const gazetteer = buildGazetteer(baseRoutes);
   const geometryCache = new Map(),
     indexed = new WeakMap(),
     placeCache = new Map(),
@@ -334,7 +337,8 @@ export function createHandler({
         }
         if (p === "/api/places" && request.method === "GET") {
           const q = (url.searchParams.get("q") || "").trim();
-          if (q.length < 3 || q.length > 120)
+          // Two-letter searches are allowed only for known nicknames ("xu", "cu").
+          if ((q.length < 3 && onlineQuery(q) === q) || q.length < 2 || q.length > 120)
             return response(
               { error: "Search text must be 3–120 characters." },
               400,
@@ -342,8 +346,14 @@ export function createHandler({
           const cached = placeCache.get(q.toLowerCase());
           if (cached && Date.now() - cached.at < 600000)
             return response(cached.result);
+          const local = searchGazetteer(gazetteer, q, 3);
+          const localOnly = () =>
+            response({
+              places: local,
+              attribution: "Place search: SakayGo route data (CDO LPTRP)",
+            });
           if (!permitted(request, "places", 20))
-            return response(
+            return local.length ? localOnly() : response(
               {
                 error:
                   "Place search limit reached. Wait a minute or pick points on the map.",
@@ -362,7 +372,7 @@ export function createHandler({
               },
               503,
             );
-          provider.searchParams.set("q", q);
+          provider.searchParams.set("q", onlineQuery(q));
           provider.searchParams.set("limit", "5");
           provider.searchParams.set("bbox", "124.2,8.1,125,8.8");
           provider.searchParams.set("lat", "8.48");
@@ -390,9 +400,17 @@ export function createHandler({
                 source: "Photon / OpenStreetMap",
               }))
               .filter((p) => p.label && validPoint(p.point))
-              .slice(0, 5);
+              // Skip online results that duplicate a local place (within ~150 m).
+              .filter(
+                (p) =>
+                  !local.some(
+                    (l) =>
+                      Math.abs(l.point[0] - p.point[0]) < 0.0014 &&
+                      Math.abs(l.point[1] - p.point[1]) < 0.0014,
+                  ),
+              );
             const result = {
-              places,
+              places: [...local, ...places].slice(0, 5),
               attribution:
                 env.GEOSEARCH_ATTRIBUTION ||
                 "Place search: Photon by komoot · © OpenStreetMap contributors",
@@ -402,6 +420,7 @@ export function createHandler({
             placeCache.set(q.toLowerCase(), { at: Date.now(), result });
             return response(result);
           } catch {
+            if (local.length) return localOnly();
             return response(
               {
                 error:

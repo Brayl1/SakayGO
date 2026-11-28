@@ -38,6 +38,9 @@ fs.writeFileSync(
       .readFileSync("shared/trips.mjs", "utf8")
       .replace(/^import[^;]+;\s*/gm, "") +
     "\n" +
+    // Local place names used by /api/places; it has no imports, so include as is.
+    fs.readFileSync("shared/places.mjs", "utf8") +
+    "\n" +
     fs.readFileSync("worker/verification.mjs", "utf8") +
     "\n" +
     fs

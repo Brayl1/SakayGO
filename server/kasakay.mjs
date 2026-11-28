@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual, createHash } from "node:crypto";
 import { z } from "zod";
-import { directionsParagraph, lineLength, tripDirections } from "../shared/directions.mjs";
+import { directionsParagraph, fareSummary, lineLength, tripDirections } from "../shared/directions.mjs";
 
 export const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const unavailable = "KaSakay AI is temporarily unavailable. You can still use route search, the fare guide, or guided trip planning.";
@@ -15,6 +15,7 @@ const intentSchema = z.object({
   origin: z.string().trim().max(120),
   destination: z.string().trim().max(120),
   passenger: z.enum(["regular", "student", "senior", "pwd"]),
+  focus: z.enum(["route", "fare"]).optional(),
 }).strict();
 const placeSchema = z.object({
   label: z.string().min(1).max(300),
@@ -97,13 +98,14 @@ function verify(token, key, now) {
 }
 const interpretationTool = {
   name: "interpret_request",
-  description: "Extract the commuter request; never invent missing endpoints. Read English, Filipino and Cebuano. Preserve endpoints stated earlier unless corrected. No route facts.",
+  description: "Extract the commuter request; never invent missing endpoints. Read English, Filipino and Cebuano. Preserve endpoints stated earlier unless corrected. No route facts. Keep place names as the user wrote them, including short local names (for example cogon, ketkai, agora, sm uptown, xu). If the user names BOTH a start and a destination, intent is trip even when they ask about the fare or price; then set focus to fare. Use intent fares only for general fare questions without both places. A student, senior citizen or PWD mentioned anywhere sets passenger.",
   parameters: { type: "OBJECT", properties: {
     intent: { type: "STRING", enum: ["trip", "help", "fares", "other"] },
     language: { type: "STRING", enum: ["en", "fil", "ceb"] },
     origin: { type: "STRING", description: "Starting place explicitly named by user, or empty string." },
     destination: { type: "STRING", description: "Destination explicitly named by user, or empty string." },
     passenger: { type: "STRING", enum: ["regular", "student", "senior", "pwd"] },
+    focus: { type: "STRING", enum: ["route", "fare"], description: "fare when the user mainly asks how much the trip costs; otherwise route." },
   }, required: ["intent", "language", "origin", "destination", "passenger"] },
 };
 export function createKaSakay({ env = process.env, api, fetchProvider = fetch, now = Date.now, duration = 20000 } = {}) {
@@ -179,7 +181,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           if (!res.ok) throw new Error("application");
           return res.json();
         };
-        let language, passenger, originPlace, destinationPlace;
+        let language, passenger, focus = "route", originPlace, destinationPlace;
         if (input.choice) {
           let choices;
           try { choices = verify(input.choice.token, env.GEMINI_API_KEY, now); }
@@ -188,13 +190,18 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           destinationPlace = choices.destinations[input.choice.destination];
           if (!originPlace || !destinationPlace) return reply({ error: "Choose both places from the supplied matches." }, 400);
           language = choices.language; passenger = choices.passenger;
+          focus = choices.focus === "fare" ? "fare" : "route";
         } else {
           const intent = intentSchema.parse(await model(interpretationTool,
             [{ role: "user", parts: [{ text: JSON.stringify(input.messages) }] }], signal));
           language = intent.language; passenger = intent.passenger;
           const words = copy[language];
+          // "How much from A to B?" names both places: answer it as a trip, fare first.
+          const bothPlaces = intent.origin.length >= 2 && intent.destination.length >= 2;
+          if (intent.intent === "fares" && bothPlaces) { intent.intent = "trip"; intent.focus = "fare"; }
+          focus = intent.focus === "fare" ? "fare" : "route";
           if (intent.intent !== "trip") return reply({ text: words[intent.intent], language, source: "AI interpretation · SakayGo guidance" });
-          if (intent.origin.length < 3 || intent.destination.length < 3)
+          if (!bothPlaces)
             return reply({ text: words.missing, language, source: "AI interpretation · SakayGo guidance" });
           const origins = z.array(placeSchema).max(5).parse((await internal("/api/places?q=" + encodeURIComponent(intent.origin))).places);
           const destinations = z.array(placeSchema).max(5).parse((await internal("/api/places?q=" + encodeURIComponent(intent.destination))).places);
@@ -202,7 +209,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           // Confirm even a single search match; geocoding is not a verified boarding stop.
           return reply({ text: words.choose, language, source: "SakayGo place search", choices: {
             origins, destinations,
-            token: sign({ origins, destinations, passenger, language, expires: now() + 600000 }, env.GEMINI_API_KEY),
+            token: sign({ origins, destinations, passenger, language, focus, expires: now() + 600000 }, env.GEMINI_API_KEY),
           } });
         }
         const result = await internal("/api/trips/plan", { origin: originPlace.point, destination: destinationPlace.point,
@@ -238,7 +245,12 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           walks: [], legs: trip.legs.map((leg) => ({ ...leg, geometry: [] })),
         }));
         // Lead with plain directions for the best option, then the ordered notes.
-        const lead = directionsParagraph(trips[0]?.steps, { language, origin: originPlace.label, destination: destinationPlace.label });
+        const places = { language, origin: originPlace.label, destination: destinationPlace.label };
+        const directions = directionsParagraph(trips[0]?.steps, places);
+        // A fare question gets the amount first, then how to get there.
+        const lead = focus === "fare"
+          ? [fareSummary(trips[0], { ...places, passenger }), directions].filter(Boolean).join(" ")
+          : directions;
         const notes = explanation.order.map((i) => facts[i]).join(" ");
         const output = { text: lead ? lead + " " + notes : notes, source: "AI-arranged explanation · SakayGo planner data",
           language, trips, origin: originPlace, destination: destinationPlace, passenger,

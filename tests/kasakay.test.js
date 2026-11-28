@@ -179,4 +179,24 @@ describe("grounded planning", () => {
       if (roads.length) expect(roads.some((road) => trip.steps.join(" ").includes(road))).toBe(true);
     }
   });
+  it("answers 'how much from A to B' with the fare first, even if read as a fare question", async () => {
+    const realApi = createCatalogApi({});
+    const fareIntent = { intent: "fares", language: "en", origin: "ketkai", destination: "cogon", passenger: "student" };
+    const provider = vi.fn(async (_url, init) => {
+      const tool = JSON.parse(init.body).tools[0].functionDeclarations[0].name;
+      return called(tool, tool === "interpret_request" ? fareIntent : { order: [0, 1, 2] });
+    });
+    const handler = createKaSakay({ env, fetchProvider: provider, api: async (req) => {
+      const url = new URL(req.url);
+      if (url.pathname === "/api/places") return Response.json({ places: url.searchParams.get("q") === "ketkai" ? [origin] : [destination] });
+      return realApi(req);
+    } });
+    const ask = await (await handler(request({ messages: [{ role: "user", text: "How much is the fare from ketkai to cogon? I'm a student." }] }))).json();
+    expect(ask.choices).toBeDefined();
+    const answer = await (await handler(request({ messages: [{ role: "user", text: "Confirm" }], choice: { token: ask.choices.token, origin: 0, destination: 0 } }))).json();
+    expect(answer.trips.length).toBeGreaterThan(0);
+    expect(answer.text).toMatch(/^For a student, the jeepney fare from Starting landmark to Destination landmark is about ₱/);
+    expect(answer.text).toContain("with the 20% discount");
+    expect(answer.text).toContain("Here's how to get from Starting landmark to Destination landmark:");
+  });
 });

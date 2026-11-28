@@ -130,3 +130,54 @@ export function directionsParagraph(steps, { language = "en", origin = "", desti
   });
   return `${w.lead(shortPlace(origin), shortPlace(destination))} ${body.join(" ")}`;
 }
+
+const fareWords = {
+  en: {
+    who: { regular: "a regular passenger", student: "a student", senior: "a senior citizen", pwd: "a person with disability" },
+    discount: (pct) => ` with the ${pct}% discount`,
+    line: (who, o, d, amount, disc, route) => `For ${who}, the jeepney fare${o ? ` from ${o}` : ""}${d ? ` to ${d}` : ""} is about ${amount}${disc}${route ? ` on ${route}` : ""}.`,
+    policy: "This follows the approved fare policy; confirm with the driver.",
+    reference: "This is a reference estimate, not an official local fare; confirm with the driver.",
+    none: (o, d) => `SakayGo has no fare reference${o && d ? ` from ${o} to ${d}` : ""} yet. Please ask the driver.`,
+    rides: (n) => `${n} jeepney rides`,
+  },
+  fil: {
+    who: { regular: "regular na pasahero", student: "estudyante", senior: "senior citizen", pwd: "PWD" },
+    discount: (pct) => ` kasama ang ${pct}% diskuwento`,
+    line: (who, o, d, amount, disc, route) => `Para sa ${who}, ang pamasahe sa jeep${o ? ` mula ${o}` : ""}${d ? ` papuntang ${d}` : ""} ay mga ${amount}${disc}${route ? ` sa ${route}` : ""}.`,
+    policy: "Batay ito sa aprubadong patakaran sa pamasahe; kumpirmahin sa driver.",
+    reference: "Tantiya lang ito, hindi opisyal na lokal na pamasahe; kumpirmahin sa driver.",
+    none: (o, d) => `Wala pang sanggunian sa pamasahe ang SakayGo${o && d ? ` mula ${o} papuntang ${d}` : ""}. Itanong sa driver.`,
+    rides: (n) => `${n} sakay ng jeep`,
+  },
+  ceb: {
+    who: { regular: "regular nga pasahero", student: "estudyante", senior: "senior citizen", pwd: "PWD" },
+    discount: (pct) => ` uban ang ${pct}% diskwento`,
+    line: (who, o, d, amount, disc, route) => `Para sa ${who}, ang plete sa jeep${o ? ` gikan ${o}` : ""}${d ? ` paingon ${d}` : ""} mga ${amount}${disc}${route ? ` sa ${route}` : ""}.`,
+    policy: "Base kini sa aprobadong polisiya sa plete; kumpirmaha sa drayber.",
+    reference: "Banabana ra kini, dili opisyal nga lokal nga plete; kumpirmaha sa drayber.",
+    none: (o, d) => `Wala pay reperensya sa plete ang SakayGo${o && d ? ` gikan ${o} paingon ${d}` : ""}. Pangutan-a ang drayber.`,
+    rides: (n) => `${n} ka sakay sa jeep`,
+  },
+};
+
+const peso = (n) => `₱${Number.isInteger(n) ? n : n.toFixed(2)}`;
+
+/** One or two sentences answering "how much is the fare", from the planner's own fare data. */
+export function fareSummary(trip, { language = "en", passenger = "regular", origin = "", destination = "" } = {}) {
+  const w = fareWords[language] || fareWords.en;
+  const o = shortPlace(origin), d = shortPlace(destination);
+  if (!trip) return w.none(o, d);
+  const legs = Array.isArray(trip.legs) ? trip.legs : [];
+  const route = legs.length === 1 ? legs[0].label : legs.length > 1 ? w.rides(legs.length) : "";
+  const who = w.who[passenger] || w.who.regular;
+  const pct = Math.round((legs[0]?.referenceFares?.[0]?.lower?.discount || 0) * 100);
+  const disc = passenger !== "regular" && pct > 0 ? w.discount(pct) : "";
+  if (typeof trip.fare === "number" && Number.isFinite(trip.fare)) return `${w.line(who, o, d, peso(trip.fare), disc, route)} ${w.policy}`;
+  const ref = trip.referenceFare;
+  if (ref && Number.isFinite(ref.minimum)) {
+    const amount = Number.isFinite(ref.maximum) && ref.maximum !== ref.minimum ? `${peso(ref.minimum)}–${peso(ref.maximum)}` : peso(ref.minimum);
+    return `${w.line(who, o, d, amount, disc, route)} ${w.reference}`;
+  }
+  return w.none(o, d);
+}

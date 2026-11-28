@@ -75,3 +75,11 @@ Changed files:
 - Server/deployment: server/kasakay.mjs, server/catalog-api.mjs, server/index.ts, vercel.json.
 - Tests: tests/kasakay.test.js, e2e/kasakay.spec.ts, e2e/trips.spec.ts, e2e/fare-comparison.spec.ts, e2e/ui-refresh.spec.ts.
 - Setup/documentation: .env.example, README.md, docs/kasakay.md.
+
+## Floating panel update
+
+The mascot button opens a right-side dialog on desktop and a full-width dialog on mobile. The existing navbar entry still opens the full assistant page. Closing/reopening the panel retains its draft and conversation; opening regular tools closes the panel. Escape, focus wrapping/restoration and background scroll locking are supported. The home-page launcher is positioned separately to avoid the route-count badge. The full assistant page does not show a duplicate launcher.
+
+Changed: src/KaSakayWidget.tsx, src/kasakay-widget.css, src/KaSakay.tsx, src/Root.tsx, e2e/kasakay-widget.spec.ts, docs/kasakay.md.
+
+Validation: ten existing assistant browser cases passed; all four new panel cases passed after the keyboard-focus fix, covering desktop/mobile opening, hero-badge clearance, draft persistence, Escape, focus wrapping, fallback links, and route navigation. Desktop/mobile screenshots were inspected. Production build, lint and whitespace checks passed. No provider or fare-engine changes and no live Gemini request were made for this UI update.

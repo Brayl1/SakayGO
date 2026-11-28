@@ -28,7 +28,7 @@ function ConfirmPlaces({ choices, disabled, onConfirm }: { choices: Choices; dis
     <button className="primary" disabled={disabled || origin === "" || destination === ""}>Confirm places and find routes <ArrowRight size={16} /></button>
   </form>;
 }
-export default function KaSakay() {
+export default function KaSakay({ compact = false }: { compact?: boolean }) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [chosen, setChosen] = useState<{ origin: Place; destination: Place } | null>(null);
   const [draft, setDraft] = useState("");
@@ -63,7 +63,7 @@ export default function KaSakay() {
       if (seq === generation.current) setError(cause instanceof Error && cause.name !== "AbortError" ? cause.message : "KaSakay AI is temporarily unavailable. Please retry or use the regular planner.");
     } finally {
       clearTimeout(timeout);
-      if (seq === generation.current) { setLoading(false); input.current?.focus(); }
+      if (seq === generation.current) { setLoading(false); if (input.current?.getClientRects().length) input.current.focus(); }
     }
   }
   function send(text: string, choice?: RequestBody["choice"]) {
@@ -80,10 +80,10 @@ export default function KaSakay() {
     setNotice("Conversation cleared."); input.current?.focus();
   }
   return <div className="kasakay-page">
-    <div className="kasakay-heading">
+    {!compact && <div className="kasakay-heading">
       <img src="/images/kasakay.png" alt="KaSakay, a friendly sage-green jeepney" width="128" height="120" />
       <div><span className="eyebrow">YOUR COMMUTE COMPANION</span><h1>Ask KaSakay</h1><p>A little help for your next sakay in Cagayan de Oro.</p></div>
-    </div>
+    </div>}
     <div className="kasakay-layout">
       <section className="kasakay-chat" aria-label="KaSakay conversation">
         <div className="kasakay-toolbar"><span>English · Filipino · Cebuano</span><button onClick={clear}><Trash2 size={16} /> Clear conversation</button></div>

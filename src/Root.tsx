@@ -3,6 +3,7 @@ import { Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig, motion } from "motion/react";
 import { Info } from "lucide-react";
 import Navigation from "./Navigation";
+import KaSakayWidget from "./KaSakayWidget";
 import { CatalogProvider, useCatalog } from "./CatalogContext";
 import CatalogPlanner, { CatalogDirectory, CatalogDetail } from "./Catalog";
 const KaSakay = lazy(() => import("./KaSakay"));
@@ -84,6 +85,7 @@ function Shell() {
           </Routes>
         </Suspense>
       </main>
+      {location.pathname !== "/kasakay" && <KaSakayWidget />}
     </>
   );
 }

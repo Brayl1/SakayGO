@@ -1,0 +1,143 @@
+﻿/* The only base rule hides additive mobile markup. Existing desktop rules are untouched. */
+.mobile-only { display: none; }
+
+@media (max-width: 768px) {
+  body:has(.home-page), body:has(.commuter-page), body:has(.mobile-bottom-tabs) {
+    --ride-primary: #1F4D34;
+    --ride-mint: #E4F0E6;
+    --ride-field: #F3F7F2;
+    --ride-border: #DCE5DD;
+    --ride-text: #14281C;
+    --ride-muted: #5B6B60;
+    --ride-background: #F5F7F1;
+    background: var(--ride-background);
+  }
+  .mobile-only { display: flex; }
+  body:has(.home-page) .site-header, body:has(.commuter-page) .site-header {
+    position: absolute; inset: 0 0 auto; height: 72px; min-height: 72px;
+    padding: 0 18px; border: 0; background: transparent;
+  }
+  body:has(.home-page) .navigation-shell, body:has(.commuter-page) .navigation-shell { min-height: 72px; gap: 12px; }
+  body:has(.home-page) .header-cta, body:has(.commuter-page) .header-cta,
+  body:has(.home-page) .desktop-navigation, body:has(.commuter-page) .desktop-navigation,
+  body:has(.home-page) .navigation-city, body:has(.commuter-page) .navigation-city { display: none; }
+  body:has(.home-page) .site-header .brand, body:has(.commuter-page) .site-header .brand { font-size: 22px; }
+  body:has(.home-page) .site-header .brand-icon, body:has(.commuter-page) .site-header .brand-icon { width: 36px; height: 40px; border-radius: 12px; margin-right: 8px; }
+  body:has(.home-page) .menu-toggle, body:has(.commuter-page) .menu-toggle { display: flex; width: 44px; height: 44px; border-radius: 14px; color: var(--ride-primary); background: white; box-shadow: 0 4px 12px #14281c18; }
+  body:has(.home-page) .mobile-navigation, body:has(.commuter-page) .mobile-navigation { max-height: calc(100dvh - 155px); overflow-y: auto; }
+  body:has(.mobile-bottom-tabs) .kasakay-launcher { display: none; }
+  .mobile-bottom-tabs { bottom: var(--ride-keyboard-inset, 0px) !important; position: fixed; z-index: 1100; inset: auto 0 0; height: calc(68px + env(safe-area-inset-bottom)); padding: 0 8px env(safe-area-inset-bottom); justify-content: space-around; background: white; border-top: 1px solid var(--ride-border); }
+  .mobile-bottom-tabs > a, .mobile-bottom-tabs > button { display: flex; flex: 1; min-width: 0; min-height: 44px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 4px; border: 0; background: transparent; color: var(--ride-muted); font-size: 10px; font-weight: 600; }
+  .mobile-bottom-tabs > .active { color: var(--ride-primary); font-weight: 800; }
+  .mobile-kasakay-icon { display: flex; width: 44px; height: 44px; margin-top: -20px; align-items: center; justify-content: center; border: 3px solid white; border-radius: 50%; background: var(--ride-primary); color: #F2B84B; box-shadow: 0 2px 8px #14281c18; }
+  body:has(.home-page) :focus-visible, body:has(.commuter-page) :focus-visible { outline: 3px solid var(--ride-primary) !important; outline-offset: 3px; }
+
+  .home-page { background: var(--ride-background); padding-bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .home-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 8px; min-height: 0; padding: 120px 18px 0; border-radius: 0; background: none; overflow: visible; }
+  .home-hero::before { height: 420px; bottom: auto; background: linear-gradient(180deg,rgba(18,42,27,.7),rgba(18,42,27,.45) 40%,rgba(18,42,27,.95)),url('/images/hero.jpg') 62% center / cover; }
+  .hero-copy { display: contents; }
+  .home-eyebrow { grid-column: 1/-1; margin: 0 0 12px; font-size: 11px; letter-spacing: 1.3px; color: #BFE0C4; }
+  .hero-copy h1 { grid-column: 1/-1; max-width: 310px; margin: 0 0 14px; color: white; font-size: 40px; line-height: 1.02; letter-spacing: -1.5px; font-weight: 800; }
+  .hero-copy h1 span { color: #BFE0C4; }
+  .hero-copy > p { grid-column: 1/-1; max-width: 360px; margin: 0; color: white; font-size: 14px; line-height: 1.55; }
+  .hero-planner { grid-column: 1/-1; display: grid; grid-template-columns: minmax(0,1fr); grid-template-rows: 60px 60px 54px; width: 100%; gap: 8px; margin-top: 30px; padding: 14px; border: 0; border-radius: 24px; box-shadow: 0 10px 24px #14281c24; }
+  .hero-planner label { position: relative; z-index: 1; align-self: start; margin: 9px 0 0 44px; color: var(--ride-muted); font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .7px; pointer-events: none; }
+  .hero-planner label[for='home-from'], .hero-planner #home-from { grid-area: 1/1; }
+  .hero-planner label[for='home-to'], .hero-planner #home-to { grid-area: 2/1; }
+  .hero-planner label::before { content: ''; position: absolute; left: -26px; top: 13px; width: 11px; height: 11px; border: 2px solid var(--ride-primary); border-radius: 50%; }
+  .hero-planner label[for='home-to']::before { background: #F2B84B; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); }
+  .hero-planner input { height: 60px; padding: 22px 12px 5px 44px; border: 1px solid var(--ride-border); border-radius: 16px; color: var(--ride-text); background: var(--ride-field); font-size: 16px; }
+  .hero-planner input::placeholder { color: var(--ride-muted); }
+  .hero-planner button { grid-area: 3/1; height: 54px; min-height: 54px; margin: 0; border-radius: 16px; background: var(--ride-primary); box-shadow: 0 8px 20px rgba(31,77,52,.35); }
+  .hero-route-badge { position: static; grid-row: 6; grid-column: 1; min-height: 36px; margin-top: 16px; padding: 7px 9px; gap: 6px; border-radius: 20px; box-shadow: none; background: var(--ride-mint); }
+  .hero-route-badge > span { width: 6px; height: 6px; flex-basis: 6px; }
+  .hero-route-badge strong { font-size: 9px; line-height: 1.4; font-weight: 700; color: var(--ride-primary); }
+  .hero-browse { grid-row: 6; grid-column: 2; margin-top: 16px; }
+  .hero-browse a { font-size: 10px; color: var(--ride-primary); gap: 2px; }
+  .mobile-home-tiles { gap: 10px; margin: 16px 18px 0; }
+  .mobile-home-tiles a { flex: 1; min-width: 0; min-height: 90px; padding: 12px 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: white; border: 1px solid var(--ride-border); border-radius: 18px; color: var(--ride-text); text-align: center; font-size: 10px; font-weight: 600; }
+  .mobile-home-tiles svg { width: 34px; height: 34px; padding: 8px; border-radius: 12px; color: var(--ride-primary); background: var(--ride-mint); }
+  .home-section { padding-top: 32px; }
+
+  body:has(.commuter-page) { overflow: hidden; }
+  body:has(.commuter-page) .demo-banner { display: none; }
+  body:has(.commuter-page) .site-header { pointer-events: none; }
+  body:has(.commuter-page) .site-header a, body:has(.commuter-page) .site-header button, body:has(.commuter-page) .mobile-navigation { pointer-events: auto; }
+  .commuter-page { --ride-map-height: clamp(225px, calc(var(--ride-viewport-height, 100dvh) * .3), 340px); height: calc(var(--ride-viewport-height, 100dvh) - 68px - env(safe-area-inset-bottom)); min-height: 0; padding: 0; background: var(--ride-background); }
+  .planner-page-heading, .planner-footnote { display: none; }
+  .commuter-page .trip-workspace { display: flex; flex-direction: column; gap: 0; height: 100%; min-height: 0; }
+  .commuter-page .trip-map-section { order: 0; position: relative; top: auto; flex: 0 0 var(--ride-map-height); width: 100%; height: var(--ride-map-height); border: 0; border-radius: 0; overflow: hidden; }
+  .commuter-page .trip-map { height: 100%; min-height: 0; }
+  .commuter-page .map-card-heading, .commuter-page .map-card-footer { display: none; }
+  .mobile-map-overlays { position: absolute; z-index: 800; top: 76px; left: 16px; right: 16px; align-items: center; justify-content: space-between; pointer-events: none; }
+  .mobile-map-overlays > a, .mobile-map-overlays > button { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; border-radius: 14px; background: white; color: var(--ride-primary); box-shadow: 0 4px 12px #14281c24; pointer-events: auto; }
+  .mobile-map-overlays > span { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; display: flex; gap: 7px; align-items: center; min-height: 38px; padding: 8px 12px; border-radius: 14px; background: white; color: var(--ride-text); font-size: 11px; font-weight: 700; box-shadow: 0 4px 12px #14281c18; }
+  .mobile-map-overlays i { width: 6px; height: 6px; background: var(--sage-600); border-radius: 50%; }
+  .mobile-map-overlays > button { position: absolute; right: 0; top: calc(var(--ride-map-height) - 170px); }
+  .commuter-page .trip-map .map-label { top: 126px; left: 16px; max-width: calc(100% - 84px); font-size: 9px; padding: 5px 8px; }
+  .commuter-page .trip-map .leaflet-top.leaflet-left { top: 124px; left: 16px; right: auto; }
+  .commuter-page .trip-map .leaflet-control-zoom { display: none; }
+  .commuter-page .trip-map .map-tools { top: 76px; right: 16px; }
+  .commuter-page .trip-map .map-tools button { width: 44px; height: 44px; }
+  .commuter-page .trip-map .catalog-legend { bottom: 35px; left: 12px; gap: 8px; padding: 5px 7px; font-size: 8px; max-width: calc(100% - 78px); }
+  .commuter-page .leaflet-control-attribution { margin-bottom: 30px; font-size: 8px; }
+  .commuter-page .map-load-error { top: 123px; left: 12px; right: 70px; max-height: 80px; overflow: auto; font-size: 10px; padding: 5px; }
+  .commuter-page .trip-panel { order: 1; display: block; position: relative; flex: 1 1 auto; min-height: 0; width: 100%; margin-top: -30px; padding: 22px 18px 16px; border: 0; border-radius: 28px 28px 0 0; background: white; box-shadow: 0 -8px 24px #14281c16; overflow: auto; overscroll-behavior: contain; scroll-padding: 16px 0 76px; transition: border-radius 220ms ease; }
+  .commuter-page .trip-panel::before { content: ''; position: absolute; width: 36px; height: 4px; border-radius: 4px; top: 8px; left: calc(50% - 18px); background: var(--ride-border); }
+  .trip-panel > div:has(.trip-form) { position: relative; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 8px; }
+  .commuter-page .trip-form, .commuter-page .trip-form > form { display: contents; }
+  .commuter-page .trip-form > h2 { display: none; }
+  .mobile-sheet-heading { grid-column: 1/-1; grid-row: 1; min-height: 36px; align-items: center; justify-content: space-between; gap: 8px; }
+  .mobile-sheet-heading h1 { margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -.8px; color: var(--ride-text); }
+  .mobile-sheet-heading > span { font-size: 10px; color: var(--ride-muted); }
+  .commuter-page .place-field { grid-column: 1/-1; min-width: 0; height: 68px; padding: 8px 54px 5px 12px; border: 1px solid var(--ride-border); border-radius: 18px 18px 0 0; background: var(--ride-field); }
+  .commuter-page .place-field:has(#trip-origin) { grid-row: 2; margin-bottom: -8px; height: 76px; }
+  .commuter-page .place-field:has(#trip-destination) { grid-row: 3; border-radius: 0 0 18px 18px; }
+  .commuter-page .place-field:focus-within { z-index: 10; background: var(--ride-mint); border-color: var(--ride-primary); box-shadow: 0 0 0 .5px var(--ride-primary); }
+  .commuter-page .place-field > label { font-size: 9px; color: var(--ride-muted); letter-spacing: .7px; }
+  .commuter-page .place-field input { min-height: 35px; font-size: 16px; color: var(--ride-text); padding: 0; }
+  .commuter-page .place-field > div > svg { flex-shrink: 0; color: var(--ride-primary); }
+  .commuter-page .place-field:has(#trip-destination) > div > svg { fill: #F2B84B; }
+  .commuter-page .place-field:has(#trip-origin) > div > svg { border: 2px solid var(--ride-primary); border-radius: 50%; width: 12px; height: 12px; margin: 0 3px; }
+  .commuter-page .place-field:has(#trip-origin) > div > svg * { display: none; }
+  .commuter-page .place-field button { min-width: 44px; min-height: 44px; }
+  .commuter-page .pick-location { position: absolute; right: 5px; top: 8px; margin: 0; width: 44px; height: 44px; overflow: hidden; font-size: 9px; text-indent: -9999px; white-space: nowrap; border-radius: 12px; color: var(--ride-primary); }
+  .commuter-page .pick-location::after { content: ''; position: absolute; top: 12px; left: 12px; width: 20px; height: 20px; background: radial-gradient(circle, transparent 4px, currentColor 4px, currentColor 5px, transparent 5px), linear-gradient(currentColor,currentColor) center / 2px 20px no-repeat, linear-gradient(currentColor,currentColor) center / 20px 2px no-repeat; }
+  .commuter-page .place-options { top: 62px; max-height: 220px; }
+  .commuter-page .location-actions { display: contents; }
+  .commuter-page .location-actions > button:first-child { display: none; }
+  .commuter-page .location-actions > button:last-child { position: absolute; z-index: 20; right: 45px; top: 99px; display: flex; justify-content: center; width: 44px; height: 44px; min-height: 44px; padding: 0; border: 1px solid var(--ride-primary); border-radius: 50%; background: white; color: var(--ride-primary); font-size: 0; }
+  .commuter-page .location-actions > button:last-child svg { width: 18px; height: 18px; }
+  .commuter-page .travel-preferences { grid-row: 4; grid-column: 1/-1; min-width: 0; margin: 4px 0 0; }
+  .commuter-page .travel-preferences legend { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+  .commuter-page .travel-preferences button { min-height: 44px; border-radius: 14px; font-size: 10px; color: var(--ride-primary); border-color: var(--ride-border); transition: background-color 220ms ease,border-color 220ms ease; }
+  .commuter-page .travel-preferences button[aria-pressed='true'] { border-color: var(--ride-primary); background: var(--ride-mint); }
+  .commuter-page .commuter-label { grid-row: 5; grid-column: 2; margin: 0; font-size: 0; align-self: center; }
+  .commuter-page .commuter-label select { min-height: 44px; margin: 0; padding: 5px; font-size: 12px; border: 0; color: var(--ride-primary); }
+  .commuter-page .popular-destinations { display: contents; }
+  .commuter-page .popular-destinations > div:first-child { grid-row: 5; grid-column: 1; margin: 0; }
+  .commuter-page .popular-destinations h3 { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .4px; color: var(--ride-muted); }
+  .commuter-page .popular-destinations small { display: none; }
+  .commuter-page .popular-destinations > div:nth-child(2) { grid-row: 6; grid-column: 1/-1; display: flex; flex-direction: column; gap: 4px; }
+  .commuter-page .popular-destinations button { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px; border: 0; border-radius: 14px; color: var(--ride-text); }
+  .commuter-page .popular-destinations button > svg:first-child { width: 36px; height: 36px; padding: 9px; border-radius: 12px; background: var(--ride-mint); color: var(--ride-primary); }
+  .commuter-page .popular-destinations button > span { margin: 0; font-size: 12px; font-weight: 600; }
+  .commuter-page .popular-destinations button > svg:last-child { position: static; margin-left: auto; }
+  .commuter-page .popular-destinations button:nth-child(n+3) { display: none; }
+  .commuter-page .popular-destinations > p { grid-row: 7; grid-column: 1/-1; margin: 0; font-size: 9px; color: var(--ride-muted); }
+  .commuter-page .find.primary { grid-row: 8; grid-column: 1/-1; position: sticky; bottom: 0; z-index: 25; min-height: 56px; margin: 0; border-radius: 18px; background: var(--ride-primary); box-shadow: 0 8px 20px rgba(31,77,52,.35); font-size: 15px; font-weight: 800; }
+  .commuter-page .find > span { margin-right: 0; }
+  .commuter-page .find > svg:last-child { margin-left: 0; }
+  .commuter-page .find > svg:first-child { display: none; }
+  .commuter-page .more-options { grid-row: 10; grid-column: 1/-1; margin: 0; }
+  .commuter-page .planner-data-tools { grid-row: 11; grid-column: 1/-1; margin: 0; }
+  .commuter-page .more-options summary, .commuter-page .planner-data-tools summary { min-height: 44px; padding-top: 12px; font-size: 12px; }
+  .commuter-page .more-options button, .commuter-page .planner-data-tools button, .commuter-page .planner-data-tools a, .commuter-page .options-row select { min-height: 44px; }
+  .commuter-page .planner-error, .commuter-page .location-accuracy, .commuter-page .search-status, .commuter-page .trip-form form > p, .commuter-page .trip-data-notes { grid-column: 1/-1; }
+  .commuter-page .trip-panel .trip-results { padding: 0; margin: 0; }
+  .commuter-page .trip-panel .result-card { padding: 16px; }
+  .commuter-page .trip-panel :is(input,select,button,a) { scroll-margin: 16px 0 84px; }
+  @media (prefers-reduced-motion: reduce) {
+    .commuter-page .trip-panel, .commuter-page .travel-preferences button { transition: none; }
+  }
+}

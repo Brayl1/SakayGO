@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import {
   ArrowDownUp,
+  ChevronLeft,
   ArrowRight,
   BusFront,
   Footprints,
@@ -284,6 +285,7 @@ export default function TripPlanner() {
                 transition={{ duration: 0.2 }}
               >
                 <section className="trip-form">
+                  <div className="mobile-only mobile-sheet-heading"><h1>Asa ta karon?</h1><span>Step 1 of 2</span></div>
                   <h2>
                     Where are you headed? <MapIcon size={20} />
                   </h2>
@@ -504,6 +506,7 @@ export default function TripPlanner() {
                     Place search: Photon / OpenStreetMap contributors. Places
                     are not verified stops.
                   </p>
+                  <p className="mobile-only">Routes and access points are approximate. Confirm the route and fare with your driver.</p>
                   <button onClick={reset}>Reset</button>
                   <Link to="/network">Browse route map →</Link>
                 </details>
@@ -516,6 +519,11 @@ export default function TripPlanner() {
           aria-label="Interactive trip map"
           ref={mapSection}
         >
+          <div className="mobile-only mobile-map-overlays">
+            <Link to="/" aria-label="Back to home"><ChevronLeft size={22} /></Link>
+            <span><i aria-hidden="true" />Cagayan de Oro</span>
+            <button type="button" onClick={locate} disabled={locating || loading} aria-label={locating ? "Locating you" : "Use my current location on map"}><LocateFixed size={20} /></button>
+          </div>
           <div className="map-card-heading">
             <MapIcon size={18} />
             <strong>Your trip, on the map</strong>

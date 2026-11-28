@@ -17,3 +17,5 @@ import "./commuter.css";
 
 import "./refresh.css";
 
+
+import "./mobile-ride.css";

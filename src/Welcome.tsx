@@ -1,6 +1,6 @@
 ﻿import { useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, BusFront, Coins, Route } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BusFront, Coins, Route, Info, Ticket } from "lucide-react";
 import { useCatalog } from "./CatalogContext";
 
 const steps = [
@@ -45,6 +45,12 @@ export default function Welcome() {
           <strong>{routeCount} routes mapped across Cagayan de Oro</strong>
         </div>
       </section>
+
+      <nav className="mobile-only mobile-home-tiles" aria-label="Commuter guides">
+        <Link to="/codes"><Ticket size={20} /><span>Jeepney Codes</span></Link>
+        <Link to="/fares"><Coins size={20} /><span>Fare Guide</span></Link>
+        <Link to="/how-it-works"><Info size={20} /><span>How It Works</span></Link>
+      </nav>
 
       <section className="home-section popular-section" aria-labelledby="popular-heading">
         <div className="section-heading"><h2 id="popular-heading">Popular routes</h2><Link to="/explore">See all {routeCount || data.routes.length} routes <ArrowUpRight size={16} /></Link></div>

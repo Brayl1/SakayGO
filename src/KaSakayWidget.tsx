@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { House, Map, Route, Sparkles, X } from "lucide-react";
+import { House, Map, Route, X } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./kasakay-widget.css";
 
@@ -73,7 +73,7 @@ export default function KaSakayWidget() {
     {(location.pathname === "/" || location.pathname === "/planner") && <nav className="mobile-only mobile-bottom-tabs" aria-label="Quick navigation">
       <NavLink to="/" end><House size={20} /><span>Home</span></NavLink>
       <NavLink to="/planner"><Map size={20} /><span>Planner</span></NavLink>
-      <button ref={mobileLauncher} type="button" aria-label="Open KaSakay assistant" aria-haspopup="dialog" aria-expanded={opened} aria-controls="kasakay-panel" onClick={() => { setStarted(true); setOpened(true); dialog.current?.showModal(); closeButton.current?.focus(); }}><span className="mobile-kasakay-icon"><Sparkles size={22} /></span><span>KaSakay</span></button>
+      <button ref={mobileLauncher} type="button" aria-label="Open KaSakay assistant" aria-haspopup="dialog" aria-expanded={opened} aria-controls="kasakay-panel" onClick={() => { setStarted(true); setOpened(true); dialog.current?.showModal(); closeButton.current?.focus(); }}><span className="mobile-kasakay-icon"><img src="/images/kasakay.png" alt="" width="36" height="36" /></span><span>KaSakay</span></button>
       <NavLink to="/explore"><Route size={20} /><span>Routes</span></NavLink>
     </nav>}
     <dialog ref={dialog} id="kasakay-panel" className="kasakay-panel" aria-labelledby="kasakay-panel-title"

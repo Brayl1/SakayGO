@@ -14,6 +14,7 @@ import { Maximize, RotateCcw } from "lucide-react";
 import type { Place, Trip } from "../shared/trip-types";
 import type { Point } from "../shared/model";
 import { measurePath, positionOnPath } from "./routeAnimation";
+import LiveLocation from "./LiveLocation";
 import "leaflet/dist/leaflet.css";
 
 // react-leaflet removes the map before child effect cleanups run, so cleanup
@@ -217,6 +218,7 @@ function Controls(props: Props) {
       <button onClick={fit} aria-label="Fit trip to map">
         <Maximize size={18} />
       </button>
+      <LiveLocation />
       {props.trip && (
         <button
           onClick={props.onReplay}

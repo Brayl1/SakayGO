@@ -181,7 +181,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           if (!res.ok) throw new Error("application");
           return res.json();
         };
-        let language, passenger, focus = "route", originPlace, destinationPlace;
+        let language, passenger, focus = "route", originPlace, destinationPlace, alternatives;
         if (input.choice) {
           let choices;
           try { choices = verify(input.choice.token, env.GEMINI_API_KEY, now); }
@@ -206,11 +206,19 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           const origins = z.array(placeSchema).max(5).parse((await internal("/api/places?q=" + encodeURIComponent(intent.origin))).places);
           const destinations = z.array(placeSchema).max(5).parse((await internal("/api/places?q=" + encodeURIComponent(intent.destination))).places);
           if (!origins.length || !destinations.length) return reply({ text: words.none, language, source: "SakayGo place search" });
-          // Confirm even a single search match; geocoding is not a verified boarding stop.
-          return reply({ text: words.choose, language, source: "SakayGo place search", choices: {
+          const choices = {
             origins, destinations,
             token: sign({ origins, destinations, passenger, language, focus, expires: now() + 600000 }, env.GEMINI_API_KEY),
-          } });
+          };
+          // Places from SakayGo's own route data (markets, terminals, barangay
+          // centres) are trusted: answer right away and offer the other matches
+          // as "Not the right place?". Online map results still need a confirm.
+          const fromRouteData = (place) => typeof place?.source === "string" && place.source.startsWith("SakayGo route data");
+          if (!fromRouteData(origins[0]) || !fromRouteData(destinations[0]))
+            return reply({ text: words.choose, language, source: "SakayGo place search", choices });
+          originPlace = origins[0];
+          destinationPlace = destinations[0];
+          alternatives = choices;
         }
         const result = await internal("/api/trips/plan", { origin: originPlace.point, destination: destinationPlace.point,
           preferences: { maxWalkMeters: 500, sort: "walking", passenger, allowTransfers: true } });
@@ -254,6 +262,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
         const notes = explanation.order.map((i) => facts[i]).join(" ");
         const output = { text: lead ? lead + " " + notes : notes, source: "AI-arranged explanation · SakayGo planner data",
           language, trips, origin: originPlace, destination: destinationPlace, passenger,
+          ...(alternatives ? { choices: alternatives } : {}),
           caveats: result.caveats || [], transferNote: result.transferNote };
         if (JSON.stringify(output).length > 100000) throw new Error("size");
         return reply(output);

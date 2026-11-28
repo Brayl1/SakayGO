@@ -199,4 +199,30 @@ describe("grounded planning", () => {
     expect(answer.text).toContain("with the 20% discount");
     expect(answer.text).toContain("Here's how to get from Starting landmark to Destination landmark:");
   });
+  it("answers immediately when both places come from SakayGo route data", async () => {
+    const realApi = createCatalogApi({});
+    const local = (label, point) => ({ label, point, source: "SakayGo route data (CDO LPTRP)" });
+    const handler = createKaSakay({ env, fetchProvider: vi.fn(async (_url, init) => {
+      const tool = JSON.parse(init.body).tools[0].functionDeclarations[0].name;
+      return called(tool, tool === "interpret_request"
+        ? { intent: "trip", language: "en", origin: "ketkai", destination: "cogon", passenger: "student", focus: "fare" }
+        : { order: [0, 1, 2] });
+    }), api: async (req) => {
+      const url = new URL(req.url);
+      if (url.pathname === "/api/places") return Response.json({ places: url.searchParams.get("q") === "ketkai"
+        ? [local("Limketkai Center, Limketkai Drive", [8.4797958, 124.6563372])]
+        : [local("Cogon Public Market", [8.4773405, 124.6522587]), local("Roxas St. (Cogon Public Market)", [8.4766, 124.6529])] });
+      return realApi(req);
+    } });
+    const answer = await (await handler(request({ messages: [{ role: "user", text: "fare from ketkai to cogon, student" }] }))).json();
+    // No confirmation round trip: fare, directions and trips come back at once.
+    expect(answer.trips.length).toBeGreaterThan(0);
+    expect(answer.text).toMatch(/^For a student, the jeepney fare from Limketkai Center to Cogon Public Market is about ₱/);
+    expect(answer.origin.label).toBe("Limketkai Center, Limketkai Drive");
+    // The other matches stay available as "Not the right place?".
+    expect(answer.choices.destinations).toHaveLength(2);
+    const changed = await (await handler(request({ messages: [{ role: "user", text: "Change" }], choice: { token: answer.choices.token, origin: 0, destination: 1 } }))).json();
+    expect(changed.destination.label).toBe("Roxas St. (Cogon Public Market)");
+    expect(changed.trips).toBeDefined();
+  });
 });

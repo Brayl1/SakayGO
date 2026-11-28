@@ -70,6 +70,10 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
       if (seq === generation.current) { setLoading(false); if (input.current?.getClientRects().length) input.current.focus(); }
     }
   }
+  function confirmPlaces(choices: Choices, origin: number, destination: number) {
+    setChosen({ origin: choices.origins[origin], destination: choices.destinations[destination] });
+    send("Plan my trip from " + choices.origins[origin].label + " to " + choices.destinations[destination].label + ".", { token: choices.token, origin, destination });
+  }
   function send(text: string, choice?: RequestBody["choice"]) {
     if (loading || !text.trim() || text.trim().length > 1000) return;
     const next: Message[] = [...messages, { role: "user", text: text.trim() }];
@@ -97,12 +101,8 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
           {messages.map((message, index) => <motion.article initial={reduced ? false : { opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }} className={"kasakay-message " + message.role} key={index}>
             <small>{message.role === "user" ? "You" : message.answer?.source || "KaSakay"}</small>
             <p>{message.text}</p>
-            {message.answer?.choices && <ConfirmPlaces choices={message.answer.choices} disabled={loading || index !== messages.length - 1}
-              onConfirm={(origin, destination) => {
-                const choices = message.answer!.choices!;
-                setChosen({ origin: choices.origins[origin], destination: choices.destinations[destination] });
-                send("Plan my trip from " + choices.origins[origin].label + " to " + choices.destinations[destination].label + ".", { token: choices.token, origin, destination });
-              }} />}
+            {message.answer?.choices && !message.answer.trips && <ConfirmPlaces choices={message.answer.choices} disabled={loading || index !== messages.length - 1}
+              onConfirm={(origin, destination) => confirmPlaces(message.answer!.choices!, origin, destination)} />}
             {message.answer?.trips && <div className="kasakay-results">
               {message.answer.trips.map((trip) => <section className="kasakay-route" key={trip.id}>
                 <h2>{trip.legs.map((leg) => leg.codes.length ? leg.codes.join(" / ") : leg.label).join(" → ")}</h2>
@@ -115,6 +115,11 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
               </section>)}
               {message.answer.caveats?.map((caveat, i) => <p key={i} className="kasakay-caveat">{caveat}</p>)}
               {message.answer.transferNote && <p>{message.answer.transferNote}</p>}
+              {message.answer.choices && <details className="kasakay-change">
+                <summary>Not the right place? Change it</summary>
+                <ConfirmPlaces choices={message.answer.choices} disabled={loading || index !== messages.length - 1}
+                  onConfirm={(origin, destination) => confirmPlaces(message.answer!.choices!, origin, destination)} />
+              </details>}
               <Link className="primary" to="/planner" state={{ origin: message.answer.origin, destination: message.answer.destination, passenger: message.answer.passenger }}>Open these places in the planner <ArrowRight size={16} /></Link>
             </div>}
           </motion.article>)}

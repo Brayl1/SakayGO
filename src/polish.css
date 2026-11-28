@@ -394,3 +394,9 @@ path.sg-live-accuracy { fill: #1F4D34; fill-opacity: .1; stroke: #1F4D34; stroke
   background: var(--sage-100);
   content: "";
 }
+
+/* KaSakay: "Not the right place?" picker under an answer */
+.kasakay-change { margin: 6px 0 12px; border: 1px solid var(--border); border-radius: 14px; background: white; }
+.kasakay-change > summary { min-height: 44px; display: flex; align-items: center; padding: 0 14px; color: var(--sage-800); font-size: 13.5px; font-weight: 700; cursor: pointer; }
+.kasakay-change[open] > summary { border-bottom: 1px solid var(--border); }
+.kasakay-change .kasakay-choices { margin: 0; padding: 12px 14px 14px; border: 0; box-shadow: none; }

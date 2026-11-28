@@ -8,6 +8,7 @@ const destination = { label: "Destination landmark", point: [8.471176, 124.64308
 const intent = { intent: "trip", language: "ceb", origin: "Centrio", destination: "Carmen Market", passenger: "student" };
 const request = (body = { messages: [{ role: "user", text: "Unsa akong sakyan gikan Centrio padulong Carmen Market?" }] }, headers = {}) =>
   new Request("https://sakaygo.test/api/kasakay", { method: "POST", headers: { "Content-Type": "application/json", ...headers }, body: JSON.stringify(body) });
+const unreadable = () => request({ messages: [{ role: "user", text: "hello there" }] });
 const called = (name, args) => Response.json({ candidates: [{ content: { parts: [{ functionCall: { name, args } }] } }] });
 function setup(options = {}) {
   const api = vi.fn(async (req) => {
@@ -67,7 +68,7 @@ describe("provider safety and availability", () => {
   it.each([400, 401, 403, 429, 500, 503])("hides provider error details for %i", async (status) => {
     const provider = vi.fn(async () => new Response("SECRET upstream stack trace", { status }));
     const { handler } = setup({ fetchProvider: provider });
-    const res = await handler(request());
+    const res = await handler(unreadable());
     expect(res.status).toBe(status === 429 ? 429 : 503);
     expect(await res.text()).not.toMatch(/SECRET|stack|test-only/);
     expect(provider).toHaveBeenCalledTimes(1);
@@ -75,20 +76,20 @@ describe("provider safety and availability", () => {
   it("backs off on quota exhaustion without switching models", async () => {
     const provider = vi.fn(async () => new Response("", { status: 429 }));
     const { handler } = setup({ fetchProvider: provider });
-    expect((await handler(request())).status).toBe(429);
-    const again = await handler(request());
+    expect((await handler(unreadable())).status).toBe(429);
+    const again = await handler(unreadable());
     expect(again.headers.get("retry-after")).toBe("60");
     expect(provider).toHaveBeenCalledTimes(1);
     expect(provider.mock.calls[0][0]).toContain(GEMINI_MODEL);
   });
   it("throttles per client", async () => {
     const { handler, provider } = setup({ fetchProvider: vi.fn(async () => called("interpret_request", { ...intent, intent: "help" })) });
-    for (let i = 0; i < 6; i++) expect((await handler(request())).status).toBe(200);
-    expect((await handler(request())).status).toBe(429);
+    for (let i = 0; i < 6; i++) expect((await handler(unreadable())).status).toBe(200);
+    expect((await handler(unreadable())).status).toBe(429);
   });
   it("bounds duration even when a dependency ignores cancellation", async () => {
     const { handler } = setup({ duration: 15, fetchProvider: () => new Promise(() => {}) });
-    expect((await handler(request())).status).toBe(503);
+    expect((await handler(unreadable())).status).toBe(503);
   });
   it.each([
     { candidates: [] },
@@ -97,12 +98,12 @@ describe("provider safety and availability", () => {
     { candidates: [{ content: { parts: [{ functionCall: { name: "interpret_request", args: { ...intent, url: "https://evil.test" } } }] } }] },
   ])("rejects unsafe or malformed model tools", async (output) => {
     const { handler, api } = setup({ fetchProvider: async () => Response.json(output) });
-    expect((await handler(request())).status).toBe(503);
+    expect((await handler(unreadable())).status).toBe(503);
     expect(api).not.toHaveBeenCalled();
   });
   it("rejects oversized provider output", async () => {
     const { handler } = setup({ fetchProvider: async () => Response.json({ text: "a".repeat(25000) }) });
-    expect((await handler(request())).status).toBe(503);
+    expect((await handler(unreadable())).status).toBe(503);
   });
 });
 describe("grounded planning", () => {
@@ -224,5 +225,34 @@ describe("grounded planning", () => {
     const changed = await (await handler(request({ messages: [{ role: "user", text: "Change" }], choice: { token: answer.choices.token, origin: 0, destination: 1 } }))).json();
     expect(changed.destination.label).toBe("Roxas St. (Cogon Public Market)");
     expect(changed.trips).toBeDefined();
+  });
+  it("still answers plain trip questions from SakayGo data when Gemini fails", async () => {
+    const provider = vi.fn(async () => new Response("", { status: 429 }));
+    const { handler, api } = setup({ fetchProvider: provider });
+    // Default question: "Unsa akong sakyan gikan Centrio padulong Carmen Market?"
+    const first = await handler(request());
+    expect(first.status).toBe(200);
+    const body = await first.json();
+    expect(body.language).toBe("ceb");
+    expect(body.choices.origins[0]).toEqual(origin);
+    expect(api.mock.calls.map(([req]) => new URL(req.url).searchParams.get("q"))).toEqual(["Centrio", "Carmen Market"]);
+    // During the one-minute cool-down Gemini is not called again, but the
+    // built-in reader keeps answering; anything it cannot read gets "busy".
+    expect((await handler(request())).status).toBe(200);
+    expect(provider).toHaveBeenCalledTimes(1);
+    const busy = await handler(unreadable());
+    expect(busy.status).toBe(429);
+    expect((await busy.json()).reason).toBe("quota");
+  });
+  it("uses one Gemini call per question", async () => {
+    const realApi = createCatalogApi({});
+    const { handler, provider } = setup({ api: async (req) => {
+      const url = new URL(req.url);
+      if (url.pathname === "/api/places") return Response.json({ places: url.searchParams.get("q") === "Centrio" ? [origin] : [destination] });
+      return realApi(req);
+    } });
+    const choices = (await (await handler(request())).json()).choices;
+    await handler(request({ messages: [{ role: "user", text: "Confirm" }], choice: { token: choices.token, origin: 0, destination: 0 } }));
+    expect(provider).toHaveBeenCalledTimes(1);
   });
 });

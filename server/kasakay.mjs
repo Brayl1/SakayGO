@@ -1,9 +1,11 @@
 import { createHmac, timingSafeEqual, createHash } from "node:crypto";
 import { z } from "zod";
 import { directionsParagraph, fareSummary, lineLength, tripDirections } from "../shared/directions.mjs";
+import { readTripLocally } from "./kasakay-local.mjs";
 
 export const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const unavailable = "KaSakay AI is temporarily unavailable. You can still use route search, the fare guide, or guided trip planning.";
+const busy = "KaSakay's free AI limit is busy right now. Ask again in a minute, or ask like \"from Limketkai to Cogon\" and KaSakay can still answer from SakayGo data.";
 const text = z.string().trim().min(1).max(1000);
 const inputSchema = z.object({
   messages: z.array(z.object({ role: z.enum(["user", "assistant"]), text }).strict()).min(1).max(10),
@@ -159,7 +161,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
     for (const [key, value] of clients) if (now() - value.at >= 60000) clients.delete(key);
     if (now() - hourly.at >= 3600000) hourly = { at: now(), count: 0 };
     const client = clients.get(id) || { at: now(), count: 0 };
-    if (client.count >= 6 || hourly.count >= 60 || active >= 2 || clients.size >= 2000 || now() < cooldown)
+    if (client.count >= 6 || hourly.count >= 60 || active >= 2 || clients.size >= 2000)
       return reply({ error: unavailable, unavailable: true }, 429, { "Retry-After": "60" });
     client.count++; clients.set(id, client); hourly.count++;
     if (!env.GEMINI_API_KEY || env.GEMINI_FREE_TIER_ENABLED !== "true")
@@ -181,7 +183,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           if (!res.ok) throw new Error("application");
           return res.json();
         };
-        let language, passenger, focus = "route", originPlace, destinationPlace, alternatives;
+        let language, passenger, focus = "route", originPlace, destinationPlace, alternatives, readBy = "ai";
         if (input.choice) {
           let choices;
           try { choices = verify(input.choice.token, env.GEMINI_API_KEY, now); }
@@ -192,8 +194,25 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           language = choices.language; passenger = choices.passenger;
           focus = choices.focus === "fare" ? "fare" : "route";
         } else {
-          const intent = intentSchema.parse(await model(interpretationTool,
-            [{ role: "user", parts: [{ text: JSON.stringify(input.messages) }] }], signal));
+          // Gemini reads the question; if it is unavailable (quota, error) a
+          // simple built-in reader handles plain "from A to B" questions.
+          const question = input.messages.at(-1).text;
+          let intent;
+          if (now() < cooldown) {
+            intent = readTripLocally(question);
+            if (!intent) throw new Error("quota");
+            readBy = "local";
+          } else {
+            try {
+              intent = intentSchema.parse(await model(interpretationTool,
+                [{ role: "user", parts: [{ text: JSON.stringify(input.messages) }] }], signal));
+            } catch (error) {
+              if (signal.aborted) throw error;
+              intent = readTripLocally(question);
+              if (!intent) throw error;
+              readBy = "local";
+            }
+          }
           language = intent.language; passenger = intent.passenger;
           const words = copy[language];
           // "How much from A to B?" names both places: answer it as a trip, fare first.
@@ -224,19 +243,15 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           preferences: { maxWalkMeters: 500, sort: "walking", passenger, allowTransfers: true } });
         if (!Array.isArray(result.trips)) throw new Error("application");
         const words = copy[language];
-        // Gemini can arrange supplied factual sentences, but cannot author route facts.
+        // Fixed SakayGo sentences; no second model call (it only reordered these
+        // and doubled the free-tier quota used per question).
         const facts = [result.trips.length ? words.found : words.noRoute, words.fare, words.warning];
-        const explanation = z.object({ order: z.array(z.number().int().min(0).max(2)).length(3) }).strict().parse(
-          await model({
-            name: "explain_results", description: "Order all three grounded sentences to explain the planner result. Include each index exactly once.",
-            parameters: { type: "OBJECT", properties: { order: { type: "ARRAY", items: { type: "INTEGER" } } }, required: ["order"] },
-          }, [{ role: "user", parts: [{ text: JSON.stringify({ language, facts }) }] }], signal));
-        if (new Set(explanation.order).size !== 3) throw new Error("provider");
         // Step-by-step directions from SakayGo data only: the planner's walk and
         // along-route distances plus each route's LPTRP streets and key places.
         const top = result.trips.slice(0, 3);
         const routeInfo = new Map();
-        for (const id of [...new Set(top.flatMap((trip) => trip.legs.map((leg) => leg.routeId)))].slice(0, 6)) {
+        const routeIds = [...new Set(top.flatMap((trip) => trip.legs.map((leg) => leg.routeId)))].slice(0, 6);
+        await Promise.all(routeIds.map(async (id) => {
           try {
             const route = await internal("/api/catalog/" + encodeURIComponent(id));
             routeInfo.set(id, {
@@ -245,7 +260,7 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
               lengths: Object.fromEntries(Object.entries(route.geometry || {}).map(([d, g]) => [d, lineLength(g)])),
             });
           } catch { /* Directions still work without street placement. */ }
-        }
+        }));
         // Geometry stays in the regular planner; bound response size without altering fare data.
         const trips = top.map((trip) => ({
           ...trip,
@@ -259,8 +274,10 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
         const lead = focus === "fare"
           ? [fareSummary(trips[0], { ...places, passenger }), directions].filter(Boolean).join(" ")
           : directions;
-        const notes = explanation.order.map((i) => facts[i]).join(" ");
-        const output = { text: lead ? lead + " " + notes : notes, source: "AI-arranged explanation · SakayGo planner data",
+        const notes = facts.join(" ");
+        const source = input.choice ? "SakayGo planner data"
+          : readBy === "ai" ? "AI interpretation · SakayGo planner data" : "SakayGo planner data · read without AI (AI busy)";
+        const output = { text: lead ? lead + " " + notes : notes, source,
           language, trips, origin: originPlace, destination: destinationPlace, passenger,
           ...(alternatives ? { choices: alternatives } : {}),
           caveats: result.caveats || [], transferNote: result.transferNote };
@@ -269,8 +286,12 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
       };
       // Also bound local API work if an upstream implementation ignores cancellation.
       return await Promise.race([work(), new Promise((_, reject) => { timer = setTimeout(() => reject(new Error("timeout")), duration); })]);
-    } catch {
-      return reply({ error: unavailable, unavailable: true }, now() < cooldown ? 429 : 503, now() < cooldown ? { "Retry-After": "60" } : {});
+    } catch (error) {
+      // Category only (our own labels such as provider/quota/timeout/application); never message text or secrets.
+      const kind = ["provider", "quota", "timeout", "application", "tool", "size", "body"].includes(error?.message) ? error.message : "error";
+      console.warn("[kasakay] request failed:", kind, now() < cooldown ? "(AI cool-down active)" : "");
+      const limited = now() < cooldown;
+      return reply({ error: limited ? busy : unavailable, unavailable: true, reason: limited ? "quota" : kind }, limited ? 429 : 503, limited ? { "Retry-After": "60" } : {});
     } finally { clearTimeout(timer); active--; }
   };
 }

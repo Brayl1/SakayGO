@@ -95,3 +95,10 @@ The steps are built by `shared/directions.mjs`, not by Gemini, so the model stil
 - the server reads routes through the public read-only `/api/catalog/<id>` endpoint (added to KaSakay's in-process allowlist; still no write or admin access).
 
 Tests: `tests/directions.test.js` (walk/ride/transfer/arrival, all three languages, nearby-place rule, graceful fallback) and the real-planner case in `tests/kasakay.test.js`, which checks every returned trip has grounded steps.
+
+## Reliability update (2026-11-28)
+
+- **One Gemini call per question.** The second call that only re-ordered three fixed SakayGo sentences was removed; the sentences now appear in a fixed order. This halves free-tier quota use.
+- **Backup reader.** If Gemini fails or is rate-limited, `server/kasakay-local.mjs` reads plain trip questions itself ("from A to B", "A to B", "gikan A paingon B", "mula A papunta B", "pag-adto sa B gikan sa A", fare words, student/senior/PWD). It never uses model output. Answers are labelled "read without AI (AI busy)". Anything it cannot read safely returns the "busy" message.
+- During the one-minute cool-down after a Gemini quota error, Gemini is not called; the backup reader keeps answering simple trip questions.
+- Failures are logged on the server as a category only (`[kasakay] request failed: provider|quota|timeout|application|…`), never message text or secrets. Check Vercel → Logs for these lines when KaSakay says it is unavailable.

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -8,13 +8,20 @@ import {
   useMap,
   useMapEvents,
 } from "react-leaflet";
-import { divIcon, marker, polyline, type Layer } from "leaflet";
+import { divIcon, marker, polyline, type Layer, type Map as LeafletMap } from "leaflet";
 import { useReducedMotion } from "motion/react";
 import { Maximize, RotateCcw } from "lucide-react";
 import type { Place, Trip } from "../shared/trip-types";
 import type { Point } from "../shared/model";
 import { measurePath, positionOnPath } from "./routeAnimation";
 import "leaflet/dist/leaflet.css";
+
+// react-leaflet removes the map before child effect cleanups run, so cleanup
+// code must not touch a removed map: map.stop() on it throws "_leaflet_pos".
+function mapAlive(map: LeafletMap) {
+  const internal = map as LeafletMap & { _mapPane?: HTMLElement };
+  return Boolean(internal._mapPane && map.getContainer().isConnected);
+}
 type Props = {
   origin: Place | null;
   destination: Place | null;
@@ -155,6 +162,7 @@ function CameraAndRide({
       cancelAnimationFrame(frame);
       clearTimeout(timer);
       map.off("moveend", draw);
+      if (!mapAlive(map)) return;
       map.stop();
       layers.forEach((l) => map.removeLayer(l));
     };
@@ -173,8 +181,15 @@ function Controls(props: Props) {
     if (props.focus)
       map.flyTo(props.focus, 17, { animate: !reduced, duration: 0.6 });
   }, [props.focus, map, reduced]);
+  // Same teardown as CatalogMap: stop any fly/zoom while the map still exists
+  // (layout cleanups run before react-leaflet's passive map.remove()) and clear
+  // Leaflet 1.9.4's leftover zoom-animation flag so its timer is a no-op.
+  useLayoutEffect(() => () => {
+    if (mapAlive(map)) map.stop();
+    (map as typeof map & { _animatingZoom?: boolean })._animatingZoom = false;
+  }, [map]);
   useEffect(() => {
-    const o = new ResizeObserver(() => map.invalidateSize({ pan: false }));
+    const o = new ResizeObserver(() => { if (mapAlive(map)) map.invalidateSize({ pan: false }); });
     o.observe(map.getContainer());
     return () => o.disconnect();
   }, [map]);

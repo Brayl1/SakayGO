@@ -5,6 +5,7 @@ import useReducedMotionNow from "./useReducedMotionNow";
 import { Info } from "lucide-react";
 import KaSakayLoader from "./KaSakayLoader";
 import Navigation from "./Navigation";
+import PageErrorBoundary from "./PageErrorBoundary";
 import KaSakayWidget from "./KaSakayWidget";
 import { CatalogProvider, useCatalog } from "./CatalogContext";
 import CatalogPlanner, { CatalogDirectory, CatalogDetail } from "./Catalog";
@@ -52,6 +53,7 @@ function Shell() {
       )}
       {sessionError && <div className="planner-error" role="alert">{sessionError}</div>}
       <main id="main">
+        <PageErrorBoundary resetKey={location.pathname}>
         <Suspense
           fallback={
             <KaSakayLoader />
@@ -93,6 +95,7 @@ function Shell() {
           </Routes>
           </motion.div>
         </Suspense>
+        </PageErrorBoundary>
       </main>
       {location.pathname !== "/kasakay" && <KaSakayWidget />}
     </>

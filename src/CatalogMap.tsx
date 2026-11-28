@@ -37,7 +37,7 @@ function Controls({
   };
   useEffect(fit, [map, points]);
   useEffect(() => {
-    const observer = new ResizeObserver(() => map.invalidateSize());
+    const observer = new ResizeObserver(() => { if (map.getContainer().isConnected) map.invalidateSize(); });
     observer.observe(map.getContainer());
     return () => observer.disconnect();
   }, [map]);

@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "motion/react";
+import KaSakayLoader from "./KaSakayLoader";
 import { Link } from "react-router-dom";
 import { ArrowRight, Send, Trash2 } from "lucide-react";
 import type { Place, Trip } from "../shared/trip-types";
@@ -29,6 +31,7 @@ function ConfirmPlaces({ choices, disabled, onConfirm }: { choices: Choices; dis
   </form>;
 }
 export default function KaSakay({ compact = false }: { compact?: boolean }) {
+  const reduced = useReducedMotion();
   const [messages, setMessages] = useState<Message[]>([]);
   const [chosen, setChosen] = useState<{ origin: Place; destination: Place } | null>(null);
   const [draft, setDraft] = useState("");
@@ -90,7 +93,7 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
         <p className="kasakay-greeting">{greeting}</p>
         <div className="kasakay-starters">{starters.map((starter) => <button key={starter} disabled={loading} onClick={() => send(starter)}>{starter}<ArrowRight size={15} /></button>)}</div>
         <div className="kasakay-messages" role="log" aria-label="Conversation messages" aria-live="polite" aria-relevant="additions">
-          {messages.map((message, index) => <article className={"kasakay-message " + message.role} key={index}>
+          {messages.map((message, index) => <motion.article initial={reduced ? false : { opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }} className={"kasakay-message " + message.role} key={index}>
             <small>{message.role === "user" ? "You" : message.answer?.source || "KaSakay"}</small>
             <p>{message.text}</p>
             {message.answer?.choices && <ConfirmPlaces choices={message.answer.choices} disabled={loading || index !== messages.length - 1}
@@ -110,9 +113,9 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
               {message.answer.transferNote && <p>{message.answer.transferNote}</p>}
               <Link className="primary" to="/planner" state={{ origin: message.answer.origin, destination: message.answer.destination, passenger: message.answer.passenger }}>Open these places in the planner <ArrowRight size={16} /></Link>
             </div>}
-          </article>)}
+          </motion.article>)}
         </div>
-        <div role="status" className="kasakay-status">{loading ? "KaSakay is checking your request…" : notice}</div>
+        {loading ? <KaSakayLoader compact label="KaSakay is checking your request..." /> : <div role="status" className="kasakay-status">{notice}</div>}
         {error && <div className="kasakay-error" role="alert"><strong>{error}</strong><p>These are regular SakayGo tools, not AI answers. You can use them below while AI is unavailable.</p>{retry && <button disabled={loading} onClick={() => void request(retry)}>Retry request</button>}</div>}
         <form className="kasakay-compose" onSubmit={(event) => { event.preventDefault(); send(draft); }}>
           <label htmlFor="kasakay-message">Your message to KaSakay</label>

@@ -1,4 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "motion/react";
+import KaSakayLoader from "./KaSakayLoader";
 import { House, Map, Route, X } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./kasakay-widget.css";
@@ -6,6 +8,7 @@ import "./kasakay-widget.css";
 const KaSakay = lazy(() => import("./KaSakay"));
 
 export default function KaSakayWidget() {
+  const reduced = useReducedMotion();
   const [opened, setOpened] = useState(false);
   const [started, setStarted] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
@@ -91,9 +94,9 @@ export default function KaSakayWidget() {
         <div><h2 id="kasakay-panel-title">KaSakay</h2><p>Your commute companion</p></div>
         <button ref={closeButton} onClick={close} aria-label="Close KaSakay assistant"><X size={22} /></button>
       </div>
-      <div className="kasakay-panel-content">
-        {started && <Suspense fallback={<p role="status">Loading KaSakay…</p>}><KaSakay compact /></Suspense>}
-      </div>
+      <motion.div className="kasakay-panel-content" initial={false} animate={{ opacity: opened ? 1 : 0, y: opened || reduced ? 0 : 8 }} transition={{ duration: reduced ? 0 : 0.2 }}>
+        {started && <Suspense fallback={<KaSakayLoader label="Loading KaSakay..." />}><KaSakay compact /></Suspense>}
+      </motion.div>
     </dialog>
   </>;
 }

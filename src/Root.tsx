@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Link, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig, motion } from "motion/react";
 import { Info } from "lucide-react";
+import KaSakayLoader from "./KaSakayLoader";
 import Navigation from "./Navigation";
 import KaSakayWidget from "./KaSakayWidget";
 import { CatalogProvider, useCatalog } from "./CatalogContext";
@@ -51,9 +52,7 @@ function Shell() {
       <main id="main">
         <Suspense
           fallback={
-            <div className="content-page" role="status">
-              Loading SakayGo…
-            </div>
+            <KaSakayLoader />
           }
         >
           <Routes>

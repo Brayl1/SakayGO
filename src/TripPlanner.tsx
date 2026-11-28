@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import type { Point } from "../shared/model";
 import type { Place, TripResult } from "../shared/trip-types";
+import KaSakayLoader, { KaSakaySpinner } from "./KaSakayLoader";
 import PlaceInput from "./PlaceInput";
 import TripResults from "./TripResults";
 import { useCatalog } from "./CatalogContext";
@@ -440,7 +441,7 @@ export default function TripPlanner() {
                       disabled={loading || data.settings.maintenance}
                     >
                       {loading ? (
-                        <span className="search-spinner" aria-hidden="true" />
+                        <KaSakaySpinner small />
                       ) : (
                         <Search size={18} />
                       )}
@@ -529,7 +530,7 @@ export default function TripPlanner() {
             <strong>Your trip, on the map</strong>
             <span>Cagayan de Oro</span>
           </div>
-          <Suspense fallback={<div className="map-fallback">Loading map…</div>}>
+          <Suspense fallback={<div className="map-fallback"><KaSakayLoader label="Loading your map..." /></div>}>
             <TripMap
               origin={origin}
               destination={destination}

@@ -117,9 +117,8 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
         <form className="kasakay-compose" onSubmit={(event) => { event.preventDefault(); send(draft); }}>
           <label htmlFor="kasakay-message">Your message to KaSakay</label>
           <textarea ref={input} id="kasakay-message" value={draft} onChange={(event) => setDraft(event.target.value)} maxLength={1000} rows={3}
-            placeholder="Unsa akong sakyan gikan Centrio padulong Carmen Market?" aria-describedby="kasakay-privacy" required />
+            placeholder="Unsa akong sakyan gikan Centrio padulong Carmen Market?" required />
           <div><small>{draft.length}/1000</small><button className="primary" disabled={loading || !draft.trim()}><Send size={17} /> Send message</button></div>
-          <p id="kasakay-privacy">Your message and recent conversation are sent to Google Gemini. Free-tier data may be used to improve Google products. Avoid sharing sensitive details. KaSakay does not automatically send your device location. This conversation is kept only on this page; clear it anytime.</p>
         </form>
       </section>
       <aside className="kasakay-tools" aria-label="Regular SakayGo tools">

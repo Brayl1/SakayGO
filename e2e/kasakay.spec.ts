@@ -8,13 +8,12 @@ test.beforeEach(async ({ page }) => {
   await page.route("**/api/session", (route) => route.fulfill({ json: { admin: false, signedIn: false } }));
   await page.route("**/api/fare-policies/current", (route) => route.fulfill({ json: { policies: [] } }));
 });
-test("navigation, privacy, unavailable fallback, retry, clear and layout", async ({ page }, info) => {
+test("navigation, unavailable fallback, retry, clear and layout", async ({ page }, info) => {
   await page.route("**/api/kasakay", (route) => route.fulfill({ status: 503, json: { error: "KaSakay AI is temporarily unavailable." } }));
   await page.goto("/");
   if (info.project.name.includes("mobile")) await page.getByRole("button", { name: "Open navigation" }).click();
   await page.getByRole("link", { name: "Ask KaSakay", exact: true }).filter({ visible: true }).click();
   await expect(page.getByRole("heading", { name: "Ask KaSakay" })).toBeVisible();
-  await expect(page.getByText("Your message and recent conversation are sent to Google Gemini.", { exact: false })).toBeVisible();
   await page.getByRole("button", { name: "Help me plan a trip" }).click();
   await expect(page.getByRole("alert")).toContainText("temporarily unavailable");
   await expect(page.getByRole("link", { name: "Guided trip planning", exact: false })).toBeVisible();

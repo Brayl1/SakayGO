@@ -76,23 +76,28 @@ describe("Dataset fidelity", () => {
   it("preserves all 76 records and 152 directional geometries", () => {
     expect(base.length).toBe(76);
     expect(base.reduce((n, r) => n + r.directions.length, 0)).toBe(152);
+    // Geometry must be exactly the CDO LPTRP source path for the same route.
     const raw = JSON.parse(
-      readFileSync("data/source/sakaygo_cdo_routes.json", "utf8"),
+      readFileSync("data/source/lptrp/cdo_lptrp_routes.json", "utf8"),
     );
-    for (const r of raw.routes) {
+    expect(raw).toHaveLength(76);
+    expect(new Set(base.map((r) => r.sourceRouteId)).size).toBe(76);
+    for (const r of base) {
+      const src = raw.find((s) => s.id === r.sourceRouteId);
+      expect(src).toBeDefined();
       const shape = JSON.parse(
         readFileSync(`public/data/routes/${r.id}.json`, "utf8"),
       );
-      expect(shape.inbound).toEqual(r.inbound_coordinates_latlng);
-      expect(shape.outbound).toEqual(
-        r.other_paths.find((p) => p.id === "outbound").route,
-      );
+      expect(shape.inbound).toEqual(src.paths.inbound);
+      expect(shape.outbound).toEqual(src.paths.outbound);
     }
   });
   it("never creates verified stops or fares", () => {
     for (const r of base) {
       expect(r.status).toBe("approved");
-      expect(r.stops).toBeUndefined();
+      // Route-plan reference points are allowed, but never as verified stops.
+      expect(r.fieldVerification.stops).not.toBe("verified");
+      for (const stop of r.stops || []) expect(stop).not.toHaveProperty("verified");
       expect(r.fare).toBeUndefined();
     }
   });

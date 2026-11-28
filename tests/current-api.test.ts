@@ -49,10 +49,10 @@ it("separates approved current policies, reference rates and legacy demo policy"
   expect((await get("/api/test-cases")).length).toBe(3);
 });
 it("returns real alternatives with synchronized geometry and passenger reference fares", async () => {
-  const response = await fetch(base + "/api/trips/plan", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ origin: [8.449972,124.622735], destination: [8.471176,124.643082], preferences: { passenger: "student" } }) });
+  const response = await fetch(base + "/api/trips/plan", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ origin: [8.449972,124.622735], destination: [8.474176,124.643082], preferences: { passenger: "student" } }) });
   expect(response.status).toBe(200);
   const result = await response.json();
-  const a = result.trips.find((t: any) => t.legs[0].routeId === "26"), b = result.trips.find((t: any) => t.legs[0].routeId === "4");
+  const a = result.trips.find((t: any) => t.legs[0].routeId === "4"), b = result.trips.find((t: any) => t.legs[0].routeId === "39");
   expect(a.id).not.toBe(b.id);
   expect(a.legs[0].geometry).not.toEqual(b.legs[0].geometry);
   expect(a.rideMeters).not.toEqual(b.rideMeters);

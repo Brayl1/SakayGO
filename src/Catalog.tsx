@@ -16,6 +16,7 @@ import {
 import type { CatalogRoute } from "../shared/catalog";
 import type { Point } from "../shared/model";
 import { useCatalog } from "./CatalogContext";
+import { operationalLabel } from "./routeStatus";
 import { distance } from "../shared/engine";
 const CatalogMap = lazy(() => import("./CatalogMap"));
 const EMPTY: Point[] = [];
@@ -374,7 +375,7 @@ export function CatalogDirectory() {
   const routes = data.routes.filter(
     (r) =>
       (!area || r.from === area) &&
-      `${r.id} ${r.name} ${r.from} ${r.to} ${r.roads.join(" ")} ${Object.values(
+      `${r.id} ${r.name} ${r.from} ${r.to} ${r.roads.join(" ")} ${(r.landmarks || []).join(" ")} ${(r.stops || []).map((s) => s.name).join(" ")} ${Object.values(
         r.verifiedCodes || {},
       )
         .flat()
@@ -448,6 +449,7 @@ export function CatalogDirectory() {
                       ? "Under review"
                       : "Unverified"}
                   </span>
+                  {operationalLabel(r) && <span className={`route-state-pill is-${operationalLabel(r)!.tone}`}>{operationalLabel(r)!.label}</span>}
                   </span>
                   <h2>{r.name}</h2>
                   <p>
@@ -516,8 +518,20 @@ export function CatalogDetail() {
         ) : (
           route && (
             <>
-              <p className="eyebrow">ROUTE {route.id} · UNVERIFIED</p>
+              <p className="eyebrow">ROUTE {route.id} · {operationalLabel(route)?.label.toUpperCase() || "UNVERIFIED"}</p>
               <h1>{route.name}</h1>
+              {route.operationalStatus === "not_yet_operational" && (
+                <div className="route-state-notice is-warning" role="note">
+                  <strong>Not yet operational.</strong> This route is in the CDO Local Public Transport Route Plan
+                  but is not running yet, so the trip planner does not suggest it.
+                </div>
+              )}
+              {route.operationalStatus === "for_clarification" && (
+                <div className="route-state-notice is-notice" role="note">
+                  <strong>For clarification.</strong> The route plan marks this route structure for clarification.
+                  Confirm the path with the driver before riding.
+                </div>
+              )}
               <div className="direction-tabs">
                 {route.directions.map((d) => (
                   <button
@@ -555,9 +569,42 @@ export function CatalogDetail() {
                   ? route.verifiedCodes[direction].join(" / ")
                   : "Signboard code not verified"}
               </p>
+              {route.stops && route.stops.length > 0 && (
+                <>
+                  <h2>Key places on this route</h2>
+                  <ul className="route-stop-list">
+                    {route.stops.map((stop, i) => (
+                      <li key={i}>
+                        <span className="route-stop-dot" aria-hidden="true" />
+                        <span>{stop.name}</span>
+                        <small>{stop.type}</small>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="route-fine-print">
+                    Reference points from the route plan, not designated jeepney stops. Board and alight where it is safe and allowed.
+                  </p>
+                </>
+              )}
+              {route.landmarks && route.landmarks.length > 0 && (
+                <>
+                  <h2>Landmarks along the way</h2>
+                  <ul className="route-landmarks">
+                    {route.landmarks.map((landmark) => (
+                      <li key={landmark}>{landmark}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {route.transferPoints && route.transferPoints.length > 0 && (
+                <>
+                  <h2>Transfer points</h2>
+                  <p>{route.transferPoints.join(" · ")}</p>
+                </>
+              )}
               <h2>Boarding & fare</h2>
               <p>
-                Boarding stops: Information unavailable
+                Boarding stops: Not designated — see key places above
                 <br />
                 Fare: Unavailable
                 <br />
@@ -601,6 +648,7 @@ export function CatalogDetail() {
           alternate={other}
           direction={direction}
           name={route?.name || ""}
+          stops={route?.stops}
         />
       </Suspense>
     </div>

@@ -1,4 +1,10 @@
 import type { Point } from "./model";
+export interface RouteStop {
+  name: string;
+  lat: number;
+  lng: number;
+  type: string;
+}
 export interface CatalogRoute {
   id: string;
   name: string;
@@ -18,7 +24,14 @@ export interface CatalogRoute {
   routeIdentifier?: string;
   signboardCode?: string;
   license?: string;
+  /** CDO LPTRP route state: "unverified" | "not_yet_operational" | "for_clarification". */
   operationalStatus?: string;
+  /** Landmarks named along the route in the LPTRP description. */
+  landmarks?: string[];
+  /** Places where the route meets others, per the source dataset. */
+  transferPoints?: string[];
+  /** Reference points from the route plan (areas, markets, terminals); not designated stops. */
+  stops?: RouteStop[];
   fieldVerification?: Record<string, string>;
   missingDirections?: string[];
   verifiedCodes?: Record<string, string[]>;

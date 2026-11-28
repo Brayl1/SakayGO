@@ -7,6 +7,11 @@ import {
 } from "../shared/trips.mjs";
 import { readVerification, verificationEndpoint } from "./verification.mjs";
 import { withConfiguredStorage } from "./supabase-store.mjs";
+
+// Route states from the CDO LPTRP. Routes that are not yet operational stay
+// visible in the directory (clearly labelled) but are never offered as trips.
+const OPERATIONAL_STATUSES = ["unverified", "not_yet_operational", "for_clarification"];
+const plannable = (r) => r.visible && r.operationalStatus !== "not_yet_operational";
 const defaults = {
   headline: "Where to today?",
   description:
@@ -40,6 +45,10 @@ export function validateState(input, baseIds) {
     );
   };
   const str = (v, max = 300) => typeof v === "string" && v.length <= max;
+  const strings = (v, maxItems) =>
+    Array.isArray(v)
+      ? v.filter((x) => str(x, 200) && x.trim()).slice(0, maxItems)
+      : [];
   if (
     !input ||
     !input.settings ||
@@ -131,14 +140,47 @@ export function validateState(input, baseIds) {
           ? r.roadsByDirection
           : {},
       routeIdentifier: str(r.routeIdentifier, 80) ? r.routeIdentifier : "",
+      ...(str(r.sourceRouteId, 120) && /^[a-z0-9-]+$/.test(r.sourceRouteId)
+        ? { sourceRouteId: r.sourceRouteId }
+        : {}),
       signboardCode: "",
       license: "not verified",
-      operationalStatus: "unverified",
+      // LPTRP route state; anything unknown falls back to "unverified".
+      operationalStatus: OPERATIONAL_STATUSES.includes(r.operationalStatus)
+        ? r.operationalStatus
+        : "unverified",
+      landmarks: strings(r.landmarks, 80),
+      transferPoints: strings(r.transferPoints, 20),
+      stops: Array.isArray(r.stops)
+        ? r.stops
+            .filter(
+              (st) =>
+                st &&
+                str(st.name, 200) &&
+                st.name.trim() &&
+                Number.isFinite(st.lat) &&
+                Number.isFinite(st.lng) &&
+                st.lat >= 7 &&
+                st.lat <= 10 &&
+                st.lng >= 123 &&
+                st.lng <= 126,
+            )
+            .slice(0, 50)
+            .map((st) => ({
+              name: st.name.trim(),
+              lat: st.lat,
+              lng: st.lng,
+              type: str(st.type, 40) ? st.type : "area",
+            }))
+        : [],
       fieldVerification: {
         label: "unverified",
         geometry: "unverified",
         roads: "unverified",
-        stops: "unavailable",
+        stops:
+          Array.isArray(r.stops) && r.stops.length
+            ? "source_reference"
+            : "unavailable",
         signboard_code: "unverified",
         fares: "unavailable",
         operation: "unverified",
@@ -420,7 +462,7 @@ export function createHandler({
           const verification = (await readVerification(env)).state;
           let result = planGeometricTrips({
             ...input,
-            routes: state.routes.filter((r) => r.visible).map(routeForPlanning),
+            routes: state.routes.filter(plannable).map(routeForPlanning),
             crosswalks: verification.crosswalks,
             farePolicies: verification.farePolicies,
             fareReference,

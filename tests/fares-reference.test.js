@@ -234,14 +234,17 @@ describe("itinerary data integrity and route-specific fares", () => {
     expect(JSON.stringify(routes)).toBe(original);
   });
   it("keeps each geometry, endpoint, distance and reference charge attached to its own ID", () => {
+    // In the LPTRP paths, routes 4 and 39 diverge before this destination,
+    // so their alternatives differ in geometry, distance and fare band.
     const trips = planGeometricTrips({
       ...points,
+      destination: [8.474176, 124.643082],
       routes,
       fareReference: reference,
       preferences: { vehicle: "modern" },
     }).trips;
-    const a = trips.find((t) => t.legs[0].routeId === "26"),
-      b = trips.find((t) => t.legs[0].routeId === "4");
+    const a = trips.find((t) => t.legs[0].routeId === "4"),
+      b = trips.find((t) => t.legs[0].routeId === "39");
     expect(a.id).not.toBe(b.id);
     expect(a.id).toContain(":inbound:");
     expect(a.legs[0].geometry).not.toEqual(b.legs[0].geometry);

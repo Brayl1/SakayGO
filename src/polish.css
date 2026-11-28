@@ -351,3 +351,18 @@ path.sg-live-accuracy { fill: #1F4D34; fill-opacity: .1; stroke: #1F4D34; stroke
   .hero-route-bus-pulse,
   .mobile-kasakay-icon::after { animation: none; opacity: 0; }
 }
+
+/* ---------- LPTRP route details ------------------------------------------ */
+.route-state-pill { display: inline-flex; align-items: center; min-height: 24px; padding: 0 9px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .2px; white-space: nowrap; }
+.route-state-pill.is-warning,
+.route-state-notice.is-warning { color: #7A4A12; background: #FBEFD9; border-color: #EBCB94; }
+.route-state-pill.is-notice,
+.route-state-notice.is-notice { color: var(--sage-800); background: var(--sage-100); border-color: var(--border); }
+.route-state-notice { margin: 12px 0 16px; padding: 12px 14px; border: 1px solid; border-radius: 14px; font-size: 13.5px; line-height: 1.5; }
+.route-stop-list { display: grid; gap: 6px; margin: 8px 0 6px; padding: 0; list-style: none; }
+.route-stop-list li { display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 6px 12px; border: 1px solid var(--border); border-radius: 12px; background: white; font-size: 14px; }
+.route-stop-list small { margin-left: auto; color: var(--text-body); font-size: 11px; text-transform: capitalize; }
+.route-stop-dot { width: 10px; height: 10px; flex: 0 0 10px; border: 2px solid white; border-radius: 50%; background: #1F4D34; box-shadow: 0 0 0 1px #1F4D34; }
+.route-fine-print { color: var(--text-body); font-size: 12px; }
+.route-landmarks { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 4px; padding: 0; list-style: none; }
+.route-landmarks li { padding: 6px 10px; border-radius: 999px; background: var(--sage-100); color: var(--sage-800); font-size: 12.5px; font-weight: 600; }

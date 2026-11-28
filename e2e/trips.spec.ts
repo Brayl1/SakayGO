@@ -350,7 +350,9 @@ test("real alternative geometry, endpoints, instructions and reference fare stay
     .fill("8.449972, 124.622735");
   await page
     .getByRole("combobox", { name: "Destination", exact: true })
-    .fill("8.471176, 124.643082");
+    // In the LPTRP paths routes 4 and 39 diverge before this point, so the two
+    // alternatives differ in geometry and fare band.
+    .fill("8.474176, 124.643082");
   const reply = page.waitForResponse(
     (r) =>
       r.url().endsWith("/api/trips/plan") && r.request().method() === "POST",
@@ -359,8 +361,8 @@ test("real alternative geometry, endpoints, instructions and reference fare stay
     .getByRole("button", { name: "Find My Jeepney", exact: true })
     .click();
   const result = await (await reply).json();
-  const a = result.trips.find((t: any) => t.legs[0].routeId === "26"),
-    b = result.trips.find((t: any) => t.legs[0].routeId === "4");
+  const a = result.trips.find((t: any) => t.legs[0].routeId === "4"),
+    b = result.trips.find((t: any) => t.legs[0].routeId === "39");
   expect(a).toBeTruthy();
   expect(b).toBeTruthy();
   expect(a.legs[0].geometry).not.toEqual(b.legs[0].geometry);
@@ -407,7 +409,7 @@ test("real alternative geometry, endpoints, instructions and reference fare stay
   await expect(page.locator(".animated-ride")).toHaveCount(1);
   await expect(page.locator(".animated-ride")).toHaveAttribute(
     "data-route-id",
-    "4",
+    b.legs[0].routeId,
   );
   await expect(page.locator(".animated-ride")).toHaveAttribute(
     "data-direction",

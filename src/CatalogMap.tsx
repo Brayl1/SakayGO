@@ -10,6 +10,7 @@ import {
 import { LocateFixed, Maximize } from "lucide-react";
 import { useState } from "react";
 import type { Point } from "../shared/model";
+import type { RouteStop } from "../shared/catalog";
 import "leaflet/dist/leaflet.css";
 function Controls({
   points,
@@ -66,11 +67,13 @@ export default function CatalogMap({
   alternate,
   name,
   direction,
+  stops = [],
 }: {
   points: Point[];
   alternate: Point[];
   name: string;
   direction: string;
+  stops?: RouteStop[];
 }) {
   const [error, setError] = useState(false);
   return (
@@ -128,6 +131,19 @@ export default function CatalogMap({
             ))}
           </>
         )}
+        {stops.map((stop, i) => (
+          <CircleMarker
+            key={`stop-${i}`}
+            center={[stop.lat, stop.lng]}
+            radius={6}
+            pathOptions={{ color: "#fff", weight: 2, fillColor: "#1F4D34", fillOpacity: 1 }}
+          >
+            <Popup>
+              <strong>{stop.name}</strong>
+              <p>Route plan reference point ({stop.type}), not a designated stop.</p>
+            </Popup>
+          </CircleMarker>
+        ))}
         <Controls points={points} alternate={alternate} />
       </MapContainer>
       <div className="map-label">

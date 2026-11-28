@@ -35,9 +35,10 @@ test("directory filtering and reduced motion", async ({ page }) => {
   await expect(page.locator(".imported-card")).toHaveCount(12);
   await page
     .getByRole("textbox", { name: "Search imported routes" })
-    .fill("Baikingon");
-  // Baikingon matches its own route and two Iponan routes' source roads.
-  await expect(page.locator(".imported-card")).toHaveCount(3);
+    .fill("Limketkai");
+  // Search covers route names, roads and LPTRP landmarks: one route ends at
+  // Limketkai and eight more pass it on the way to Agora.
+  await expect(page.locator(".imported-card")).toHaveCount(9);
   await page
     .getByRole("textbox", { name: "Search imported routes" })
     .fill("no-such-route");

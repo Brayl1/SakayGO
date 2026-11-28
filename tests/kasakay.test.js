@@ -168,6 +168,10 @@ describe("grounded planning", () => {
       .toEqual(expected.trips.slice(0, 3).map((trip) => ({ id: trip.id, fare: trip.fare, referenceFare: trip.referenceFare, legs: trip.legs.map((leg) => [leg.routeId, leg.codes, leg.fare]) })));
     // Every trip carries grounded step-by-step directions: a start step, a
     // ride + get-off pair per leg, and an arrival step, all naming SakayGo data.
+    // The reply itself leads with plain directions for the best trip, in the
+    // user's language (this conversation is Cebuano).
+    expect(answer.text.startsWith("Mao ni ang paagi gikan Starting landmark paingon Destination landmark: Una, ")).toBe(true);
+    expect(answer.text).toContain(answer.trips[0].legs[0].label);
     for (const trip of answer.trips) {
       expect(trip.steps).toHaveLength(trip.legs.length * 3 + 1);
       for (const leg of trip.legs) expect(trip.steps.join(" ")).toContain(leg.label);

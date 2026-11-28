@@ -111,3 +111,22 @@ export function tripDirections(trip, routes, { language = "en", origin = "", des
   steps.push(w.arrive(roundWalk(walkOut), shortPlace(destination)));
   return steps;
 }
+
+const paragraphWords = {
+  en: { lead: (o, d) => `Here's how to get${o ? ` from ${o}` : ""}${d ? ` to ${d}` : ""}:`, first: "First,", then: "Then", next: "After that,", last: "Finally," },
+  fil: { lead: (o, d) => `Ganito pumunta${o ? ` mula ${o}` : ""}${d ? ` papuntang ${d}` : ""}:`, first: "Una,", then: "Pagkatapos,", next: "Sunod,", last: "Sa huli," },
+  ceb: { lead: (o, d) => `Mao ni ang paagi${o ? ` gikan ${o}` : ""}${d ? ` paingon ${d}` : ""}:`, first: "Una,", then: "Dayon,", next: "Human ana,", last: "Sa katapusan," },
+};
+
+/** Join steps into one readable paragraph: "Here's how to get from A to B: First, … Then, … Finally, …". */
+export function directionsParagraph(steps, { language = "en", origin = "", destination = "" } = {}) {
+  if (!Array.isArray(steps) || !steps.length) return "";
+  const w = paragraphWords[language] || paragraphWords.en;
+  const lower = (s) => s.charAt(0).toLowerCase() + s.slice(1);
+  const body = steps.map((step, i) => {
+    if (steps.length === 1) return step;
+    const word = i === 0 ? w.first : i === steps.length - 1 ? w.last : i % 2 ? w.then : w.next;
+    return `${word} ${lower(step)}`;
+  });
+  return `${w.lead(shortPlace(origin), shortPlace(destination))} ${body.join(" ")}`;
+}

@@ -15,8 +15,9 @@ const greeting = "Maayong adlaw! Asa ka padulong? Tell me where you’re startin
 const starters = ["Help me plan a trip", "How do I use the route planner?", "What fare information is available?"];
 
 function ConfirmPlaces({ choices, disabled, onConfirm }: { choices: Choices; disabled: boolean; onConfirm: (origin: number, destination: number) => void }) {
-  const [origin, setOrigin] = useState("");
-  const [destination, setDestination] = useState("");
+  // Pre-select the best search match; the person still confirms with one tap.
+  const [origin, setOrigin] = useState(choices.origins.length ? "0" : "");
+  const [destination, setDestination] = useState(choices.destinations.length ? "0" : "");
   return <form className="kasakay-choices" onSubmit={(event) => { event.preventDefault(); onConfirm(Number(origin), Number(destination)); }}>
     <label>Starting place<select aria-label="Starting place" value={origin} disabled={disabled} onChange={(event) => setOrigin(event.target.value)} required>
       <option value="">Choose your starting place</option>

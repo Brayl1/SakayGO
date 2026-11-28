@@ -38,7 +38,10 @@ test("confirms ambiguous places and preserves both planner endpoints", async ({ 
   await page.goto("/kasakay");
   await page.getByLabel("Your message to KaSakay").fill("Unsa akong sakyan gikan Centrio padulong Carmen Market?");
   await page.getByRole("button", { name: "Send message" }).click();
-  await expect(page.getByRole("button", { name: "Confirm places and find routes" })).toBeDisabled();
+  // The best matches are pre-selected; confirming is still an explicit tap.
+  await expect(page.getByLabel("Starting place", { exact: true })).toHaveValue("0");
+  await expect(page.getByLabel("Destination", { exact: true })).toHaveValue("0");
+  await expect(page.getByRole("button", { name: "Confirm places and find routes" })).toBeEnabled();
   await page.getByLabel("Starting place", { exact: true }).selectOption("0");
   await page.getByLabel("Destination", { exact: true }).selectOption("0");
   await page.getByRole("button", { name: "Confirm places and find routes" }).click();

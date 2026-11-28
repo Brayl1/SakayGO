@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { tripDirections, lineLength, shortPlace } from "../shared/directions.mjs";
+import { tripDirections, lineLength, shortPlace, directionsParagraph } from "../shared/directions.mjs";
 
 // Two straight routes ~1 km long with ordered street lists and key places.
 const lineA = [[8.47, 124.62], [8.47, 124.629]];
@@ -57,5 +57,15 @@ describe("tripDirections", () => {
   it("returns nothing for a trip without legs and shortens place labels", () => {
     expect(tripDirections({ legs: [] }, routes)).toEqual([]);
     expect(shortPlace("Centrio Mall, Corrales Ave, Cagayan de Oro")).toBe("Centrio Mall");
+  });
+  it("turns steps into one readable paragraph in each language", () => {
+    const steps = ["Walk about 140 m to A St.", "Ride the Bulua R1 jeepney.", "Get off around D St after about 0.9 km.", "Walk about 60 m to Cogon."];
+    expect(directionsParagraph(steps, { origin: "Bulua Terminal, CDO", destination: "Cogon, CDO" })).toBe(
+      "Here's how to get from Bulua Terminal to Cogon: First, walk about 140 m to A St. Then ride the Bulua R1 jeepney. After that, get off around D St after about 0.9 km. Finally, walk about 60 m to Cogon.",
+    );
+    expect(directionsParagraph(["Sakay na diha mismo.", "Naog sa may D St."], { language: "ceb", destination: "Cogon" })).toBe(
+      "Mao ni ang paagi paingon Cogon: Una, sakay na diha mismo. Sa katapusan, naog sa may D St.",
+    );
+    expect(directionsParagraph([], {})).toBe("");
   });
 });

@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual, createHash } from "node:crypto";
 import { z } from "zod";
-import { lineLength, tripDirections } from "../shared/directions.mjs";
+import { directionsParagraph, lineLength, tripDirections } from "../shared/directions.mjs";
 
 export const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const unavailable = "KaSakay AI is temporarily unavailable. You can still use route search, the fare guide, or guided trip planning.";
@@ -237,7 +237,10 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
           steps: tripDirections(trip, routeInfo, { language, origin: originPlace.label, destination: destinationPlace.label }),
           walks: [], legs: trip.legs.map((leg) => ({ ...leg, geometry: [] })),
         }));
-        const output = { text: explanation.order.map((i) => facts[i]).join(" "), source: "AI-arranged explanation · SakayGo planner data",
+        // Lead with plain directions for the best option, then the ordered notes.
+        const lead = directionsParagraph(trips[0]?.steps, { language, origin: originPlace.label, destination: destinationPlace.label });
+        const notes = explanation.order.map((i) => facts[i]).join(" ");
+        const output = { text: lead ? lead + " " + notes : notes, source: "AI-arranged explanation · SakayGo planner data",
           language, trips, origin: originPlace, destination: destinationPlace, passenger,
           caveats: result.caveats || [], transferNote: result.transferNote };
         if (JSON.stringify(output).length > 100000) throw new Error("size");

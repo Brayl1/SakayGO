@@ -166,5 +166,13 @@ describe("grounded planning", () => {
     expect(answer.trips.length).toBeGreaterThan(0);
     expect(answer.trips.map((trip) => ({ id: trip.id, fare: trip.fare, referenceFare: trip.referenceFare, legs: trip.legs.map((leg) => [leg.routeId, leg.codes, leg.fare]) })))
       .toEqual(expected.trips.slice(0, 3).map((trip) => ({ id: trip.id, fare: trip.fare, referenceFare: trip.referenceFare, legs: trip.legs.map((leg) => [leg.routeId, leg.codes, leg.fare]) })));
+    // Every trip carries grounded step-by-step directions: a start step, a
+    // ride + get-off pair per leg, and an arrival step, all naming SakayGo data.
+    for (const trip of answer.trips) {
+      expect(trip.steps).toHaveLength(trip.legs.length * 3 + 1);
+      for (const leg of trip.legs) expect(trip.steps.join(" ")).toContain(leg.label);
+      const roads = trip.legs.flatMap((leg) => leg.roads);
+      if (roads.length) expect(roads.some((road) => trip.steps.join(" ").includes(road))).toBe(true);
+    }
   });
 });

@@ -8,7 +8,7 @@ import FareCard from "./FareCard";
 import "./kasakay.css";
 
 type Choices = { token: string; origins: Place[]; destinations: Place[] };
-type Answer = { text: string; source: string; choices?: Choices; trips?: Trip[]; origin?: Place; destination?: Place; passenger?: string; caveats?: string[]; transferNote?: string };
+type Answer = { text: string; source: string; choices?: Choices; trips?: (Trip & { steps?: string[] })[]; origin?: Place; destination?: Place; passenger?: string; caveats?: string[]; transferNote?: string };
 type Message = { role: "user" | "assistant"; text: string; answer?: Answer };
 type RequestBody = { messages: { role: "user" | "assistant"; text: string }[]; choice?: { token: string; origin: number; destination: number } };
 const greeting = "Maayong adlaw! Asa ka padulong? Tell me where you’re starting and where you want to go.";
@@ -106,6 +106,9 @@ export default function KaSakay({ compact = false }: { compact?: boolean }) {
               {message.answer.trips.map((trip) => <section className="kasakay-route" key={trip.id}>
                 <h2>{trip.legs.map((leg) => leg.codes.length ? leg.codes.join(" / ") : leg.label).join(" → ")}</h2>
                 <p>{trip.transfers} transfer{trip.transfers === 1 ? "" : "s"} · {Math.round(trip.walkingMeters)} m walking · Approximate route</p>
+                {trip.steps && trip.steps.length > 0 && <ol className="kasakay-steps" aria-label="How to get there">
+                  {trip.steps.map((step, stepIndex) => <li key={stepIndex}>{step}</li>)}
+                </ol>}
                 {trip.legs.map((leg, legIndex) => <p key={legIndex}><Link to={"/routes/" + encodeURIComponent(leg.routeId)}>{leg.label}</Link> · {leg.direction}{!leg.codes.length && " · Signboard code unverified"}</p>)}
                 <FareCard breakdownId={"kasakay-fare-" + index + "-" + trip.id} trip={trip} passenger={message.answer?.passenger || "regular"} />
               </section>)}

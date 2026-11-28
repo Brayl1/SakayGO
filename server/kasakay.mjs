@@ -1,5 +1,6 @@
 import { createHmac, timingSafeEqual, createHash } from "node:crypto";
 import { z } from "zod";
+import { lineLength, tripDirections } from "../shared/directions.mjs";
 
 export const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const unavailable = "KaSakay AI is temporarily unavailable. You can still use route search, the fare guide, or guided trip planning.";
@@ -168,7 +169,9 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
         const internal = async (path, body) => {
           signal.throwIfAborted();
           // Only application-owned read/search/planning endpoints, never model URLs.
-          if (!["/api/trips/plan", "/api/places"].includes(path.split("?")[0])) throw new Error("tool");
+          const bare = path.split("?")[0];
+          const routeRead = !body && /^\/api\/catalog\/[A-Za-z0-9-]{1,50}$/.test(bare);
+          if (!["/api/trips/plan", "/api/places"].includes(bare) && !routeRead) throw new Error("tool");
           const headers = { "Content-Type": "application/json", "cf-connecting-ip": id };
           const res = await api(new Request(url.origin + path, {
             method: body ? "POST" : "GET", headers, signal, ...(body ? { body: JSON.stringify(body) } : {}),
@@ -214,9 +217,25 @@ export function createKaSakay({ env = process.env, api, fetchProvider = fetch, n
             parameters: { type: "OBJECT", properties: { order: { type: "ARRAY", items: { type: "INTEGER" } } }, required: ["order"] },
           }, [{ role: "user", parts: [{ text: JSON.stringify({ language, facts }) }] }], signal));
         if (new Set(explanation.order).size !== 3) throw new Error("provider");
+        // Step-by-step directions from SakayGo data only: the planner's walk and
+        // along-route distances plus each route's LPTRP streets and key places.
+        const top = result.trips.slice(0, 3);
+        const routeInfo = new Map();
+        for (const id of [...new Set(top.flatMap((trip) => trip.legs.map((leg) => leg.routeId)))].slice(0, 6)) {
+          try {
+            const route = await internal("/api/catalog/" + encodeURIComponent(id));
+            routeInfo.set(id, {
+              from: route.from, to: route.to,
+              stops: Array.isArray(route.stops) ? route.stops : [],
+              lengths: Object.fromEntries(Object.entries(route.geometry || {}).map(([d, g]) => [d, lineLength(g)])),
+            });
+          } catch { /* Directions still work without street placement. */ }
+        }
         // Geometry stays in the regular planner; bound response size without altering fare data.
-        const trips = result.trips.slice(0, 3).map((trip) => ({
-          ...trip, walks: [], legs: trip.legs.map((leg) => ({ ...leg, geometry: [] })),
+        const trips = top.map((trip) => ({
+          ...trip,
+          steps: tripDirections(trip, routeInfo, { language, origin: originPlace.label, destination: destinationPlace.label }),
+          walks: [], legs: trip.legs.map((leg) => ({ ...leg, geometry: [] })),
         }));
         const output = { text: explanation.order.map((i) => facts[i]).join(" "), source: "AI-arranged explanation · SakayGo planner data",
           language, trips, origin: originPlace, destination: destinationPlace, passenger,

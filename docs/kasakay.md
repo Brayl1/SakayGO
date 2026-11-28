@@ -83,3 +83,15 @@ The mascot button opens a right-side dialog on desktop and a full-width dialog o
 Changed: src/KaSakayWidget.tsx, src/kasakay-widget.css, src/KaSakay.tsx, src/Root.tsx, e2e/kasakay-widget.spec.ts, docs/kasakay.md.
 
 Validation: ten existing assistant browser cases passed; all four new panel cases passed after the keyboard-focus fix, covering desktop/mobile opening, hero-badge clearance, draft persistence, Escape, focus wrapping, fallback links, and route navigation. Desktop/mobile screenshots were inspected. Production build, lint and whitespace checks passed. No provider or fare-engine changes and no live Gemini request were made for this UI update.
+
+## Step-by-step directions (2026-11-28)
+
+Each suggested trip now carries numbered steps in the user's language (English, Filipino or Cebuano): where to walk to catch the jeepney, which jeepney to ride and where it is heading, the streets it passes, where to get off, any transfer, and the final walk.
+
+The steps are built by `shared/directions.mjs`, not by Gemini, so the model still cannot invent routes, stops or places:
+- walk distances and where along each route you board and alight come from the trip planner;
+- street names come from the route's LPTRP street list (placed approximately by distance along the route, so they read "around …");
+- "near …" names come from the route's LPTRP key places and only when they are within 450 m;
+- the server reads routes through the public read-only `/api/catalog/<id>` endpoint (added to KaSakay's in-process allowlist; still no write or admin access).
+
+Tests: `tests/directions.test.js` (walk/ride/transfer/arrival, all three languages, nearby-place rule, graceful fallback) and the real-planner case in `tests/kasakay.test.js`, which checks every returned trip has grounded steps.
